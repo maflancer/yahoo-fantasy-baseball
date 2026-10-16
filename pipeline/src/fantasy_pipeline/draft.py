@@ -5,8 +5,16 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import Any
 
-# How many undrafted players to list, best season rank first.
-UNDRAFTED_LIMIT = 15
+from fantasy_pipeline.transactions import Stint, kept_share, to_date
+
+# Highlight rules. Steals: drafted this round or later, kept by the drafter for
+# at least this share of the season, best season rank first. Busts: drafted
+# this round or earlier and finished outside this rank, earliest pick first.
+STEAL_MIN_ROUND = 10
+STEAL_MIN_KEPT = 0.5
+BUST_MAX_ROUND = 5
+BUST_RANK = 300
+HIGHLIGHTS = 5
 
 
 @dataclass(frozen=True)
@@ -50,27 +58,17 @@ def _season_rank(entry: list[Any], year: int) -> int | None:
     return None
 
 
-def pick_value(pick: int, rank: int | None, num_picks: int) -> int | None:
-    """How many spots better than their draft slot a player finished (negative = worse).
-
-    Ranks past the end of the draft count as one spot past the last pick, so a
-    late-round flier who finished 900th isn't scored as a bigger bust than a
-    first-rounder who finished 300th.
-    """
-    if rank is None:
-        return None
-    return pick - min(rank, num_picks + 1)
-
-
 def build_draft(
-    draft_results: list[dict[str, Any]], players: dict[str, Player], game_id: str
+    draft_results: list[dict[str, Any]],
+    players: dict[str, Player],
+    game_id: str,
+    stints: dict[str, list[Stint]],
+    season: tuple[int, int],
 ) -> dict[str, Any]:
-    num_picks = len(draft_results)
     picks = []
     for result in sorted(draft_results, key=lambda r: int(r["pick"])):
         key = f"{game_id}.p.{result['player_id']}"
         player = players.get(key)
-        rank = player.season_rank if player else None
         picks.append(
             {
                 "pick": int(result["pick"]),
@@ -80,28 +78,48 @@ def build_draft(
                 "name": player.name if player else key,
                 "mlb_team": player.mlb_team if player else "",
                 "position": player.position if player else "",
-                "rank": rank,
-                "value": pick_value(int(result["pick"]), rank, num_picks),
+                "rank": player.season_rank if player else None,
+                "tenure": tenure(stints.get(key, []), result["team_key"], season),
             }
         )
-
-    drafted = {p["player_key"] for p in picks}
-    undrafted = sorted(
-        (p for p in players.values() if p.player_key not in drafted and p.season_rank),
-        key=lambda p: p.season_rank or 0,
-    )[:UNDRAFTED_LIMIT]
-
     return {
-        "num_picks": num_picks,
+        "num_picks": len(picks),
         "picks": picks,
-        "undrafted": [
-            {
-                "player_key": p.player_key,
-                "name": p.name,
-                "mlb_team": p.mlb_team,
-                "position": p.position,
-                "rank": p.season_rank,
-            }
-            for p in undrafted
-        ],
+        "steals": [p["pick"] for p in steals(picks)],
+        "busts": [p["pick"] for p in busts(picks)],
     }
+
+
+def tenure(stints: list[Stint], team_key: str, season: tuple[int, int]) -> dict[str, Any]:
+    """How long the drafting team kept the player, and where he went next."""
+    first = stints[0] if stints and stints[0].team_key == team_key else None
+    later = stints[1:] if first else stints
+    next_stint = next((s for s in later if s.team_key != team_key), None)
+    return {
+        "kept_share": kept_share(stints, team_key, *season),
+        "left": first.left if first else None,
+        "left_date": to_date(first.end) if first else None,
+        "next_team_key": next_stint.team_key if next_stint else None,
+    }
+
+
+def steals(picks: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Late picks the drafting team held onto that finished highest."""
+    candidates = [
+        p
+        for p in picks
+        if p["round"] >= STEAL_MIN_ROUND
+        and p["rank"] is not None
+        and p["tenure"]["kept_share"] >= STEAL_MIN_KEPT
+    ]
+    return sorted(candidates, key=lambda p: p["rank"])[:HIGHLIGHTS]
+
+
+def busts(picks: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Early picks who finished outside the top BUST_RANK, earliest first."""
+    candidates = [
+        p
+        for p in picks
+        if p["round"] <= BUST_MAX_ROUND and (p["rank"] is None or p["rank"] > BUST_RANK)
+    ]
+    return sorted(candidates, key=lambda p: p["pick"])[:HIGHLIGHTS]

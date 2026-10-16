@@ -53,11 +53,12 @@ def test_season_summary(raw_season):
     assert summary == {
         "year": 2026,
         "name": "Test League",
-        "league_key": "",
+        "league_key": "469.l.83828",
         "num_teams": 14,
         "playoff_start_week": 23,
         "is_finished": True,
         "has_draft": False,
+        "has_moves": False,
         "updated_at": "2026-10-01T00:00:00+00:00",
     }
 

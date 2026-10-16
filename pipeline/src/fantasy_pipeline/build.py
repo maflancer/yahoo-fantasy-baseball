@@ -8,6 +8,7 @@ from typing import Any
 from fantasy_pipeline.bracket import RoundLabel, replay_playoffs
 from fantasy_pipeline.draft import build_draft, parse_players
 from fantasy_pipeline.leaders import season_leaders
+from fantasy_pipeline.moves import build_moves
 from fantasy_pipeline.parse import (
     Matchup,
     StatCategory,
@@ -18,6 +19,7 @@ from fantasy_pipeline.parse import (
     week_dates,
 )
 from fantasy_pipeline.stats import build_stats
+from fantasy_pipeline.transactions import ownership, parse_transactions, season_bounds
 
 
 @dataclass
@@ -31,6 +33,7 @@ class RawSeason:
     teams: dict[str, dict[str, Any]]  # league.teams()
     matchups: list[dict[str, Any]]  # league.matchups(week) for each completed week
     draft_results: list[dict[str, Any]] = field(default_factory=list)  # league.draft_results()
+    transactions: dict[str, Any] = field(default_factory=dict)  # league transactions resource
     players: list[dict[str, Any]] = field(default_factory=list)  # player pages with ranks
 
 
@@ -106,10 +109,28 @@ def build_season(raw: RawSeason) -> dict[str, dict[str, Any]]:
             ),
         },
     }
-    if raw.draft_results:
-        game_id = raw.draft_results[0]["team_key"].split(".")[0]
+    transactions = parse_transactions(raw.transactions)
+    if raw.draft_results or transactions:
+        game_id = (
+            str(raw.settings.get("league_key", "")).split(".")[0]
+            or (raw.draft_results[0]["team_key"].split(".")[0])
+        )
         players = parse_players(raw.players, raw.year)
-        docs["draft.json"] = {"teams": teams, **build_draft(raw.draft_results, players, game_id)}
+        season = season_bounds(raw.settings)
+        draft_time = int(raw.settings.get("draft_time") or season[0])
+        # Tenure counts from draft day when the season opened earlier (e.g. 2024's Seoul Series).
+        season = (max(season[0], draft_time), season[1])
+        drafted = [(f"{game_id}.p.{r['player_id']}", r["team_key"]) for r in raw.draft_results]
+        stints = ownership(drafted, draft_time, transactions)
+        if raw.draft_results:
+            docs["draft.json"] = {
+                "teams": teams,
+                **build_draft(raw.draft_results, players, game_id, stints, season),
+            }
+        docs["moves.json"] = {
+            "teams": teams,
+            **build_moves(transactions, raw.draft_results, game_id, draft_time, players, stints),
+        }
     return docs
 
 
@@ -140,6 +161,7 @@ def season_summary(raw: RawSeason, updated_at: str) -> dict[str, Any]:
         "playoff_start_week": _int_or_none(s.get("playoff_start_week")),
         "is_finished": str(s.get("is_finished", "0")) == "1",
         "has_draft": bool(raw.draft_results),
+        "has_moves": bool(raw.draft_results or parse_transactions(raw.transactions)),
         "updated_at": updated_at,
     }
 

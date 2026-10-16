@@ -11,7 +11,8 @@ SEASONS_FILE = "seasons.json"
 
 def write_json(path: Path, doc: Any) -> bool:
     """Write doc as JSON. Returns True if the file's contents changed."""
-    text = json.dumps(doc, indent=1, ensure_ascii=False) + "\n"
+    # Compact: these files are served to browsers, not read by people.
+    text = json.dumps(doc, separators=(",", ":"), ensure_ascii=False) + "\n"
     if path.exists() and path.read_text(encoding="utf-8") == text:
         return False
     path.parent.mkdir(parents=True, exist_ok=True)

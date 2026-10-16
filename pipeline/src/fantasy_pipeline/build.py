@@ -16,6 +16,7 @@ from fantasy_pipeline.parse import (
     parse_stat_categories,
     week_dates,
 )
+from fantasy_pipeline.stats import build_stats
 
 
 @dataclass
@@ -63,11 +64,12 @@ def build_standings(raw: RawSeason) -> list[dict[str, Any]]:
 def build_season(raw: RawSeason, name_map: dict[str, str]) -> dict[str, dict[str, Any]]:
     """Returns {filename: document} for one season."""
     categories: list[StatCategory] = parse_stat_categories(raw.settings_raw)
+    display_stats = parse_stat_categories(raw.settings_raw, display_only=True)
     rows = [row for week in raw.matchups for row in parse_matchups(week, categories)]
     matchups_by_week: dict[int, list[Matchup]] = {}
     dates = {}
     for week_raw in raw.matchups:
-        week_matchups = parse_scoreboard(week_raw, categories)
+        week_matchups = parse_scoreboard(week_raw, categories, display_stats)
         if not week_matchups:
             continue
         week = week_matchups[0].week
@@ -94,6 +96,14 @@ def build_season(raw: RawSeason, name_map: dict[str, str]) -> dict[str, dict[str
             "teams": teams,
             "categories": [c.to_json() for c in categories],
             "weeks": weeks,
+        },
+        "stats.json": {
+            "teams": teams,
+            **build_stats(
+                matchups_by_week,
+                categories,
+                {key: label.name for key, label in labels.items()},
+            ),
         },
     }
 

@@ -1,0 +1,10399 @@
+{
+ "teams": [
+  {
+   "team_key": "431.l.120609.t.1",
+   "name": "Jose"
+  },
+  {
+   "team_key": "431.l.120609.t.10",
+   "name": "Ian"
+  },
+  {
+   "team_key": "431.l.120609.t.11",
+   "name": "Zach"
+  },
+  {
+   "team_key": "431.l.120609.t.12",
+   "name": "dawson"
+  },
+  {
+   "team_key": "431.l.120609.t.13",
+   "name": "JT"
+  },
+  {
+   "team_key": "431.l.120609.t.14",
+   "name": "adam"
+  },
+  {
+   "team_key": "431.l.120609.t.2",
+   "name": "Jahn"
+  },
+  {
+   "team_key": "431.l.120609.t.3",
+   "name": "quinn"
+  },
+  {
+   "team_key": "431.l.120609.t.4",
+   "name": "gabriel"
+  },
+  {
+   "team_key": "431.l.120609.t.5",
+   "name": "Dante"
+  },
+  {
+   "team_key": "431.l.120609.t.6",
+   "name": "david"
+  },
+  {
+   "team_key": "431.l.120609.t.7",
+   "name": "nathan"
+  },
+  {
+   "team_key": "431.l.120609.t.8",
+   "name": "Ben"
+  },
+  {
+   "team_key": "431.l.120609.t.9",
+   "name": "Matt"
+  }
+ ],
+ "categories": [
+  {
+   "id": "7",
+   "abbr": "R",
+   "name": "Runs",
+   "higher_is_better": true,
+   "position_type": "B",
+   "agg": {
+    "type": "sum"
+   }
+  },
+  {
+   "id": "12",
+   "abbr": "HR",
+   "name": "Home Runs",
+   "higher_is_better": true,
+   "position_type": "B",
+   "agg": {
+    "type": "sum"
+   }
+  },
+  {
+   "id": "13",
+   "abbr": "RBI",
+   "name": "Runs Batted In",
+   "higher_is_better": true,
+   "position_type": "B",
+   "agg": {
+    "type": "sum"
+   }
+  },
+  {
+   "id": "16",
+   "abbr": "SB",
+   "name": "Stolen Bases",
+   "higher_is_better": true,
+   "position_type": "B",
+   "agg": {
+    "type": "sum"
+   }
+  },
+  {
+   "id": "23",
+   "abbr": "TB",
+   "name": "Total Bases",
+   "higher_is_better": true,
+   "position_type": "B",
+   "agg": {
+    "type": "sum"
+   }
+  },
+  {
+   "id": "3",
+   "abbr": "AVG",
+   "name": "Batting Average",
+   "higher_is_better": true,
+   "position_type": "B",
+   "agg": {
+    "type": "ratio",
+    "num": "H",
+    "den": "AB",
+    "scale": 1,
+    "decimals": 3
+   }
+  },
+  {
+   "id": "4",
+   "abbr": "OBP",
+   "name": "On-base Percentage",
+   "higher_is_better": true,
+   "position_type": "B",
+   "agg": {
+    "type": "weighted",
+    "weight": "AB",
+    "decimals": 3,
+    "approximate": true
+   }
+  },
+  {
+   "id": "50",
+   "abbr": "IP",
+   "name": "Innings Pitched",
+   "higher_is_better": true,
+   "position_type": "P",
+   "agg": {
+    "type": "innings"
+   }
+  },
+  {
+   "id": "42",
+   "abbr": "K",
+   "name": "Strikeouts",
+   "higher_is_better": true,
+   "position_type": "P",
+   "agg": {
+    "type": "sum"
+   }
+  },
+  {
+   "id": "26",
+   "abbr": "ERA",
+   "name": "Earned Run Average",
+   "higher_is_better": false,
+   "position_type": "P",
+   "agg": {
+    "type": "ratio",
+    "num": "ER",
+    "den": "outs",
+    "scale": 27,
+    "decimals": 2
+   }
+  },
+  {
+   "id": "27",
+   "abbr": "WHIP",
+   "name": "(Walks + Hits)/ Innings Pitched",
+   "higher_is_better": false,
+   "position_type": "P",
+   "agg": {
+    "type": "ratio",
+    "num": "WH",
+    "den": "outs",
+    "scale": 3,
+    "decimals": 2
+   }
+  },
+  {
+   "id": "89",
+   "abbr": "SV+H",
+   "name": "Saves + Holds",
+   "higher_is_better": true,
+   "position_type": "P",
+   "agg": {
+    "type": "sum"
+   }
+  }
+ ],
+ "rows": [
+  {
+   "week": 1,
+   "team_key": "431.l.120609.t.1",
+   "opponent_key": "431.l.120609.t.14",
+   "result": "L",
+   "score": [
+    4,
+    8
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 36,
+    "HR": 11,
+    "RBI": 42,
+    "SB": 0,
+    "TB": 109,
+    "AVG": 0.238,
+    "OBP": 0.284,
+    "IP": 225,
+    "K": 72,
+    "ERA": 2.52,
+    "WHIP": 0.96,
+    "SV+H": 11
+   },
+   "parts": {
+    "H": 63,
+    "AB": 265,
+    "outs": 225,
+    "ER": 21,
+    "WH": 72
+   }
+  },
+  {
+   "week": 1,
+   "team_key": "431.l.120609.t.14",
+   "opponent_key": "431.l.120609.t.1",
+   "result": "W",
+   "score": [
+    8,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 64,
+    "HR": 19,
+    "RBI": 62,
+    "SB": 8,
+    "TB": 183,
+    "AVG": 0.276,
+    "OBP": 0.324,
+    "IP": 182,
+    "K": 70,
+    "ERA": 2.23,
+    "WHIP": 1.09,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 107,
+    "AB": 387,
+    "outs": 182,
+    "ER": 15,
+    "WH": 66
+   }
+  },
+  {
+   "week": 1,
+   "team_key": "431.l.120609.t.2",
+   "opponent_key": "431.l.120609.t.10",
+   "result": "L",
+   "score": [
+    3,
+    9
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 52,
+    "HR": 14,
+    "RBI": 51,
+    "SB": 6,
+    "TB": 147,
+    "AVG": 0.239,
+    "OBP": 0.312,
+    "IP": 193,
+    "K": 56,
+    "ERA": 5.18,
+    "WHIP": 1.43,
+    "SV+H": 9
+   },
+   "parts": {
+    "H": 89,
+    "AB": 372,
+    "outs": 193,
+    "ER": 37,
+    "WH": 92
+   }
+  },
+  {
+   "week": 1,
+   "team_key": "431.l.120609.t.10",
+   "opponent_key": "431.l.120609.t.2",
+   "result": "W",
+   "score": [
+    9,
+    3
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 51,
+    "HR": 15,
+    "RBI": 63,
+    "SB": 7,
+    "TB": 175,
+    "AVG": 0.258,
+    "OBP": 0.341,
+    "IP": 205,
+    "K": 73,
+    "ERA": 5.4,
+    "WHIP": 1.36,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 92,
+    "AB": 357,
+    "outs": 205,
+    "ER": 41,
+    "WH": 93
+   }
+  },
+  {
+   "week": 1,
+   "team_key": "431.l.120609.t.3",
+   "opponent_key": "431.l.120609.t.7",
+   "result": "L",
+   "score": [
+    4,
+    7
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 58,
+    "HR": 14,
+    "RBI": 53,
+    "SB": 11,
+    "TB": 131,
+    "AVG": 0.221,
+    "OBP": 0.312,
+    "IP": 289,
+    "K": 101,
+    "ERA": 4.95,
+    "WHIP": 1.22,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 75,
+    "AB": 339,
+    "outs": 289,
+    "ER": 53,
+    "WH": 118
+   }
+  },
+  {
+   "week": 1,
+   "team_key": "431.l.120609.t.7",
+   "opponent_key": "431.l.120609.t.3",
+   "result": "W",
+   "score": [
+    7,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 63,
+    "HR": 17,
+    "RBI": 53,
+    "SB": 6,
+    "TB": 157,
+    "AVG": 0.265,
+    "OBP": 0.362,
+    "IP": 209,
+    "K": 85,
+    "ERA": 3.36,
+    "WHIP": 0.96,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 91,
+    "AB": 344,
+    "outs": 209,
+    "ER": 26,
+    "WH": 67
+   }
+  },
+  {
+   "week": 1,
+   "team_key": "431.l.120609.t.4",
+   "opponent_key": "431.l.120609.t.11",
+   "result": "W",
+   "score": [
+    8,
+    3
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 53,
+    "HR": 15,
+    "RBI": 58,
+    "SB": 5,
+    "TB": 157,
+    "AVG": 0.242,
+    "OBP": 0.303,
+    "IP": 210,
+    "K": 63,
+    "ERA": 2.31,
+    "WHIP": 1.13,
+    "SV+H": 7
+   },
+   "parts": {
+    "H": 92,
+    "AB": 380,
+    "outs": 210,
+    "ER": 18,
+    "WH": 79
+   }
+  },
+  {
+   "week": 1,
+   "team_key": "431.l.120609.t.11",
+   "opponent_key": "431.l.120609.t.4",
+   "result": "L",
+   "score": [
+    3,
+    8
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 49,
+    "HR": 8,
+    "RBI": 48,
+    "SB": 7,
+    "TB": 131,
+    "AVG": 0.245,
+    "OBP": 0.326,
+    "IP": 179,
+    "K": 62,
+    "ERA": 2.56,
+    "WHIP": 1.17,
+    "SV+H": 7
+   },
+   "parts": {
+    "H": 84,
+    "AB": 343,
+    "outs": 179,
+    "ER": 17,
+    "WH": 70
+   }
+  },
+  {
+   "week": 1,
+   "team_key": "431.l.120609.t.5",
+   "opponent_key": "431.l.120609.t.8",
+   "result": "W",
+   "score": [
+    8,
+    3
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 42,
+    "HR": 9,
+    "RBI": 42,
+    "SB": 12,
+    "TB": 141,
+    "AVG": 0.254,
+    "OBP": 0.332,
+    "IP": 190,
+    "K": 71,
+    "ERA": 2.7,
+    "WHIP": 1.18,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 86,
+    "AB": 339,
+    "outs": 190,
+    "ER": 19,
+    "WH": 75
+   }
+  },
+  {
+   "week": 1,
+   "team_key": "431.l.120609.t.8",
+   "opponent_key": "431.l.120609.t.5",
+   "result": "L",
+   "score": [
+    3,
+    8
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 42,
+    "HR": 10,
+    "RBI": 38,
+    "SB": 4,
+    "TB": 123,
+    "AVG": 0.238,
+    "OBP": 0.311,
+    "IP": 197,
+    "K": 81,
+    "ERA": 4.52,
+    "WHIP": 1.29,
+    "SV+H": 1
+   },
+   "parts": {
+    "H": 82,
+    "AB": 345,
+    "outs": 197,
+    "ER": 33,
+    "WH": 85
+   }
+  },
+  {
+   "week": 1,
+   "team_key": "431.l.120609.t.6",
+   "opponent_key": "431.l.120609.t.13",
+   "result": "T",
+   "score": [
+    6,
+    6
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 40,
+    "HR": 12,
+    "RBI": 41,
+    "SB": 6,
+    "TB": 133,
+    "AVG": 0.238,
+    "OBP": 0.316,
+    "IP": 228,
+    "K": 73,
+    "ERA": 3.08,
+    "WHIP": 1.16,
+    "SV+H": 7
+   },
+   "parts": {
+    "H": 85,
+    "AB": 357,
+    "outs": 228,
+    "ER": 26,
+    "WH": 88
+   }
+  },
+  {
+   "week": 1,
+   "team_key": "431.l.120609.t.13",
+   "opponent_key": "431.l.120609.t.6",
+   "result": "T",
+   "score": [
+    6,
+    6
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 59,
+    "HR": 13,
+    "RBI": 45,
+    "SB": 1,
+    "TB": 152,
+    "AVG": 0.26,
+    "OBP": 0.357,
+    "IP": 202,
+    "K": 65,
+    "ERA": 3.48,
+    "WHIP": 1.22,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 87,
+    "AB": 335,
+    "outs": 202,
+    "ER": 26,
+    "WH": 82
+   }
+  },
+  {
+   "week": 1,
+   "team_key": "431.l.120609.t.9",
+   "opponent_key": "431.l.120609.t.12",
+   "result": "W",
+   "score": [
+    8,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 46,
+    "HR": 17,
+    "RBI": 55,
+    "SB": 5,
+    "TB": 171,
+    "AVG": 0.276,
+    "OBP": 0.355,
+    "IP": 262,
+    "K": 87,
+    "ERA": 4.74,
+    "WHIP": 1.45,
+    "SV+H": 7
+   },
+   "parts": {
+    "H": 100,
+    "AB": 362,
+    "outs": 262,
+    "ER": 46,
+    "WH": 127
+   }
+  },
+  {
+   "week": 1,
+   "team_key": "431.l.120609.t.12",
+   "opponent_key": "431.l.120609.t.9",
+   "result": "L",
+   "score": [
+    4,
+    8
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 58,
+    "HR": 14,
+    "RBI": 40,
+    "SB": 13,
+    "TB": 160,
+    "AVG": 0.258,
+    "OBP": 0.345,
+    "IP": 124,
+    "K": 51,
+    "ERA": 1.96,
+    "WHIP": 0.99,
+    "SV+H": 0
+   },
+   "parts": {
+    "H": 101,
+    "AB": 391,
+    "outs": 124,
+    "ER": 9,
+    "WH": 41
+   }
+  },
+  {
+   "week": 2,
+   "team_key": "431.l.120609.t.1",
+   "opponent_key": "431.l.120609.t.12",
+   "result": "W",
+   "score": [
+    8,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 31,
+    "HR": 11,
+    "RBI": 44,
+    "SB": 4,
+    "TB": 103,
+    "AVG": 0.321,
+    "OBP": 0.4,
+    "IP": 142,
+    "K": 42,
+    "ERA": 4.37,
+    "WHIP": 1.35,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 61,
+    "AB": 190,
+    "outs": 142,
+    "ER": 23,
+    "WH": 64
+   }
+  },
+  {
+   "week": 2,
+   "team_key": "431.l.120609.t.12",
+   "opponent_key": "431.l.120609.t.1",
+   "result": "L",
+   "score": [
+    4,
+    8
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 43,
+    "HR": 10,
+    "RBI": 35,
+    "SB": 9,
+    "TB": 123,
+    "AVG": 0.303,
+    "OBP": 0.369,
+    "IP": 132,
+    "K": 52,
+    "ERA": 5.93,
+    "WHIP": 1.48,
+    "SV+H": 1
+   },
+   "parts": {
+    "H": 77,
+    "AB": 254,
+    "outs": 132,
+    "ER": 29,
+    "WH": 65
+   }
+  },
+  {
+   "week": 2,
+   "team_key": "431.l.120609.t.2",
+   "opponent_key": "431.l.120609.t.4",
+   "result": "L",
+   "score": [
+    3,
+    9
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 29,
+    "HR": 4,
+    "RBI": 18,
+    "SB": 6,
+    "TB": 73,
+    "AVG": 0.229,
+    "OBP": 0.307,
+    "IP": 165,
+    "K": 43,
+    "ERA": 5.24,
+    "WHIP": 1.58,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 50,
+    "AB": 218,
+    "outs": 165,
+    "ER": 32,
+    "WH": 87
+   }
+  },
+  {
+   "week": 2,
+   "team_key": "431.l.120609.t.4",
+   "opponent_key": "431.l.120609.t.2",
+   "result": "W",
+   "score": [
+    9,
+    3
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 40,
+    "HR": 8,
+    "RBI": 34,
+    "SB": 1,
+    "TB": 104,
+    "AVG": 0.243,
+    "OBP": 0.335,
+    "IP": 160,
+    "K": 54,
+    "ERA": 4.89,
+    "WHIP": 1.33,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 59,
+    "AB": 243,
+    "outs": 160,
+    "ER": 29,
+    "WH": 71
+   }
+  },
+  {
+   "week": 2,
+   "team_key": "431.l.120609.t.3",
+   "opponent_key": "431.l.120609.t.11",
+   "result": "W",
+   "score": [
+    9,
+    3
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 34,
+    "HR": 7,
+    "RBI": 24,
+    "SB": 11,
+    "TB": 89,
+    "AVG": 0.274,
+    "OBP": 0.352,
+    "IP": 214,
+    "K": 81,
+    "ERA": 2.9,
+    "WHIP": 1.29,
+    "SV+H": 6
+   },
+   "parts": {
+    "H": 62,
+    "AB": 226,
+    "outs": 214,
+    "ER": 23,
+    "WH": 92
+   }
+  },
+  {
+   "week": 2,
+   "team_key": "431.l.120609.t.11",
+   "opponent_key": "431.l.120609.t.3",
+   "result": "L",
+   "score": [
+    3,
+    9
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 33,
+    "HR": 10,
+    "RBI": 43,
+    "SB": 4,
+    "TB": 96,
+    "AVG": 0.23,
+    "OBP": 0.337,
+    "IP": 102,
+    "K": 32,
+    "ERA": 5.82,
+    "WHIP": 1.47,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 53,
+    "AB": 230,
+    "outs": 102,
+    "ER": 22,
+    "WH": 50
+   }
+  },
+  {
+   "week": 2,
+   "team_key": "431.l.120609.t.5",
+   "opponent_key": "431.l.120609.t.10",
+   "result": "L",
+   "score": [
+    5,
+    6
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 26,
+    "HR": 13,
+    "RBI": 35,
+    "SB": 4,
+    "TB": 108,
+    "AVG": 0.262,
+    "OBP": 0.339,
+    "IP": 132,
+    "K": 42,
+    "ERA": 5.11,
+    "WHIP": 1.34,
+    "SV+H": 1
+   },
+   "parts": {
+    "H": 56,
+    "AB": 214,
+    "outs": 132,
+    "ER": 25,
+    "WH": 59
+   }
+  },
+  {
+   "week": 2,
+   "team_key": "431.l.120609.t.10",
+   "opponent_key": "431.l.120609.t.5",
+   "result": "W",
+   "score": [
+    6,
+    5
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 32,
+    "HR": 7,
+    "RBI": 27,
+    "SB": 5,
+    "TB": 95,
+    "AVG": 0.251,
+    "OBP": 0.326,
+    "IP": 190,
+    "K": 79,
+    "ERA": 3.13,
+    "WHIP": 1.03,
+    "SV+H": 1
+   },
+   "parts": {
+    "H": 54,
+    "AB": 215,
+    "outs": 190,
+    "ER": 22,
+    "WH": 65
+   }
+  },
+  {
+   "week": 2,
+   "team_key": "431.l.120609.t.6",
+   "opponent_key": "431.l.120609.t.8",
+   "result": "T",
+   "score": [
+    6,
+    6
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 29,
+    "HR": 5,
+    "RBI": 34,
+    "SB": 4,
+    "TB": 82,
+    "AVG": 0.237,
+    "OBP": 0.284,
+    "IP": 165,
+    "K": 68,
+    "ERA": 3.11,
+    "WHIP": 1.16,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 57,
+    "AB": 241,
+    "outs": 165,
+    "ER": 19,
+    "WH": 64
+   }
+  },
+  {
+   "week": 2,
+   "team_key": "431.l.120609.t.8",
+   "opponent_key": "431.l.120609.t.6",
+   "result": "T",
+   "score": [
+    6,
+    6
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 36,
+    "HR": 13,
+    "RBI": 31,
+    "SB": 0,
+    "TB": 111,
+    "AVG": 0.27,
+    "OBP": 0.349,
+    "IP": 145,
+    "K": 47,
+    "ERA": 3.17,
+    "WHIP": 1.16,
+    "SV+H": 2
+   },
+   "parts": {
+    "H": 60,
+    "AB": 222,
+    "outs": 145,
+    "ER": 17,
+    "WH": 56
+   }
+  },
+  {
+   "week": 2,
+   "team_key": "431.l.120609.t.7",
+   "opponent_key": "431.l.120609.t.9",
+   "result": "L",
+   "score": [
+    5,
+    7
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 33,
+    "HR": 8,
+    "RBI": 24,
+    "SB": 3,
+    "TB": 87,
+    "AVG": 0.246,
+    "OBP": 0.304,
+    "IP": 165,
+    "K": 63,
+    "ERA": 3.44,
+    "WHIP": 1.2,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 52,
+    "AB": 211,
+    "outs": 165,
+    "ER": 21,
+    "WH": 66
+   }
+  },
+  {
+   "week": 2,
+   "team_key": "431.l.120609.t.9",
+   "opponent_key": "431.l.120609.t.7",
+   "result": "W",
+   "score": [
+    7,
+    5
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 38,
+    "HR": 7,
+    "RBI": 39,
+    "SB": 2,
+    "TB": 110,
+    "AVG": 0.271,
+    "OBP": 0.369,
+    "IP": 237,
+    "K": 72,
+    "ERA": 4.33,
+    "WHIP": 1.48,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 65,
+    "AB": 240,
+    "outs": 237,
+    "ER": 38,
+    "WH": 117
+   }
+  },
+  {
+   "week": 2,
+   "team_key": "431.l.120609.t.13",
+   "opponent_key": "431.l.120609.t.14",
+   "result": "L",
+   "score": [
+    3,
+    9
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 27,
+    "HR": 7,
+    "RBI": 22,
+    "SB": 4,
+    "TB": 79,
+    "AVG": 0.246,
+    "OBP": 0.335,
+    "IP": 116,
+    "K": 46,
+    "ERA": 2.56,
+    "WHIP": 1.09,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 52,
+    "AB": 211,
+    "outs": 116,
+    "ER": 11,
+    "WH": 42
+   }
+  },
+  {
+   "week": 2,
+   "team_key": "431.l.120609.t.14",
+   "opponent_key": "431.l.120609.t.13",
+   "result": "W",
+   "score": [
+    9,
+    3
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 47,
+    "HR": 14,
+    "RBI": 42,
+    "SB": 5,
+    "TB": 122,
+    "AVG": 0.277,
+    "OBP": 0.345,
+    "IP": 154,
+    "K": 45,
+    "ERA": 3.86,
+    "WHIP": 1.15,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 70,
+    "AB": 253,
+    "outs": 154,
+    "ER": 22,
+    "WH": 59
+   }
+  },
+  {
+   "week": 3,
+   "team_key": "431.l.120609.t.1",
+   "opponent_key": "431.l.120609.t.7",
+   "result": "W",
+   "score": [
+    9,
+    2
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 27,
+    "HR": 6,
+    "RBI": 33,
+    "SB": 7,
+    "TB": 88,
+    "AVG": 0.269,
+    "OBP": 0.326,
+    "IP": 116,
+    "K": 36,
+    "ERA": 1.86,
+    "WHIP": 0.85,
+    "SV+H": 10
+   },
+   "parts": {
+    "H": 53,
+    "AB": 197,
+    "outs": 116,
+    "ER": 8,
+    "WH": 33
+   }
+  },
+  {
+   "week": 3,
+   "team_key": "431.l.120609.t.7",
+   "opponent_key": "431.l.120609.t.1",
+   "result": "L",
+   "score": [
+    2,
+    9
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 19,
+    "HR": 6,
+    "RBI": 18,
+    "SB": 3,
+    "TB": 54,
+    "AVG": 0.167,
+    "OBP": 0.225,
+    "IP": 162,
+    "K": 70,
+    "ERA": 4.33,
+    "WHIP": 1.3,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 32,
+    "AB": 192,
+    "outs": 162,
+    "ER": 26,
+    "WH": 70
+   }
+  },
+  {
+   "week": 3,
+   "team_key": "431.l.120609.t.2",
+   "opponent_key": "431.l.120609.t.3",
+   "result": "T",
+   "score": [
+    6,
+    6
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 36,
+    "HR": 4,
+    "RBI": 26,
+    "SB": 8,
+    "TB": 78,
+    "AVG": 0.247,
+    "OBP": 0.322,
+    "IP": 189,
+    "K": 61,
+    "ERA": 1.43,
+    "WHIP": 0.89,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 54,
+    "AB": 219,
+    "outs": 189,
+    "ER": 10,
+    "WH": 56
+   }
+  },
+  {
+   "week": 3,
+   "team_key": "431.l.120609.t.3",
+   "opponent_key": "431.l.120609.t.2",
+   "result": "T",
+   "score": [
+    6,
+    6
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 28,
+    "HR": 5,
+    "RBI": 22,
+    "SB": 12,
+    "TB": 90,
+    "AVG": 0.259,
+    "OBP": 0.342,
+    "IP": 188,
+    "K": 72,
+    "ERA": 2.73,
+    "WHIP": 1.21,
+    "SV+H": 2
+   },
+   "parts": {
+    "H": 59,
+    "AB": 228,
+    "outs": 188,
+    "ER": 19,
+    "WH": 76
+   }
+  },
+  {
+   "week": 3,
+   "team_key": "431.l.120609.t.4",
+   "opponent_key": "431.l.120609.t.5",
+   "result": "W",
+   "score": [
+    7,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 42,
+    "HR": 10,
+    "RBI": 28,
+    "SB": 5,
+    "TB": 105,
+    "AVG": 0.237,
+    "OBP": 0.326,
+    "IP": 137,
+    "K": 33,
+    "ERA": 2.56,
+    "WHIP": 1.18,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 57,
+    "AB": 241,
+    "outs": 137,
+    "ER": 13,
+    "WH": 54
+   }
+  },
+  {
+   "week": 3,
+   "team_key": "431.l.120609.t.5",
+   "opponent_key": "431.l.120609.t.4",
+   "result": "L",
+   "score": [
+    4,
+    7
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 25,
+    "HR": 6,
+    "RBI": 28,
+    "SB": 11,
+    "TB": 79,
+    "AVG": 0.299,
+    "OBP": 0.39,
+    "IP": 125,
+    "K": 45,
+    "ERA": 4.1,
+    "WHIP": 1.34,
+    "SV+H": 0
+   },
+   "parts": {
+    "H": 56,
+    "AB": 187,
+    "outs": 125,
+    "ER": 19,
+    "WH": 56
+   }
+  },
+  {
+   "week": 3,
+   "team_key": "431.l.120609.t.6",
+   "opponent_key": "431.l.120609.t.10",
+   "result": "L",
+   "score": [
+    4,
+    7
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 27,
+    "HR": 5,
+    "RBI": 31,
+    "SB": 6,
+    "TB": 96,
+    "AVG": 0.307,
+    "OBP": 0.387,
+    "IP": 124,
+    "K": 45,
+    "ERA": 4.35,
+    "WHIP": 1.21,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 66,
+    "AB": 215,
+    "outs": 124,
+    "ER": 20,
+    "WH": 50
+   }
+  },
+  {
+   "week": 3,
+   "team_key": "431.l.120609.t.10",
+   "opponent_key": "431.l.120609.t.6",
+   "result": "W",
+   "score": [
+    7,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 30,
+    "HR": 5,
+    "RBI": 32,
+    "SB": 8,
+    "TB": 90,
+    "AVG": 0.258,
+    "OBP": 0.306,
+    "IP": 163,
+    "K": 57,
+    "ERA": 3.31,
+    "WHIP": 1.05,
+    "SV+H": 2
+   },
+   "parts": {
+    "H": 59,
+    "AB": 229,
+    "outs": 163,
+    "ER": 20,
+    "WH": 57
+   }
+  },
+  {
+   "week": 3,
+   "team_key": "431.l.120609.t.8",
+   "opponent_key": "431.l.120609.t.13",
+   "result": "W",
+   "score": [
+    6,
+    5
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 26,
+    "HR": 7,
+    "RBI": 33,
+    "SB": 4,
+    "TB": 75,
+    "AVG": 0.207,
+    "OBP": 0.299,
+    "IP": 153,
+    "K": 50,
+    "ERA": 5.65,
+    "WHIP": 1.39,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 45,
+    "AB": 217,
+    "outs": 153,
+    "ER": 32,
+    "WH": 71
+   }
+  },
+  {
+   "week": 3,
+   "team_key": "431.l.120609.t.13",
+   "opponent_key": "431.l.120609.t.8",
+   "result": "L",
+   "score": [
+    5,
+    6
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 25,
+    "HR": 2,
+    "RBI": 12,
+    "SB": 5,
+    "TB": 61,
+    "AVG": 0.227,
+    "OBP": 0.313,
+    "IP": 168,
+    "K": 45,
+    "ERA": 3.7,
+    "WHIP": 1.39,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 49,
+    "AB": 216,
+    "outs": 168,
+    "ER": 23,
+    "WH": 78
+   }
+  },
+  {
+   "week": 3,
+   "team_key": "431.l.120609.t.9",
+   "opponent_key": "431.l.120609.t.11",
+   "result": "L",
+   "score": [
+    5,
+    7
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 29,
+    "HR": 5,
+    "RBI": 25,
+    "SB": 7,
+    "TB": 67,
+    "AVG": 0.195,
+    "OBP": 0.261,
+    "IP": 194,
+    "K": 53,
+    "ERA": 1.81,
+    "WHIP": 1.13,
+    "SV+H": 2
+   },
+   "parts": {
+    "H": 44,
+    "AB": 226,
+    "outs": 194,
+    "ER": 13,
+    "WH": 73
+   }
+  },
+  {
+   "week": 3,
+   "team_key": "431.l.120609.t.11",
+   "opponent_key": "431.l.120609.t.9",
+   "result": "W",
+   "score": [
+    7,
+    5
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 38,
+    "HR": 14,
+    "RBI": 41,
+    "SB": 3,
+    "TB": 116,
+    "AVG": 0.282,
+    "OBP": 0.378,
+    "IP": 184,
+    "K": 51,
+    "ERA": 4.4,
+    "WHIP": 1.35,
+    "SV+H": 10
+   },
+   "parts": {
+    "H": 60,
+    "AB": 213,
+    "outs": 184,
+    "ER": 30,
+    "WH": 83
+   }
+  },
+  {
+   "week": 3,
+   "team_key": "431.l.120609.t.12",
+   "opponent_key": "431.l.120609.t.14",
+   "result": "W",
+   "score": [
+    9,
+    3
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 32,
+    "HR": 4,
+    "RBI": 31,
+    "SB": 13,
+    "TB": 103,
+    "AVG": 0.267,
+    "OBP": 0.323,
+    "IP": 133,
+    "K": 46,
+    "ERA": 2.44,
+    "WHIP": 1.02,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 73,
+    "AB": 273,
+    "outs": 133,
+    "ER": 12,
+    "WH": 45
+   }
+  },
+  {
+   "week": 3,
+   "team_key": "431.l.120609.t.14",
+   "opponent_key": "431.l.120609.t.12",
+   "result": "L",
+   "score": [
+    3,
+    9
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 28,
+    "HR": 5,
+    "RBI": 26,
+    "SB": 6,
+    "TB": 91,
+    "AVG": 0.248,
+    "OBP": 0.316,
+    "IP": 100,
+    "K": 38,
+    "ERA": 2.16,
+    "WHIP": 1.11,
+    "SV+H": 6
+   },
+   "parts": {
+    "H": 61,
+    "AB": 246,
+    "outs": 100,
+    "ER": 8,
+    "WH": 37
+   }
+  },
+  {
+   "week": 4,
+   "team_key": "431.l.120609.t.1",
+   "opponent_key": "431.l.120609.t.11",
+   "result": "W",
+   "score": [
+    6,
+    5
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 38,
+    "HR": 11,
+    "RBI": 31,
+    "SB": 6,
+    "TB": 107,
+    "AVG": 0.319,
+    "OBP": 0.393,
+    "IP": 210,
+    "K": 71,
+    "ERA": 1.67,
+    "WHIP": 0.91,
+    "SV+H": 7
+   },
+   "parts": {
+    "H": 60,
+    "AB": 188,
+    "outs": 210,
+    "ER": 13,
+    "WH": 64
+   }
+  },
+  {
+   "week": 4,
+   "team_key": "431.l.120609.t.11",
+   "opponent_key": "431.l.120609.t.1",
+   "result": "L",
+   "score": [
+    5,
+    6
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 47,
+    "HR": 13,
+    "RBI": 44,
+    "SB": 6,
+    "TB": 135,
+    "AVG": 0.323,
+    "OBP": 0.381,
+    "IP": 143,
+    "K": 53,
+    "ERA": 4.91,
+    "WHIP": 1.2,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 75,
+    "AB": 232,
+    "outs": 143,
+    "ER": 26,
+    "WH": 57
+   }
+  },
+  {
+   "week": 4,
+   "team_key": "431.l.120609.t.2",
+   "opponent_key": "431.l.120609.t.9",
+   "result": "L",
+   "score": [
+    5,
+    6
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 29,
+    "HR": 8,
+    "RBI": 24,
+    "SB": 3,
+    "TB": 95,
+    "AVG": 0.268,
+    "OBP": 0.345,
+    "IP": 213,
+    "K": 66,
+    "ERA": 4.06,
+    "WHIP": 1.2,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 61,
+    "AB": 228,
+    "outs": 213,
+    "ER": 32,
+    "WH": 85
+   }
+  },
+  {
+   "week": 4,
+   "team_key": "431.l.120609.t.9",
+   "opponent_key": "431.l.120609.t.2",
+   "result": "W",
+   "score": [
+    6,
+    5
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 35,
+    "HR": 14,
+    "RBI": 35,
+    "SB": 3,
+    "TB": 102,
+    "AVG": 0.237,
+    "OBP": 0.315,
+    "IP": 226,
+    "K": 64,
+    "ERA": 3.46,
+    "WHIP": 1.3,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 54,
+    "AB": 228,
+    "outs": 226,
+    "ER": 29,
+    "WH": 98
+   }
+  },
+  {
+   "week": 4,
+   "team_key": "431.l.120609.t.3",
+   "opponent_key": "431.l.120609.t.5",
+   "result": "L",
+   "score": [
+    2,
+    10
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 27,
+    "HR": 9,
+    "RBI": 26,
+    "SB": 7,
+    "TB": 79,
+    "AVG": 0.221,
+    "OBP": 0.282,
+    "IP": 125,
+    "K": 41,
+    "ERA": 5.83,
+    "WHIP": 1.46,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 44,
+    "AB": 199,
+    "outs": 125,
+    "ER": 27,
+    "WH": 61
+   }
+  },
+  {
+   "week": 4,
+   "team_key": "431.l.120609.t.5",
+   "opponent_key": "431.l.120609.t.3",
+   "result": "W",
+   "score": [
+    10,
+    2
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 26,
+    "HR": 11,
+    "RBI": 36,
+    "SB": 11,
+    "TB": 80,
+    "AVG": 0.19,
+    "OBP": 0.282,
+    "IP": 151,
+    "K": 63,
+    "ERA": 4.11,
+    "WHIP": 1.09,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 38,
+    "AB": 200,
+    "outs": 151,
+    "ER": 23,
+    "WH": 55
+   }
+  },
+  {
+   "week": 4,
+   "team_key": "431.l.120609.t.4",
+   "opponent_key": "431.l.120609.t.6",
+   "result": "L",
+   "score": [
+    3,
+    9
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 24,
+    "HR": 4,
+    "RBI": 21,
+    "SB": 3,
+    "TB": 75,
+    "AVG": 0.208,
+    "OBP": 0.292,
+    "IP": 107,
+    "K": 43,
+    "ERA": 3.03,
+    "WHIP": 1.32,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 51,
+    "AB": 245,
+    "outs": 107,
+    "ER": 12,
+    "WH": 47
+   }
+  },
+  {
+   "week": 4,
+   "team_key": "431.l.120609.t.6",
+   "opponent_key": "431.l.120609.t.4",
+   "result": "W",
+   "score": [
+    9,
+    3
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 25,
+    "HR": 5,
+    "RBI": 26,
+    "SB": 2,
+    "TB": 78,
+    "AVG": 0.227,
+    "OBP": 0.298,
+    "IP": 120,
+    "K": 49,
+    "ERA": 3.38,
+    "WHIP": 1.25,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 52,
+    "AB": 229,
+    "outs": 120,
+    "ER": 15,
+    "WH": 50
+   }
+  },
+  {
+   "week": 4,
+   "team_key": "431.l.120609.t.7",
+   "opponent_key": "431.l.120609.t.14",
+   "result": "W",
+   "score": [
+    7,
+    5
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 17,
+    "HR": 9,
+    "RBI": 28,
+    "SB": 3,
+    "TB": 83,
+    "AVG": 0.242,
+    "OBP": 0.321,
+    "IP": 196,
+    "K": 65,
+    "ERA": 2.89,
+    "WHIP": 1.19,
+    "SV+H": 12
+   },
+   "parts": {
+    "H": 45,
+    "AB": 186,
+    "outs": 196,
+    "ER": 21,
+    "WH": 78
+   }
+  },
+  {
+   "week": 4,
+   "team_key": "431.l.120609.t.14",
+   "opponent_key": "431.l.120609.t.7",
+   "result": "L",
+   "score": [
+    5,
+    7
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 29,
+    "HR": 4,
+    "RBI": 25,
+    "SB": 8,
+    "TB": 90,
+    "AVG": 0.244,
+    "OBP": 0.307,
+    "IP": 176,
+    "K": 45,
+    "ERA": 3.38,
+    "WHIP": 1.16,
+    "SV+H": 7
+   },
+   "parts": {
+    "H": 61,
+    "AB": 250,
+    "outs": 176,
+    "ER": 22,
+    "WH": 68
+   }
+  },
+  {
+   "week": 4,
+   "team_key": "431.l.120609.t.8",
+   "opponent_key": "431.l.120609.t.10",
+   "result": "W",
+   "score": [
+    8,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 32,
+    "HR": 10,
+    "RBI": 27,
+    "SB": 6,
+    "TB": 105,
+    "AVG": 0.252,
+    "OBP": 0.319,
+    "IP": 182,
+    "K": 52,
+    "ERA": 3.71,
+    "WHIP": 0.87,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 63,
+    "AB": 250,
+    "outs": 182,
+    "ER": 25,
+    "WH": 53
+   }
+  },
+  {
+   "week": 4,
+   "team_key": "431.l.120609.t.10",
+   "opponent_key": "431.l.120609.t.8",
+   "result": "L",
+   "score": [
+    4,
+    8
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 22,
+    "HR": 2,
+    "RBI": 24,
+    "SB": 12,
+    "TB": 69,
+    "AVG": 0.225,
+    "OBP": 0.288,
+    "IP": 222,
+    "K": 83,
+    "ERA": 2.55,
+    "WHIP": 1.04,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 51,
+    "AB": 227,
+    "outs": 222,
+    "ER": 21,
+    "WH": 77
+   }
+  },
+  {
+   "week": 4,
+   "team_key": "431.l.120609.t.12",
+   "opponent_key": "431.l.120609.t.13",
+   "result": "L",
+   "score": [
+    2,
+    10
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 33,
+    "HR": 5,
+    "RBI": 15,
+    "SB": 4,
+    "TB": 85,
+    "AVG": 0.242,
+    "OBP": 0.308,
+    "IP": 153,
+    "K": 40,
+    "ERA": 4.76,
+    "WHIP": 1.59,
+    "SV+H": 7
+   },
+   "parts": {
+    "H": 58,
+    "AB": 240,
+    "outs": 153,
+    "ER": 27,
+    "WH": 81
+   }
+  },
+  {
+   "week": 4,
+   "team_key": "431.l.120609.t.13",
+   "opponent_key": "431.l.120609.t.12",
+   "result": "W",
+   "score": [
+    10,
+    2
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 30,
+    "HR": 7,
+    "RBI": 24,
+    "SB": 5,
+    "TB": 96,
+    "AVG": 0.274,
+    "OBP": 0.331,
+    "IP": 176,
+    "K": 63,
+    "ERA": 2.45,
+    "WHIP": 1.04,
+    "SV+H": 6
+   },
+   "parts": {
+    "H": 60,
+    "AB": 219,
+    "outs": 176,
+    "ER": 16,
+    "WH": 61
+   }
+  },
+  {
+   "week": 5,
+   "team_key": "431.l.120609.t.1",
+   "opponent_key": "431.l.120609.t.2",
+   "result": "L",
+   "score": [
+    5,
+    6
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 20,
+    "HR": 6,
+    "RBI": 25,
+    "SB": 6,
+    "TB": 74,
+    "AVG": 0.232,
+    "OBP": 0.317,
+    "IP": 204,
+    "K": 59,
+    "ERA": 2.12,
+    "WHIP": 1,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 46,
+    "AB": 198,
+    "outs": 204,
+    "ER": 16,
+    "WH": 68
+   }
+  },
+  {
+   "week": 5,
+   "team_key": "431.l.120609.t.2",
+   "opponent_key": "431.l.120609.t.1",
+   "result": "W",
+   "score": [
+    6,
+    5
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 33,
+    "HR": 8,
+    "RBI": 25,
+    "SB": 8,
+    "TB": 108,
+    "AVG": 0.295,
+    "OBP": 0.363,
+    "IP": 99,
+    "K": 35,
+    "ERA": 4.64,
+    "WHIP": 1.33,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 67,
+    "AB": 227,
+    "outs": 99,
+    "ER": 17,
+    "WH": 44
+   }
+  },
+  {
+   "week": 5,
+   "team_key": "431.l.120609.t.3",
+   "opponent_key": "431.l.120609.t.6",
+   "result": "L",
+   "score": [
+    5,
+    7
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 29,
+    "HR": 7,
+    "RBI": 28,
+    "SB": 8,
+    "TB": 80,
+    "AVG": 0.227,
+    "OBP": 0.293,
+    "IP": 167,
+    "K": 75,
+    "ERA": 3.4,
+    "WHIP": 0.9,
+    "SV+H": 1
+   },
+   "parts": {
+    "H": 47,
+    "AB": 207,
+    "outs": 167,
+    "ER": 21,
+    "WH": 50
+   }
+  },
+  {
+   "week": 5,
+   "team_key": "431.l.120609.t.6",
+   "opponent_key": "431.l.120609.t.3",
+   "result": "W",
+   "score": [
+    7,
+    5
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 26,
+    "HR": 10,
+    "RBI": 39,
+    "SB": 4,
+    "TB": 99,
+    "AVG": 0.281,
+    "OBP": 0.337,
+    "IP": 128,
+    "K": 30,
+    "ERA": 3.38,
+    "WHIP": 1.05,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 62,
+    "AB": 221,
+    "outs": 128,
+    "ER": 16,
+    "WH": 45
+   }
+  },
+  {
+   "week": 5,
+   "team_key": "431.l.120609.t.4",
+   "opponent_key": "431.l.120609.t.8",
+   "result": "W",
+   "score": [
+    7,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 27,
+    "HR": 6,
+    "RBI": 27,
+    "SB": 5,
+    "TB": 94,
+    "AVG": 0.252,
+    "OBP": 0.33,
+    "IP": 111,
+    "K": 38,
+    "ERA": 2.19,
+    "WHIP": 1.08,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 60,
+    "AB": 238,
+    "outs": 111,
+    "ER": 9,
+    "WH": 40
+   }
+  },
+  {
+   "week": 5,
+   "team_key": "431.l.120609.t.8",
+   "opponent_key": "431.l.120609.t.4",
+   "result": "L",
+   "score": [
+    4,
+    7
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 25,
+    "HR": 3,
+    "RBI": 26,
+    "SB": 5,
+    "TB": 60,
+    "AVG": 0.183,
+    "OBP": 0.283,
+    "IP": 156,
+    "K": 55,
+    "ERA": 1.73,
+    "WHIP": 0.9,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 41,
+    "AB": 224,
+    "outs": 156,
+    "ER": 10,
+    "WH": 47
+   }
+  },
+  {
+   "week": 5,
+   "team_key": "431.l.120609.t.5",
+   "opponent_key": "431.l.120609.t.9",
+   "result": "T",
+   "score": [
+    5,
+    5
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 31,
+    "HR": 7,
+    "RBI": 19,
+    "SB": 7,
+    "TB": 81,
+    "AVG": 0.262,
+    "OBP": 0.381,
+    "IP": 126,
+    "K": 37,
+    "ERA": 4.93,
+    "WHIP": 1.24,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 48,
+    "AB": 183,
+    "outs": 126,
+    "ER": 23,
+    "WH": 52
+   }
+  },
+  {
+   "week": 5,
+   "team_key": "431.l.120609.t.9",
+   "opponent_key": "431.l.120609.t.5",
+   "result": "T",
+   "score": [
+    5,
+    5
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 22,
+    "HR": 7,
+    "RBI": 19,
+    "SB": 4,
+    "TB": 69,
+    "AVG": 0.188,
+    "OBP": 0.269,
+    "IP": 148,
+    "K": 55,
+    "ERA": 3.1,
+    "WHIP": 1.16,
+    "SV+H": 8
+   },
+   "parts": {
+    "H": 39,
+    "AB": 208,
+    "outs": 148,
+    "ER": 17,
+    "WH": 57
+   }
+  },
+  {
+   "week": 5,
+   "team_key": "431.l.120609.t.7",
+   "opponent_key": "431.l.120609.t.12",
+   "result": "L",
+   "score": [
+    5,
+    7
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 26,
+    "HR": 3,
+    "RBI": 14,
+    "SB": 3,
+    "TB": 67,
+    "AVG": 0.2,
+    "OBP": 0.278,
+    "IP": 180,
+    "K": 65,
+    "ERA": 3.15,
+    "WHIP": 0.97,
+    "SV+H": 6
+   },
+   "parts": {
+    "H": 40,
+    "AB": 200,
+    "outs": 180,
+    "ER": 21,
+    "WH": 58
+   }
+  },
+  {
+   "week": 5,
+   "team_key": "431.l.120609.t.12",
+   "opponent_key": "431.l.120609.t.7",
+   "result": "W",
+   "score": [
+    7,
+    5
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 38,
+    "HR": 2,
+    "RBI": 27,
+    "SB": 9,
+    "TB": 101,
+    "AVG": 0.281,
+    "OBP": 0.331,
+    "IP": 165,
+    "K": 45,
+    "ERA": 2.29,
+    "WHIP": 1.07,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 70,
+    "AB": 249,
+    "outs": 165,
+    "ER": 14,
+    "WH": 59
+   }
+  },
+  {
+   "week": 5,
+   "team_key": "431.l.120609.t.10",
+   "opponent_key": "431.l.120609.t.13",
+   "result": "T",
+   "score": [
+    6,
+    6
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 17,
+    "HR": 2,
+    "RBI": 14,
+    "SB": 7,
+    "TB": 48,
+    "AVG": 0.177,
+    "OBP": 0.265,
+    "IP": 171,
+    "K": 51,
+    "ERA": 2.84,
+    "WHIP": 1.23,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 32,
+    "AB": 181,
+    "outs": 171,
+    "ER": 18,
+    "WH": 70
+   }
+  },
+  {
+   "week": 5,
+   "team_key": "431.l.120609.t.13",
+   "opponent_key": "431.l.120609.t.10",
+   "result": "T",
+   "score": [
+    6,
+    6
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 22,
+    "HR": 5,
+    "RBI": 23,
+    "SB": 5,
+    "TB": 75,
+    "AVG": 0.211,
+    "OBP": 0.263,
+    "IP": 152,
+    "K": 52,
+    "ERA": 4.8,
+    "WHIP": 1.32,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 51,
+    "AB": 242,
+    "outs": 152,
+    "ER": 27,
+    "WH": 67
+   }
+  },
+  {
+   "week": 5,
+   "team_key": "431.l.120609.t.11",
+   "opponent_key": "431.l.120609.t.14",
+   "result": "L",
+   "score": [
+    3,
+    9
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 24,
+    "HR": 9,
+    "RBI": 30,
+    "SB": 2,
+    "TB": 79,
+    "AVG": 0.218,
+    "OBP": 0.317,
+    "IP": 173,
+    "K": 54,
+    "ERA": 4.99,
+    "WHIP": 1.25,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 47,
+    "AB": 216,
+    "outs": 173,
+    "ER": 32,
+    "WH": 72
+   }
+  },
+  {
+   "week": 5,
+   "team_key": "431.l.120609.t.14",
+   "opponent_key": "431.l.120609.t.11",
+   "result": "W",
+   "score": [
+    9,
+    3
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 35,
+    "HR": 11,
+    "RBI": 38,
+    "SB": 7,
+    "TB": 108,
+    "AVG": 0.247,
+    "OBP": 0.338,
+    "IP": 157,
+    "K": 51,
+    "ERA": 4.3,
+    "WHIP": 1.18,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 59,
+    "AB": 239,
+    "outs": 157,
+    "ER": 25,
+    "WH": 62
+   }
+  },
+  {
+   "week": 6,
+   "team_key": "431.l.120609.t.1",
+   "opponent_key": "431.l.120609.t.5",
+   "result": "L",
+   "score": [
+    4,
+    8
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 26,
+    "HR": 8,
+    "RBI": 33,
+    "SB": 2,
+    "TB": 92,
+    "AVG": 0.313,
+    "OBP": 0.403,
+    "IP": 162,
+    "K": 57,
+    "ERA": 4.33,
+    "WHIP": 1.28,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 57,
+    "AB": 182,
+    "outs": 162,
+    "ER": 26,
+    "WH": 69
+   }
+  },
+  {
+   "week": 6,
+   "team_key": "431.l.120609.t.5",
+   "opponent_key": "431.l.120609.t.1",
+   "result": "W",
+   "score": [
+    8,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 36,
+    "HR": 10,
+    "RBI": 44,
+    "SB": 13,
+    "TB": 100,
+    "AVG": 0.283,
+    "OBP": 0.377,
+    "IP": 140,
+    "K": 40,
+    "ERA": 3.47,
+    "WHIP": 1.03,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 60,
+    "AB": 212,
+    "outs": 140,
+    "ER": 18,
+    "WH": 48
+   }
+  },
+  {
+   "week": 6,
+   "team_key": "431.l.120609.t.2",
+   "opponent_key": "431.l.120609.t.14",
+   "result": "L",
+   "score": [
+    4,
+    7
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 28,
+    "HR": 8,
+    "RBI": 25,
+    "SB": 4,
+    "TB": 92,
+    "AVG": 0.23,
+    "OBP": 0.289,
+    "IP": 148,
+    "K": 33,
+    "ERA": 2.55,
+    "WHIP": 1.22,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 52,
+    "AB": 226,
+    "outs": 148,
+    "ER": 14,
+    "WH": 60
+   }
+  },
+  {
+   "week": 6,
+   "team_key": "431.l.120609.t.14",
+   "opponent_key": "431.l.120609.t.2",
+   "result": "W",
+   "score": [
+    7,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 28,
+    "HR": 12,
+    "RBI": 42,
+    "SB": 6,
+    "TB": 113,
+    "AVG": 0.27,
+    "OBP": 0.332,
+    "IP": 143,
+    "K": 46,
+    "ERA": 6.42,
+    "WHIP": 1.49,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 63,
+    "AB": 233,
+    "outs": 143,
+    "ER": 34,
+    "WH": 71
+   }
+  },
+  {
+   "week": 6,
+   "team_key": "431.l.120609.t.3",
+   "opponent_key": "431.l.120609.t.8",
+   "result": "L",
+   "score": [
+    2,
+    9
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 23,
+    "HR": 5,
+    "RBI": 18,
+    "SB": 3,
+    "TB": 65,
+    "AVG": 0.216,
+    "OBP": 0.273,
+    "IP": 226,
+    "K": 69,
+    "ERA": 3.11,
+    "WHIP": 1.08,
+    "SV+H": 2
+   },
+   "parts": {
+    "H": 41,
+    "AB": 190,
+    "outs": 226,
+    "ER": 26,
+    "WH": 81
+   }
+  },
+  {
+   "week": 6,
+   "team_key": "431.l.120609.t.8",
+   "opponent_key": "431.l.120609.t.3",
+   "result": "W",
+   "score": [
+    9,
+    2
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 35,
+    "HR": 12,
+    "RBI": 40,
+    "SB": 3,
+    "TB": 114,
+    "AVG": 0.271,
+    "OBP": 0.339,
+    "IP": 118,
+    "K": 50,
+    "ERA": 2.97,
+    "WHIP": 1.02,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 57,
+    "AB": 210,
+    "outs": 118,
+    "ER": 13,
+    "WH": 40
+   }
+  },
+  {
+   "week": 6,
+   "team_key": "431.l.120609.t.4",
+   "opponent_key": "431.l.120609.t.10",
+   "result": "L",
+   "score": [
+    1,
+    11
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 25,
+    "HR": 10,
+    "RBI": 21,
+    "SB": 1,
+    "TB": 78,
+    "AVG": 0.199,
+    "OBP": 0.257,
+    "IP": 161,
+    "K": 57,
+    "ERA": 5.03,
+    "WHIP": 1.25,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 44,
+    "AB": 221,
+    "outs": 161,
+    "ER": 30,
+    "WH": 67
+   }
+  },
+  {
+   "week": 6,
+   "team_key": "431.l.120609.t.10",
+   "opponent_key": "431.l.120609.t.4",
+   "result": "W",
+   "score": [
+    11,
+    1
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 34,
+    "HR": 11,
+    "RBI": 27,
+    "SB": 10,
+    "TB": 104,
+    "AVG": 0.274,
+    "OBP": 0.347,
+    "IP": 212,
+    "K": 64,
+    "ERA": 3.44,
+    "WHIP": 1.06,
+    "SV+H": 2
+   },
+   "parts": {
+    "H": 59,
+    "AB": 215,
+    "outs": 212,
+    "ER": 27,
+    "WH": 75
+   }
+  },
+  {
+   "week": 6,
+   "team_key": "431.l.120609.t.6",
+   "opponent_key": "431.l.120609.t.9",
+   "result": "W",
+   "score": [
+    6,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 24,
+    "HR": 5,
+    "RBI": 31,
+    "SB": 7,
+    "TB": 84,
+    "AVG": 0.238,
+    "OBP": 0.31,
+    "IP": 213,
+    "K": 85,
+    "ERA": 2.66,
+    "WHIP": 1.1,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 55,
+    "AB": 231,
+    "outs": 213,
+    "ER": 21,
+    "WH": 78
+   }
+  },
+  {
+   "week": 6,
+   "team_key": "431.l.120609.t.9",
+   "opponent_key": "431.l.120609.t.6",
+   "result": "L",
+   "score": [
+    4,
+    6
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 21,
+    "HR": 5,
+    "RBI": 19,
+    "SB": 4,
+    "TB": 54,
+    "AVG": 0.192,
+    "OBP": 0.314,
+    "IP": 213,
+    "K": 63,
+    "ERA": 2.54,
+    "WHIP": 1.04,
+    "SV+H": 8
+   },
+   "parts": {
+    "H": 33,
+    "AB": 172,
+    "outs": 213,
+    "ER": 20,
+    "WH": 74
+   }
+  },
+  {
+   "week": 6,
+   "team_key": "431.l.120609.t.7",
+   "opponent_key": "431.l.120609.t.13",
+   "result": "T",
+   "score": [
+    5,
+    5
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 28,
+    "HR": 6,
+    "RBI": 20,
+    "SB": 4,
+    "TB": 76,
+    "AVG": 0.255,
+    "OBP": 0.319,
+    "IP": 178,
+    "K": 50,
+    "ERA": 4.85,
+    "WHIP": 1.35,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 48,
+    "AB": 188,
+    "outs": 178,
+    "ER": 32,
+    "WH": 80
+   }
+  },
+  {
+   "week": 6,
+   "team_key": "431.l.120609.t.13",
+   "opponent_key": "431.l.120609.t.7",
+   "result": "T",
+   "score": [
+    5,
+    5
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 25,
+    "HR": 10,
+    "RBI": 18,
+    "SB": 4,
+    "TB": 90,
+    "AVG": 0.266,
+    "OBP": 0.333,
+    "IP": 156,
+    "K": 50,
+    "ERA": 4.33,
+    "WHIP": 1.37,
+    "SV+H": 1
+   },
+   "parts": {
+    "H": 50,
+    "AB": 188,
+    "outs": 156,
+    "ER": 25,
+    "WH": 71
+   }
+  },
+  {
+   "week": 6,
+   "team_key": "431.l.120609.t.11",
+   "opponent_key": "431.l.120609.t.12",
+   "result": "W",
+   "score": [
+    8,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 35,
+    "HR": 11,
+    "RBI": 32,
+    "SB": 5,
+    "TB": 107,
+    "AVG": 0.236,
+    "OBP": 0.302,
+    "IP": 149,
+    "K": 41,
+    "ERA": 3.08,
+    "WHIP": 1.11,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 56,
+    "AB": 237,
+    "outs": 149,
+    "ER": 17,
+    "WH": 55
+   }
+  },
+  {
+   "week": 6,
+   "team_key": "431.l.120609.t.12",
+   "opponent_key": "431.l.120609.t.11",
+   "result": "L",
+   "score": [
+    4,
+    8
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 32,
+    "HR": 5,
+    "RBI": 20,
+    "SB": 3,
+    "TB": 94,
+    "AVG": 0.265,
+    "OBP": 0.332,
+    "IP": 159,
+    "K": 49,
+    "ERA": 3.23,
+    "WHIP": 1.38,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 60,
+    "AB": 226,
+    "outs": 159,
+    "ER": 19,
+    "WH": 73
+   }
+  },
+  {
+   "week": 7,
+   "team_key": "431.l.120609.t.1",
+   "opponent_key": "431.l.120609.t.6",
+   "result": "W",
+   "score": [
+    8,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 30,
+    "HR": 11,
+    "RBI": 33,
+    "SB": 4,
+    "TB": 113,
+    "AVG": 0.266,
+    "OBP": 0.322,
+    "IP": 150,
+    "K": 41,
+    "ERA": 2.7,
+    "WHIP": 1.12,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 62,
+    "AB": 233,
+    "outs": 150,
+    "ER": 15,
+    "WH": 56
+   }
+  },
+  {
+   "week": 7,
+   "team_key": "431.l.120609.t.6",
+   "opponent_key": "431.l.120609.t.1",
+   "result": "L",
+   "score": [
+    4,
+    8
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 26,
+    "HR": 5,
+    "RBI": 21,
+    "SB": 2,
+    "TB": 90,
+    "AVG": 0.247,
+    "OBP": 0.279,
+    "IP": 194,
+    "K": 66,
+    "ERA": 2.51,
+    "WHIP": 1.28,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 62,
+    "AB": 251,
+    "outs": 194,
+    "ER": 18,
+    "WH": 83
+   }
+  },
+  {
+   "week": 7,
+   "team_key": "431.l.120609.t.2",
+   "opponent_key": "431.l.120609.t.12",
+   "result": "L",
+   "score": [
+    5,
+    6
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 31,
+    "HR": 8,
+    "RBI": 29,
+    "SB": 6,
+    "TB": 95,
+    "AVG": 0.281,
+    "OBP": 0.344,
+    "IP": 234,
+    "K": 69,
+    "ERA": 3.35,
+    "WHIP": 1.22,
+    "SV+H": 6
+   },
+   "parts": {
+    "H": 63,
+    "AB": 224,
+    "outs": 234,
+    "ER": 29,
+    "WH": 95
+   }
+  },
+  {
+   "week": 7,
+   "team_key": "431.l.120609.t.12",
+   "opponent_key": "431.l.120609.t.2",
+   "result": "W",
+   "score": [
+    6,
+    5
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 40,
+    "HR": 10,
+    "RBI": 29,
+    "SB": 4,
+    "TB": 113,
+    "AVG": 0.276,
+    "OBP": 0.344,
+    "IP": 209,
+    "K": 67,
+    "ERA": 2.97,
+    "WHIP": 1.06,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 67,
+    "AB": 243,
+    "outs": 209,
+    "ER": 23,
+    "WH": 74
+   }
+  },
+  {
+   "week": 7,
+   "team_key": "431.l.120609.t.3",
+   "opponent_key": "431.l.120609.t.10",
+   "result": "L",
+   "score": [
+    2,
+    10
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 29,
+    "HR": 4,
+    "RBI": 17,
+    "SB": 9,
+    "TB": 69,
+    "AVG": 0.232,
+    "OBP": 0.339,
+    "IP": 114,
+    "K": 37,
+    "ERA": 5.21,
+    "WHIP": 1.39,
+    "SV+H": 2
+   },
+   "parts": {
+    "H": 46,
+    "AB": 198,
+    "outs": 114,
+    "ER": 22,
+    "WH": 53
+   }
+  },
+  {
+   "week": 7,
+   "team_key": "431.l.120609.t.10",
+   "opponent_key": "431.l.120609.t.3",
+   "result": "W",
+   "score": [
+    10,
+    2
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 31,
+    "HR": 7,
+    "RBI": 29,
+    "SB": 3,
+    "TB": 87,
+    "AVG": 0.243,
+    "OBP": 0.308,
+    "IP": 163,
+    "K": 54,
+    "ERA": 4.14,
+    "WHIP": 1.14,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 49,
+    "AB": 202,
+    "outs": 163,
+    "ER": 25,
+    "WH": 62
+   }
+  },
+  {
+   "week": 7,
+   "team_key": "431.l.120609.t.4",
+   "opponent_key": "431.l.120609.t.13",
+   "result": "T",
+   "score": [
+    5,
+    5
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 28,
+    "HR": 7,
+    "RBI": 24,
+    "SB": 0,
+    "TB": 82,
+    "AVG": 0.241,
+    "OBP": 0.284,
+    "IP": 104,
+    "K": 38,
+    "ERA": 2.08,
+    "WHIP": 0.98,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 49,
+    "AB": 203,
+    "outs": 104,
+    "ER": 8,
+    "WH": 34
+   }
+  },
+  {
+   "week": 7,
+   "team_key": "431.l.120609.t.13",
+   "opponent_key": "431.l.120609.t.4",
+   "result": "T",
+   "score": [
+    5,
+    5
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 28,
+    "HR": 7,
+    "RBI": 19,
+    "SB": 1,
+    "TB": 75,
+    "AVG": 0.234,
+    "OBP": 0.329,
+    "IP": 146,
+    "K": 51,
+    "ERA": 2.77,
+    "WHIP": 0.99,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 47,
+    "AB": 201,
+    "outs": 146,
+    "ER": 15,
+    "WH": 48
+   }
+  },
+  {
+   "week": 7,
+   "team_key": "431.l.120609.t.5",
+   "opponent_key": "431.l.120609.t.14",
+   "result": "W",
+   "score": [
+    9,
+    3
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 36,
+    "HR": 9,
+    "RBI": 34,
+    "SB": 14,
+    "TB": 107,
+    "AVG": 0.268,
+    "OBP": 0.336,
+    "IP": 156,
+    "K": 46,
+    "ERA": 2.42,
+    "WHIP": 0.92,
+    "SV+H": 2
+   },
+   "parts": {
+    "H": 66,
+    "AB": 246,
+    "outs": 156,
+    "ER": 14,
+    "WH": 48
+   }
+  },
+  {
+   "week": 7,
+   "team_key": "431.l.120609.t.14",
+   "opponent_key": "431.l.120609.t.5",
+   "result": "L",
+   "score": [
+    3,
+    9
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 17,
+    "HR": 3,
+    "RBI": 30,
+    "SB": 5,
+    "TB": 72,
+    "AVG": 0.24,
+    "OBP": 0.318,
+    "IP": 181,
+    "K": 64,
+    "ERA": 2.83,
+    "WHIP": 1.04,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 49,
+    "AB": 204,
+    "outs": 181,
+    "ER": 19,
+    "WH": 63
+   }
+  },
+  {
+   "week": 7,
+   "team_key": "431.l.120609.t.7",
+   "opponent_key": "431.l.120609.t.11",
+   "result": "L",
+   "score": [
+    4,
+    8
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 24,
+    "HR": 5,
+    "RBI": 14,
+    "SB": 1,
+    "TB": 59,
+    "AVG": 0.179,
+    "OBP": 0.256,
+    "IP": 165,
+    "K": 61,
+    "ERA": 3.27,
+    "WHIP": 1.24,
+    "SV+H": 6
+   },
+   "parts": {
+    "H": 33,
+    "AB": 184,
+    "outs": 165,
+    "ER": 20,
+    "WH": 68
+   }
+  },
+  {
+   "week": 7,
+   "team_key": "431.l.120609.t.11",
+   "opponent_key": "431.l.120609.t.7",
+   "result": "W",
+   "score": [
+    8,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 26,
+    "HR": 9,
+    "RBI": 33,
+    "SB": 4,
+    "TB": 98,
+    "AVG": 0.24,
+    "OBP": 0.3,
+    "IP": 160,
+    "K": 58,
+    "ERA": 3.88,
+    "WHIP": 1.11,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 54,
+    "AB": 225,
+    "outs": 160,
+    "ER": 23,
+    "WH": 59
+   }
+  },
+  {
+   "week": 7,
+   "team_key": "431.l.120609.t.8",
+   "opponent_key": "431.l.120609.t.9",
+   "result": "L",
+   "score": [
+    4,
+    8
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 25,
+    "HR": 7,
+    "RBI": 26,
+    "SB": 1,
+    "TB": 90,
+    "AVG": 0.244,
+    "OBP": 0.328,
+    "IP": 135,
+    "K": 52,
+    "ERA": 3.8,
+    "WHIP": 0.93,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 55,
+    "AB": 225,
+    "outs": 135,
+    "ER": 19,
+    "WH": 42
+   }
+  },
+  {
+   "week": 7,
+   "team_key": "431.l.120609.t.9",
+   "opponent_key": "431.l.120609.t.8",
+   "result": "W",
+   "score": [
+    8,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 26,
+    "HR": 8,
+    "RBI": 20,
+    "SB": 5,
+    "TB": 83,
+    "AVG": 0.271,
+    "OBP": 0.368,
+    "IP": 181,
+    "K": 49,
+    "ERA": 3.28,
+    "WHIP": 1.24,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 48,
+    "AB": 177,
+    "outs": 181,
+    "ER": 22,
+    "WH": 75
+   }
+  },
+  {
+   "week": 8,
+   "team_key": "431.l.120609.t.1",
+   "opponent_key": "431.l.120609.t.8",
+   "result": "W",
+   "score": [
+    10,
+    2
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 34,
+    "HR": 16,
+    "RBI": 38,
+    "SB": 4,
+    "TB": 115,
+    "AVG": 0.242,
+    "OBP": 0.315,
+    "IP": 228,
+    "K": 66,
+    "ERA": 4.26,
+    "WHIP": 1.17,
+    "SV+H": 7
+   },
+   "parts": {
+    "H": 56,
+    "AB": 231,
+    "outs": 228,
+    "ER": 36,
+    "WH": 89
+   }
+  },
+  {
+   "week": 8,
+   "team_key": "431.l.120609.t.8",
+   "opponent_key": "431.l.120609.t.1",
+   "result": "L",
+   "score": [
+    2,
+    10
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 32,
+    "HR": 5,
+    "RBI": 30,
+    "SB": 3,
+    "TB": 87,
+    "AVG": 0.241,
+    "OBP": 0.326,
+    "IP": 214,
+    "K": 79,
+    "ERA": 4.79,
+    "WHIP": 1.4,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 55,
+    "AB": 228,
+    "outs": 214,
+    "ER": 38,
+    "WH": 100
+   }
+  },
+  {
+   "week": 8,
+   "team_key": "431.l.120609.t.2",
+   "opponent_key": "431.l.120609.t.7",
+   "result": "T",
+   "score": [
+    6,
+    6
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 33,
+    "HR": 8,
+    "RBI": 21,
+    "SB": 3,
+    "TB": 74,
+    "AVG": 0.203,
+    "OBP": 0.3,
+    "IP": 185,
+    "K": 54,
+    "ERA": 3.21,
+    "WHIP": 1.17,
+    "SV+H": 1
+   },
+   "parts": {
+    "H": 43,
+    "AB": 212,
+    "outs": 185,
+    "ER": 22,
+    "WH": 72
+   }
+  },
+  {
+   "week": 8,
+   "team_key": "431.l.120609.t.7",
+   "opponent_key": "431.l.120609.t.2",
+   "result": "T",
+   "score": [
+    6,
+    6
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 17,
+    "HR": 2,
+    "RBI": 18,
+    "SB": 5,
+    "TB": 48,
+    "AVG": 0.201,
+    "OBP": 0.282,
+    "IP": 201,
+    "K": 85,
+    "ERA": 2.82,
+    "WHIP": 0.94,
+    "SV+H": 7
+   },
+   "parts": {
+    "H": 32,
+    "AB": 159,
+    "outs": 201,
+    "ER": 21,
+    "WH": 63
+   }
+  },
+  {
+   "week": 8,
+   "team_key": "431.l.120609.t.3",
+   "opponent_key": "431.l.120609.t.4",
+   "result": "W",
+   "score": [
+    7,
+    5
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 30,
+    "HR": 9,
+    "RBI": 29,
+    "SB": 8,
+    "TB": 104,
+    "AVG": 0.262,
+    "OBP": 0.329,
+    "IP": 164,
+    "K": 53,
+    "ERA": 2.3,
+    "WHIP": 1.13,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 58,
+    "AB": 221,
+    "outs": 164,
+    "ER": 14,
+    "WH": 62
+   }
+  },
+  {
+   "week": 8,
+   "team_key": "431.l.120609.t.4",
+   "opponent_key": "431.l.120609.t.3",
+   "result": "L",
+   "score": [
+    5,
+    7
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 29,
+    "HR": 11,
+    "RBI": 32,
+    "SB": 3,
+    "TB": 96,
+    "AVG": 0.228,
+    "OBP": 0.293,
+    "IP": 159,
+    "K": 41,
+    "ERA": 1.87,
+    "WHIP": 0.91,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 55,
+    "AB": 241,
+    "outs": 159,
+    "ER": 11,
+    "WH": 48
+   }
+  },
+  {
+   "week": 8,
+   "team_key": "431.l.120609.t.5",
+   "opponent_key": "431.l.120609.t.12",
+   "result": "W",
+   "score": [
+    7,
+    5
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 30,
+    "HR": 9,
+    "RBI": 35,
+    "SB": 8,
+    "TB": 90,
+    "AVG": 0.211,
+    "OBP": 0.286,
+    "IP": 114,
+    "K": 30,
+    "ERA": 4.03,
+    "WHIP": 1.18,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 47,
+    "AB": 223,
+    "outs": 114,
+    "ER": 17,
+    "WH": 45
+   }
+  },
+  {
+   "week": 8,
+   "team_key": "431.l.120609.t.12",
+   "opponent_key": "431.l.120609.t.5",
+   "result": "L",
+   "score": [
+    5,
+    7
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 27,
+    "HR": 6,
+    "RBI": 29,
+    "SB": 6,
+    "TB": 102,
+    "AVG": 0.28,
+    "OBP": 0.331,
+    "IP": 184,
+    "K": 57,
+    "ERA": 4.4,
+    "WHIP": 1.34,
+    "SV+H": 1
+   },
+   "parts": {
+    "H": 67,
+    "AB": 239,
+    "outs": 184,
+    "ER": 30,
+    "WH": 82
+   }
+  },
+  {
+   "week": 8,
+   "team_key": "431.l.120609.t.6",
+   "opponent_key": "431.l.120609.t.14",
+   "result": "W",
+   "score": [
+    6,
+    5
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 26,
+    "HR": 8,
+    "RBI": 31,
+    "SB": 3,
+    "TB": 97,
+    "AVG": 0.241,
+    "OBP": 0.299,
+    "IP": 187,
+    "K": 62,
+    "ERA": 2.17,
+    "WHIP": 0.99,
+    "SV+H": 6
+   },
+   "parts": {
+    "H": 56,
+    "AB": 232,
+    "outs": 187,
+    "ER": 15,
+    "WH": 62
+   }
+  },
+  {
+   "week": 8,
+   "team_key": "431.l.120609.t.14",
+   "opponent_key": "431.l.120609.t.6",
+   "result": "L",
+   "score": [
+    5,
+    6
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 33,
+    "HR": 4,
+    "RBI": 25,
+    "SB": 5,
+    "TB": 105,
+    "AVG": 0.288,
+    "OBP": 0.357,
+    "IP": 150,
+    "K": 47,
+    "ERA": 4.14,
+    "WHIP": 1.32,
+    "SV+H": 6
+   },
+   "parts": {
+    "H": 72,
+    "AB": 250,
+    "outs": 150,
+    "ER": 23,
+    "WH": 66
+   }
+  },
+  {
+   "week": 8,
+   "team_key": "431.l.120609.t.9",
+   "opponent_key": "431.l.120609.t.10",
+   "result": "W",
+   "score": [
+    7,
+    5
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 34,
+    "HR": 13,
+    "RBI": 29,
+    "SB": 10,
+    "TB": 102,
+    "AVG": 0.246,
+    "OBP": 0.322,
+    "IP": 261,
+    "K": 75,
+    "ERA": 4.45,
+    "WHIP": 1.2,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 52,
+    "AB": 211,
+    "outs": 261,
+    "ER": 43,
+    "WH": 104
+   }
+  },
+  {
+   "week": 8,
+   "team_key": "431.l.120609.t.10",
+   "opponent_key": "431.l.120609.t.9",
+   "result": "L",
+   "score": [
+    5,
+    7
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 40,
+    "HR": 18,
+    "RBI": 39,
+    "SB": 3,
+    "TB": 120,
+    "AVG": 0.249,
+    "OBP": 0.321,
+    "IP": 196,
+    "K": 72,
+    "ERA": 4.68,
+    "WHIP": 1.29,
+    "SV+H": 2
+   },
+   "parts": {
+    "H": 59,
+    "AB": 237,
+    "outs": 196,
+    "ER": 34,
+    "WH": 84
+   }
+  },
+  {
+   "week": 8,
+   "team_key": "431.l.120609.t.11",
+   "opponent_key": "431.l.120609.t.13",
+   "result": "W",
+   "score": [
+    8,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 38,
+    "HR": 11,
+    "RBI": 36,
+    "SB": 7,
+    "TB": 102,
+    "AVG": 0.23,
+    "OBP": 0.322,
+    "IP": 140,
+    "K": 44,
+    "ERA": 2.31,
+    "WHIP": 1.14,
+    "SV+H": 10
+   },
+   "parts": {
+    "H": 54,
+    "AB": 235,
+    "outs": 140,
+    "ER": 12,
+    "WH": 53
+   }
+  },
+  {
+   "week": 8,
+   "team_key": "431.l.120609.t.13",
+   "opponent_key": "431.l.120609.t.11",
+   "result": "L",
+   "score": [
+    4,
+    8
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 30,
+    "HR": 9,
+    "RBI": 29,
+    "SB": 3,
+    "TB": 93,
+    "AVG": 0.263,
+    "OBP": 0.326,
+    "IP": 173,
+    "K": 59,
+    "ERA": 6.24,
+    "WHIP": 1.32,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 54,
+    "AB": 205,
+    "outs": 173,
+    "ER": 40,
+    "WH": 76
+   }
+  },
+  {
+   "week": 9,
+   "team_key": "431.l.120609.t.1",
+   "opponent_key": "431.l.120609.t.10",
+   "result": "W",
+   "score": [
+    8,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 42,
+    "HR": 11,
+    "RBI": 39,
+    "SB": 2,
+    "TB": 113,
+    "AVG": 0.276,
+    "OBP": 0.336,
+    "IP": 229,
+    "K": 66,
+    "ERA": 4.01,
+    "WHIP": 1.43,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 63,
+    "AB": 228,
+    "outs": 229,
+    "ER": 34,
+    "WH": 109
+   }
+  },
+  {
+   "week": 9,
+   "team_key": "431.l.120609.t.10",
+   "opponent_key": "431.l.120609.t.1",
+   "result": "L",
+   "score": [
+    4,
+    8
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 31,
+    "HR": 7,
+    "RBI": 31,
+    "SB": 6,
+    "TB": 104,
+    "AVG": 0.279,
+    "OBP": 0.333,
+    "IP": 188,
+    "K": 58,
+    "ERA": 3.16,
+    "WHIP": 0.96,
+    "SV+H": 2
+   },
+   "parts": {
+    "H": 67,
+    "AB": 240,
+    "outs": 188,
+    "ER": 22,
+    "WH": 60
+   }
+  },
+  {
+   "week": 9,
+   "team_key": "431.l.120609.t.2",
+   "opponent_key": "431.l.120609.t.11",
+   "result": "T",
+   "score": [
+    6,
+    6
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 32,
+    "HR": 4,
+    "RBI": 30,
+    "SB": 3,
+    "TB": 98,
+    "AVG": 0.289,
+    "OBP": 0.362,
+    "IP": 147,
+    "K": 58,
+    "ERA": 4.04,
+    "WHIP": 1.24,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 66,
+    "AB": 228,
+    "outs": 147,
+    "ER": 22,
+    "WH": 61
+   }
+  },
+  {
+   "week": 9,
+   "team_key": "431.l.120609.t.11",
+   "opponent_key": "431.l.120609.t.2",
+   "result": "T",
+   "score": [
+    6,
+    6
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 26,
+    "HR": 8,
+    "RBI": 33,
+    "SB": 4,
+    "TB": 91,
+    "AVG": 0.22,
+    "OBP": 0.277,
+    "IP": 119,
+    "K": 49,
+    "ERA": 3.86,
+    "WHIP": 1.01,
+    "SV+H": 7
+   },
+   "parts": {
+    "H": 54,
+    "AB": 246,
+    "outs": 119,
+    "ER": 17,
+    "WH": 40
+   }
+  },
+  {
+   "week": 9,
+   "team_key": "431.l.120609.t.3",
+   "opponent_key": "431.l.120609.t.13",
+   "result": "L",
+   "score": [
+    5,
+    6
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 23,
+    "HR": 8,
+    "RBI": 26,
+    "SB": 8,
+    "TB": 86,
+    "AVG": 0.238,
+    "OBP": 0.308,
+    "IP": 207,
+    "K": 79,
+    "ERA": 2.87,
+    "WHIP": 1.12,
+    "SV+H": 2
+   },
+   "parts": {
+    "H": 50,
+    "AB": 210,
+    "outs": 207,
+    "ER": 22,
+    "WH": 77
+   }
+  },
+  {
+   "week": 9,
+   "team_key": "431.l.120609.t.13",
+   "opponent_key": "431.l.120609.t.3",
+   "result": "W",
+   "score": [
+    6,
+    5
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 30,
+    "HR": 9,
+    "RBI": 26,
+    "SB": 1,
+    "TB": 99,
+    "AVG": 0.264,
+    "OBP": 0.344,
+    "IP": 199,
+    "K": 66,
+    "ERA": 3.26,
+    "WHIP": 1.28,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 58,
+    "AB": 220,
+    "outs": 199,
+    "ER": 24,
+    "WH": 85
+   }
+  },
+  {
+   "week": 9,
+   "team_key": "431.l.120609.t.4",
+   "opponent_key": "431.l.120609.t.9",
+   "result": "L",
+   "score": [
+    3,
+    8
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 34,
+    "HR": 7,
+    "RBI": 31,
+    "SB": 1,
+    "TB": 105,
+    "AVG": 0.258,
+    "OBP": 0.309,
+    "IP": 148,
+    "K": 41,
+    "ERA": 3.47,
+    "WHIP": 1.34,
+    "SV+H": 2
+   },
+   "parts": {
+    "H": 64,
+    "AB": 248,
+    "outs": 148,
+    "ER": 19,
+    "WH": 66
+   }
+  },
+  {
+   "week": 9,
+   "team_key": "431.l.120609.t.9",
+   "opponent_key": "431.l.120609.t.4",
+   "result": "W",
+   "score": [
+    8,
+    3
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 31,
+    "HR": 11,
+    "RBI": 31,
+    "SB": 6,
+    "TB": 93,
+    "AVG": 0.247,
+    "OBP": 0.318,
+    "IP": 168,
+    "K": 53,
+    "ERA": 2.73,
+    "WHIP": 1.07,
+    "SV+H": 11
+   },
+   "parts": {
+    "H": 53,
+    "AB": 215,
+    "outs": 168,
+    "ER": 17,
+    "WH": 60
+   }
+  },
+  {
+   "week": 9,
+   "team_key": "431.l.120609.t.5",
+   "opponent_key": "431.l.120609.t.7",
+   "result": "L",
+   "score": [
+    3,
+    9
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 18,
+    "HR": 4,
+    "RBI": 22,
+    "SB": 6,
+    "TB": 67,
+    "AVG": 0.225,
+    "OBP": 0.289,
+    "IP": 102,
+    "K": 37,
+    "ERA": 2.91,
+    "WHIP": 1.21,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 46,
+    "AB": 204,
+    "outs": 102,
+    "ER": 11,
+    "WH": 41
+   }
+  },
+  {
+   "week": 9,
+   "team_key": "431.l.120609.t.7",
+   "opponent_key": "431.l.120609.t.5",
+   "result": "W",
+   "score": [
+    9,
+    3
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 25,
+    "HR": 6,
+    "RBI": 21,
+    "SB": 4,
+    "TB": 77,
+    "AVG": 0.254,
+    "OBP": 0.327,
+    "IP": 169,
+    "K": 55,
+    "ERA": 2.72,
+    "WHIP": 1.12,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 47,
+    "AB": 185,
+    "outs": 169,
+    "ER": 17,
+    "WH": 63
+   }
+  },
+  {
+   "week": 9,
+   "team_key": "431.l.120609.t.6",
+   "opponent_key": "431.l.120609.t.12",
+   "result": "W",
+   "score": [
+    11,
+    1
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 28,
+    "HR": 7,
+    "RBI": 31,
+    "SB": 6,
+    "TB": 86,
+    "AVG": 0.255,
+    "OBP": 0.328,
+    "IP": 169,
+    "K": 72,
+    "ERA": 4.47,
+    "WHIP": 1.21,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 56,
+    "AB": 220,
+    "outs": 169,
+    "ER": 28,
+    "WH": 68
+   }
+  },
+  {
+   "week": 9,
+   "team_key": "431.l.120609.t.12",
+   "opponent_key": "431.l.120609.t.6",
+   "result": "L",
+   "score": [
+    1,
+    11
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 23,
+    "HR": 2,
+    "RBI": 21,
+    "SB": 5,
+    "TB": 67,
+    "AVG": 0.216,
+    "OBP": 0.285,
+    "IP": 159,
+    "K": 60,
+    "ERA": 4.58,
+    "WHIP": 1.26,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 50,
+    "AB": 232,
+    "outs": 159,
+    "ER": 27,
+    "WH": 67
+   }
+  },
+  {
+   "week": 9,
+   "team_key": "431.l.120609.t.8",
+   "opponent_key": "431.l.120609.t.14",
+   "result": "L",
+   "score": [
+    5,
+    7
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 27,
+    "HR": 11,
+    "RBI": 33,
+    "SB": 3,
+    "TB": 110,
+    "AVG": 0.239,
+    "OBP": 0.284,
+    "IP": 141,
+    "K": 53,
+    "ERA": 5.74,
+    "WHIP": 1.4,
+    "SV+H": 1
+   },
+   "parts": {
+    "H": 59,
+    "AB": 247,
+    "outs": 141,
+    "ER": 30,
+    "WH": 66
+   }
+  },
+  {
+   "week": 9,
+   "team_key": "431.l.120609.t.14",
+   "opponent_key": "431.l.120609.t.8",
+   "result": "W",
+   "score": [
+    7,
+    5
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 39,
+    "HR": 4,
+    "RBI": 18,
+    "SB": 2,
+    "TB": 91,
+    "AVG": 0.258,
+    "OBP": 0.329,
+    "IP": 147,
+    "K": 45,
+    "ERA": 5.51,
+    "WHIP": 1.31,
+    "SV+H": 2
+   },
+   "parts": {
+    "H": 66,
+    "AB": 256,
+    "outs": 147,
+    "ER": 30,
+    "WH": 64
+   }
+  },
+  {
+   "week": 10,
+   "team_key": "431.l.120609.t.1",
+   "opponent_key": "431.l.120609.t.4",
+   "result": "W",
+   "score": [
+    7,
+    5
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 35,
+    "HR": 6,
+    "RBI": 25,
+    "SB": 14,
+    "TB": 81,
+    "AVG": 0.227,
+    "OBP": 0.3,
+    "IP": 188,
+    "K": 55,
+    "ERA": 3.59,
+    "WHIP": 1.31,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 49,
+    "AB": 216,
+    "outs": 188,
+    "ER": 25,
+    "WH": 82
+   }
+  },
+  {
+   "week": 10,
+   "team_key": "431.l.120609.t.4",
+   "opponent_key": "431.l.120609.t.1",
+   "result": "L",
+   "score": [
+    5,
+    7
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 31,
+    "HR": 11,
+    "RBI": 35,
+    "SB": 6,
+    "TB": 113,
+    "AVG": 0.28,
+    "OBP": 0.341,
+    "IP": 175,
+    "K": 41,
+    "ERA": 8.18,
+    "WHIP": 1.63,
+    "SV+H": 2
+   },
+   "parts": {
+    "H": 69,
+    "AB": 246,
+    "outs": 175,
+    "ER": 53,
+    "WH": 95
+   }
+  },
+  {
+   "week": 10,
+   "team_key": "431.l.120609.t.2",
+   "opponent_key": "431.l.120609.t.13",
+   "result": "W",
+   "score": [
+    6,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 26,
+    "HR": 6,
+    "RBI": 16,
+    "SB": 1,
+    "TB": 75,
+    "AVG": 0.221,
+    "OBP": 0.319,
+    "IP": 148,
+    "K": 40,
+    "ERA": 2.19,
+    "WHIP": 0.85,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 45,
+    "AB": 204,
+    "outs": 148,
+    "ER": 12,
+    "WH": 42
+   }
+  },
+  {
+   "week": 10,
+   "team_key": "431.l.120609.t.13",
+   "opponent_key": "431.l.120609.t.2",
+   "result": "L",
+   "score": [
+    4,
+    6
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 26,
+    "HR": 8,
+    "RBI": 32,
+    "SB": 1,
+    "TB": 73,
+    "AVG": 0.218,
+    "OBP": 0.321,
+    "IP": 143,
+    "K": 50,
+    "ERA": 3.97,
+    "WHIP": 1.01,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 45,
+    "AB": 206,
+    "outs": 143,
+    "ER": 21,
+    "WH": 48
+   }
+  },
+  {
+   "week": 10,
+   "team_key": "431.l.120609.t.3",
+   "opponent_key": "431.l.120609.t.9",
+   "result": "L",
+   "score": [
+    1,
+    11
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 25,
+    "HR": 5,
+    "RBI": 20,
+    "SB": 3,
+    "TB": 75,
+    "AVG": 0.244,
+    "OBP": 0.303,
+    "IP": 167,
+    "K": 61,
+    "ERA": 4.69,
+    "WHIP": 1.28,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 44,
+    "AB": 180,
+    "outs": 167,
+    "ER": 29,
+    "WH": 71
+   }
+  },
+  {
+   "week": 10,
+   "team_key": "431.l.120609.t.9",
+   "opponent_key": "431.l.120609.t.3",
+   "result": "W",
+   "score": [
+    11,
+    1
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 35,
+    "HR": 10,
+    "RBI": 38,
+    "SB": 7,
+    "TB": 119,
+    "AVG": 0.301,
+    "OBP": 0.382,
+    "IP": 232,
+    "K": 72,
+    "ERA": 4.54,
+    "WHIP": 1.25,
+    "SV+H": 2
+   },
+   "parts": {
+    "H": 65,
+    "AB": 216,
+    "outs": 232,
+    "ER": 39,
+    "WH": 97
+   }
+  },
+  {
+   "week": 10,
+   "team_key": "431.l.120609.t.5",
+   "opponent_key": "431.l.120609.t.11",
+   "result": "W",
+   "score": [
+    10,
+    2
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 31,
+    "HR": 8,
+    "RBI": 21,
+    "SB": 12,
+    "TB": 102,
+    "AVG": 0.277,
+    "OBP": 0.337,
+    "IP": 175,
+    "K": 51,
+    "ERA": 2.78,
+    "WHIP": 0.89,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 65,
+    "AB": 235,
+    "outs": 175,
+    "ER": 18,
+    "WH": 52
+   }
+  },
+  {
+   "week": 10,
+   "team_key": "431.l.120609.t.11",
+   "opponent_key": "431.l.120609.t.5",
+   "result": "L",
+   "score": [
+    2,
+    10
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 29,
+    "HR": 5,
+    "RBI": 28,
+    "SB": 6,
+    "TB": 79,
+    "AVG": 0.212,
+    "OBP": 0.293,
+    "IP": 124,
+    "K": 47,
+    "ERA": 5.66,
+    "WHIP": 1.38,
+    "SV+H": 6
+   },
+   "parts": {
+    "H": 46,
+    "AB": 217,
+    "outs": 124,
+    "ER": 26,
+    "WH": 57
+   }
+  },
+  {
+   "week": 10,
+   "team_key": "431.l.120609.t.6",
+   "opponent_key": "431.l.120609.t.7",
+   "result": "L",
+   "score": [
+    2,
+    9
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 24,
+    "HR": 11,
+    "RBI": 31,
+    "SB": 2,
+    "TB": 89,
+    "AVG": 0.205,
+    "OBP": 0.267,
+    "IP": 212,
+    "K": 66,
+    "ERA": 5.73,
+    "WHIP": 1.46,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 49,
+    "AB": 239,
+    "outs": 212,
+    "ER": 45,
+    "WH": 103
+   }
+  },
+  {
+   "week": 10,
+   "team_key": "431.l.120609.t.7",
+   "opponent_key": "431.l.120609.t.6",
+   "result": "W",
+   "score": [
+    9,
+    2
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 34,
+    "HR": 13,
+    "RBI": 34,
+    "SB": 6,
+    "TB": 105,
+    "AVG": 0.294,
+    "OBP": 0.397,
+    "IP": 211,
+    "K": 62,
+    "ERA": 4.35,
+    "WHIP": 1.15,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 60,
+    "AB": 204,
+    "outs": 211,
+    "ER": 34,
+    "WH": 81
+   }
+  },
+  {
+   "week": 10,
+   "team_key": "431.l.120609.t.8",
+   "opponent_key": "431.l.120609.t.12",
+   "result": "L",
+   "score": [
+    4,
+    7
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 28,
+    "HR": 10,
+    "RBI": 29,
+    "SB": 0,
+    "TB": 85,
+    "AVG": 0.223,
+    "OBP": 0.286,
+    "IP": 129,
+    "K": 51,
+    "ERA": 4.4,
+    "WHIP": 0.98,
+    "SV+H": 2
+   },
+   "parts": {
+    "H": 47,
+    "AB": 211,
+    "outs": 129,
+    "ER": 21,
+    "WH": 42
+   }
+  },
+  {
+   "week": 10,
+   "team_key": "431.l.120609.t.12",
+   "opponent_key": "431.l.120609.t.8",
+   "result": "W",
+   "score": [
+    7,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 34,
+    "HR": 5,
+    "RBI": 19,
+    "SB": 10,
+    "TB": 89,
+    "AVG": 0.258,
+    "OBP": 0.32,
+    "IP": 152,
+    "K": 51,
+    "ERA": 4.97,
+    "WHIP": 1.26,
+    "SV+H": 6
+   },
+   "parts": {
+    "H": 59,
+    "AB": 229,
+    "outs": 152,
+    "ER": 28,
+    "WH": 64
+   }
+  },
+  {
+   "week": 10,
+   "team_key": "431.l.120609.t.10",
+   "opponent_key": "431.l.120609.t.14",
+   "result": "L",
+   "score": [
+    3,
+    8
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 24,
+    "HR": 7,
+    "RBI": 33,
+    "SB": 3,
+    "TB": 86,
+    "AVG": 0.232,
+    "OBP": 0.28,
+    "IP": 209,
+    "K": 80,
+    "ERA": 4.39,
+    "WHIP": 1.29,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 55,
+    "AB": 237,
+    "outs": 209,
+    "ER": 34,
+    "WH": 90
+   }
+  },
+  {
+   "week": 10,
+   "team_key": "431.l.120609.t.14",
+   "opponent_key": "431.l.120609.t.10",
+   "result": "W",
+   "score": [
+    8,
+    3
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 40,
+    "HR": 10,
+    "RBI": 27,
+    "SB": 8,
+    "TB": 105,
+    "AVG": 0.269,
+    "OBP": 0.35,
+    "IP": 110,
+    "K": 34,
+    "ERA": 2.95,
+    "WHIP": 0.95,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 58,
+    "AB": 216,
+    "outs": 110,
+    "ER": 12,
+    "WH": 35
+   }
+  },
+  {
+   "week": 11,
+   "team_key": "431.l.120609.t.1",
+   "opponent_key": "431.l.120609.t.3",
+   "result": "W",
+   "score": [
+    10,
+    2
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 34,
+    "HR": 9,
+    "RBI": 34,
+    "SB": 11,
+    "TB": 91,
+    "AVG": 0.267,
+    "OBP": 0.357,
+    "IP": 157,
+    "K": 51,
+    "ERA": 5.85,
+    "WHIP": 1.41,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 56,
+    "AB": 210,
+    "outs": 157,
+    "ER": 34,
+    "WH": 74
+   }
+  },
+  {
+   "week": 11,
+   "team_key": "431.l.120609.t.3",
+   "opponent_key": "431.l.120609.t.1",
+   "result": "L",
+   "score": [
+    2,
+    10
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 28,
+    "HR": 12,
+    "RBI": 32,
+    "SB": 5,
+    "TB": 90,
+    "AVG": 0.223,
+    "OBP": 0.286,
+    "IP": 129,
+    "K": 44,
+    "ERA": 5.23,
+    "WHIP": 1.67,
+    "SV+H": 2
+   },
+   "parts": {
+    "H": 47,
+    "AB": 211,
+    "outs": 129,
+    "ER": 25,
+    "WH": 72
+   }
+  },
+  {
+   "week": 11,
+   "team_key": "431.l.120609.t.2",
+   "opponent_key": "431.l.120609.t.5",
+   "result": "T",
+   "score": [
+    6,
+    6
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 35,
+    "HR": 11,
+    "RBI": 33,
+    "SB": 3,
+    "TB": 108,
+    "AVG": 0.267,
+    "OBP": 0.339,
+    "IP": 173,
+    "K": 49,
+    "ERA": 5.62,
+    "WHIP": 1.44,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 60,
+    "AB": 225,
+    "outs": 173,
+    "ER": 36,
+    "WH": 83
+   }
+  },
+  {
+   "week": 11,
+   "team_key": "431.l.120609.t.5",
+   "opponent_key": "431.l.120609.t.2",
+   "result": "T",
+   "score": [
+    6,
+    6
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 32,
+    "HR": 10,
+    "RBI": 29,
+    "SB": 8,
+    "TB": 103,
+    "AVG": 0.263,
+    "OBP": 0.339,
+    "IP": 151,
+    "K": 52,
+    "ERA": 3.4,
+    "WHIP": 1.23,
+    "SV+H": 6
+   },
+   "parts": {
+    "H": 54,
+    "AB": 205,
+    "outs": 151,
+    "ER": 19,
+    "WH": 62
+   }
+  },
+  {
+   "week": 11,
+   "team_key": "431.l.120609.t.4",
+   "opponent_key": "431.l.120609.t.14",
+   "result": "W",
+   "score": [
+    9,
+    3
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 41,
+    "HR": 13,
+    "RBI": 45,
+    "SB": 2,
+    "TB": 125,
+    "AVG": 0.295,
+    "OBP": 0.366,
+    "IP": 251,
+    "K": 63,
+    "ERA": 3.76,
+    "WHIP": 1.31,
+    "SV+H": 6
+   },
+   "parts": {
+    "H": 69,
+    "AB": 234,
+    "outs": 251,
+    "ER": 35,
+    "WH": 110
+   }
+  },
+  {
+   "week": 11,
+   "team_key": "431.l.120609.t.14",
+   "opponent_key": "431.l.120609.t.4",
+   "result": "L",
+   "score": [
+    3,
+    9
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 20,
+    "HR": 4,
+    "RBI": 17,
+    "SB": 8,
+    "TB": 69,
+    "AVG": 0.205,
+    "OBP": 0.259,
+    "IP": 203,
+    "K": 64,
+    "ERA": 3.19,
+    "WHIP": 1.34,
+    "SV+H": 1
+   },
+   "parts": {
+    "H": 48,
+    "AB": 234,
+    "outs": 203,
+    "ER": 24,
+    "WH": 91
+   }
+  },
+  {
+   "week": 11,
+   "team_key": "431.l.120609.t.6",
+   "opponent_key": "431.l.120609.t.11",
+   "result": "L",
+   "score": [
+    3,
+    8
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 33,
+    "HR": 8,
+    "RBI": 28,
+    "SB": 5,
+    "TB": 90,
+    "AVG": 0.248,
+    "OBP": 0.325,
+    "IP": 184,
+    "K": 61,
+    "ERA": 3.38,
+    "WHIP": 0.99,
+    "SV+H": 6
+   },
+   "parts": {
+    "H": 54,
+    "AB": 218,
+    "outs": 184,
+    "ER": 23,
+    "WH": 61
+   }
+  },
+  {
+   "week": 11,
+   "team_key": "431.l.120609.t.11",
+   "opponent_key": "431.l.120609.t.6",
+   "result": "W",
+   "score": [
+    8,
+    3
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 29,
+    "HR": 7,
+    "RBI": 42,
+    "SB": 5,
+    "TB": 102,
+    "AVG": 0.268,
+    "OBP": 0.332,
+    "IP": 185,
+    "K": 64,
+    "ERA": 2.48,
+    "WHIP": 1.04,
+    "SV+H": 12
+   },
+   "parts": {
+    "H": 62,
+    "AB": 231,
+    "outs": 185,
+    "ER": 17,
+    "WH": 64
+   }
+  },
+  {
+   "week": 11,
+   "team_key": "431.l.120609.t.7",
+   "opponent_key": "431.l.120609.t.8",
+   "result": "W",
+   "score": [
+    8,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 31,
+    "HR": 11,
+    "RBI": 33,
+    "SB": 4,
+    "TB": 96,
+    "AVG": 0.296,
+    "OBP": 0.35,
+    "IP": 188,
+    "K": 61,
+    "ERA": 3.73,
+    "WHIP": 1.26,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 55,
+    "AB": 186,
+    "outs": 188,
+    "ER": 26,
+    "WH": 79
+   }
+  },
+  {
+   "week": 11,
+   "team_key": "431.l.120609.t.8",
+   "opponent_key": "431.l.120609.t.7",
+   "result": "L",
+   "score": [
+    4,
+    8
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 35,
+    "HR": 13,
+    "RBI": 34,
+    "SB": 1,
+    "TB": 121,
+    "AVG": 0.273,
+    "OBP": 0.325,
+    "IP": 168,
+    "K": 58,
+    "ERA": 4.82,
+    "WHIP": 1.55,
+    "SV+H": 1
+   },
+   "parts": {
+    "H": 68,
+    "AB": 249,
+    "outs": 168,
+    "ER": 30,
+    "WH": 87
+   }
+  },
+  {
+   "week": 11,
+   "team_key": "431.l.120609.t.9",
+   "opponent_key": "431.l.120609.t.13",
+   "result": "W",
+   "score": [
+    9,
+    3
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 28,
+    "HR": 7,
+    "RBI": 29,
+    "SB": 7,
+    "TB": 81,
+    "AVG": 0.245,
+    "OBP": 0.306,
+    "IP": 223,
+    "K": 67,
+    "ERA": 3.27,
+    "WHIP": 1.2,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 48,
+    "AB": 196,
+    "outs": 223,
+    "ER": 27,
+    "WH": 89
+   }
+  },
+  {
+   "week": 11,
+   "team_key": "431.l.120609.t.13",
+   "opponent_key": "431.l.120609.t.9",
+   "result": "L",
+   "score": [
+    3,
+    9
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 23,
+    "HR": 3,
+    "RBI": 15,
+    "SB": 1,
+    "TB": 61,
+    "AVG": 0.201,
+    "OBP": 0.281,
+    "IP": 194,
+    "K": 51,
+    "ERA": 2.92,
+    "WHIP": 1.02,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 40,
+    "AB": 199,
+    "outs": 194,
+    "ER": 21,
+    "WH": 66
+   }
+  },
+  {
+   "week": 11,
+   "team_key": "431.l.120609.t.10",
+   "opponent_key": "431.l.120609.t.12",
+   "result": "L",
+   "score": [
+    3,
+    9
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 26,
+    "HR": 6,
+    "RBI": 22,
+    "SB": 8,
+    "TB": 91,
+    "AVG": 0.274,
+    "OBP": 0.341,
+    "IP": 178,
+    "K": 59,
+    "ERA": 3.34,
+    "WHIP": 1.18,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 62,
+    "AB": 226,
+    "outs": 178,
+    "ER": 22,
+    "WH": 70
+   }
+  },
+  {
+   "week": 11,
+   "team_key": "431.l.120609.t.12",
+   "opponent_key": "431.l.120609.t.10",
+   "result": "W",
+   "score": [
+    9,
+    3
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 30,
+    "HR": 7,
+    "RBI": 23,
+    "SB": 9,
+    "TB": 94,
+    "AVG": 0.279,
+    "OBP": 0.336,
+    "IP": 196,
+    "K": 65,
+    "ERA": 4.41,
+    "WHIP": 1.19,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 63,
+    "AB": 226,
+    "outs": 196,
+    "ER": 32,
+    "WH": 78
+   }
+  },
+  {
+   "week": 12,
+   "team_key": "431.l.120609.t.1",
+   "opponent_key": "431.l.120609.t.9",
+   "result": "W",
+   "score": [
+    8,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 40,
+    "HR": 12,
+    "RBI": 40,
+    "SB": 9,
+    "TB": 122,
+    "AVG": 0.306,
+    "OBP": 0.39,
+    "IP": 117,
+    "K": 40,
+    "ERA": 4.15,
+    "WHIP": 1.13,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 72,
+    "AB": 235,
+    "outs": 117,
+    "ER": 18,
+    "WH": 44
+   }
+  },
+  {
+   "week": 12,
+   "team_key": "431.l.120609.t.9",
+   "opponent_key": "431.l.120609.t.1",
+   "result": "L",
+   "score": [
+    4,
+    8
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 26,
+    "HR": 13,
+    "RBI": 48,
+    "SB": 4,
+    "TB": 106,
+    "AVG": 0.274,
+    "OBP": 0.324,
+    "IP": 212,
+    "K": 67,
+    "ERA": 4.2,
+    "WHIP": 1.22,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 55,
+    "AB": 201,
+    "outs": 212,
+    "ER": 33,
+    "WH": 86
+   }
+  },
+  {
+   "week": 12,
+   "team_key": "431.l.120609.t.2",
+   "opponent_key": "431.l.120609.t.6",
+   "result": "W",
+   "score": [
+    7,
+    5
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 28,
+    "HR": 10,
+    "RBI": 32,
+    "SB": 6,
+    "TB": 107,
+    "AVG": 0.272,
+    "OBP": 0.329,
+    "IP": 96,
+    "K": 33,
+    "ERA": 2.81,
+    "WHIP": 1.34,
+    "SV+H": 6
+   },
+   "parts": {
+    "H": 62,
+    "AB": 228,
+    "outs": 96,
+    "ER": 10,
+    "WH": 43
+   }
+  },
+  {
+   "week": 12,
+   "team_key": "431.l.120609.t.6",
+   "opponent_key": "431.l.120609.t.2",
+   "result": "L",
+   "score": [
+    5,
+    7
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 32,
+    "HR": 5,
+    "RBI": 27,
+    "SB": 3,
+    "TB": 79,
+    "AVG": 0.237,
+    "OBP": 0.312,
+    "IP": 184,
+    "K": 51,
+    "ERA": 3.82,
+    "WHIP": 1.32,
+    "SV+H": 9
+   },
+   "parts": {
+    "H": 52,
+    "AB": 219,
+    "outs": 184,
+    "ER": 26,
+    "WH": 81
+   }
+  },
+  {
+   "week": 12,
+   "team_key": "431.l.120609.t.3",
+   "opponent_key": "431.l.120609.t.14",
+   "result": "W",
+   "score": [
+    8,
+    3
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 38,
+    "HR": 6,
+    "RBI": 22,
+    "SB": 9,
+    "TB": 94,
+    "AVG": 0.268,
+    "OBP": 0.307,
+    "IP": 198,
+    "K": 68,
+    "ERA": 2.73,
+    "WHIP": 1.15,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 60,
+    "AB": 224,
+    "outs": 198,
+    "ER": 20,
+    "WH": 76
+   }
+  },
+  {
+   "week": 12,
+   "team_key": "431.l.120609.t.14",
+   "opponent_key": "431.l.120609.t.3",
+   "result": "L",
+   "score": [
+    3,
+    8
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 29,
+    "HR": 8,
+    "RBI": 24,
+    "SB": 1,
+    "TB": 91,
+    "AVG": 0.249,
+    "OBP": 0.303,
+    "IP": 86,
+    "K": 22,
+    "ERA": 3.14,
+    "WHIP": 1.01,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 56,
+    "AB": 225,
+    "outs": 86,
+    "ER": 10,
+    "WH": 29
+   }
+  },
+  {
+   "week": 12,
+   "team_key": "431.l.120609.t.4",
+   "opponent_key": "431.l.120609.t.12",
+   "result": "W",
+   "score": [
+    7,
+    5
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 43,
+    "HR": 14,
+    "RBI": 37,
+    "SB": 1,
+    "TB": 123,
+    "AVG": 0.306,
+    "OBP": 0.356,
+    "IP": 179,
+    "K": 57,
+    "ERA": 4.98,
+    "WHIP": 1.22,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 66,
+    "AB": 216,
+    "outs": 179,
+    "ER": 33,
+    "WH": 73
+   }
+  },
+  {
+   "week": 12,
+   "team_key": "431.l.120609.t.12",
+   "opponent_key": "431.l.120609.t.4",
+   "result": "L",
+   "score": [
+    5,
+    7
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 28,
+    "HR": 5,
+    "RBI": 28,
+    "SB": 6,
+    "TB": 89,
+    "AVG": 0.265,
+    "OBP": 0.32,
+    "IP": 221,
+    "K": 67,
+    "ERA": 3.54,
+    "WHIP": 1.22,
+    "SV+H": 2
+   },
+   "parts": {
+    "H": 56,
+    "AB": 211,
+    "outs": 221,
+    "ER": 29,
+    "WH": 90
+   }
+  },
+  {
+   "week": 12,
+   "team_key": "431.l.120609.t.5",
+   "opponent_key": "431.l.120609.t.13",
+   "result": "W",
+   "score": [
+    8,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 35,
+    "HR": 14,
+    "RBI": 33,
+    "SB": 5,
+    "TB": 119,
+    "AVG": 0.283,
+    "OBP": 0.357,
+    "IP": 94,
+    "K": 30,
+    "ERA": 4.88,
+    "WHIP": 1.34,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 63,
+    "AB": 223,
+    "outs": 94,
+    "ER": 17,
+    "WH": 42
+   }
+  },
+  {
+   "week": 12,
+   "team_key": "431.l.120609.t.13",
+   "opponent_key": "431.l.120609.t.5",
+   "result": "L",
+   "score": [
+    4,
+    8
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 28,
+    "HR": 6,
+    "RBI": 28,
+    "SB": 2,
+    "TB": 84,
+    "AVG": 0.269,
+    "OBP": 0.313,
+    "IP": 121,
+    "K": 34,
+    "ERA": 4.24,
+    "WHIP": 1.29,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 56,
+    "AB": 208,
+    "outs": 121,
+    "ER": 19,
+    "WH": 52
+   }
+  },
+  {
+   "week": 12,
+   "team_key": "431.l.120609.t.7",
+   "opponent_key": "431.l.120609.t.10",
+   "result": "L",
+   "score": [
+    5,
+    6
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 30,
+    "HR": 14,
+    "RBI": 27,
+    "SB": 2,
+    "TB": 103,
+    "AVG": 0.237,
+    "OBP": 0.324,
+    "IP": 192,
+    "K": 59,
+    "ERA": 4.92,
+    "WHIP": 1.22,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 51,
+    "AB": 215,
+    "outs": 192,
+    "ER": 35,
+    "WH": 78
+   }
+  },
+  {
+   "week": 12,
+   "team_key": "431.l.120609.t.10",
+   "opponent_key": "431.l.120609.t.7",
+   "result": "W",
+   "score": [
+    6,
+    5
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 21,
+    "HR": 8,
+    "RBI": 27,
+    "SB": 3,
+    "TB": 89,
+    "AVG": 0.256,
+    "OBP": 0.301,
+    "IP": 208,
+    "K": 64,
+    "ERA": 4.02,
+    "WHIP": 1.1,
+    "SV+H": 2
+   },
+   "parts": {
+    "H": 52,
+    "AB": 203,
+    "outs": 208,
+    "ER": 31,
+    "WH": 76
+   }
+  },
+  {
+   "week": 12,
+   "team_key": "431.l.120609.t.8",
+   "opponent_key": "431.l.120609.t.11",
+   "result": "L",
+   "score": [
+    4,
+    8
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 37,
+    "HR": 9,
+    "RBI": 25,
+    "SB": 5,
+    "TB": 98,
+    "AVG": 0.291,
+    "OBP": 0.384,
+    "IP": 191,
+    "K": 61,
+    "ERA": 5.8,
+    "WHIP": 1.46,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 58,
+    "AB": 199,
+    "outs": 191,
+    "ER": 41,
+    "WH": 93
+   }
+  },
+  {
+   "week": 12,
+   "team_key": "431.l.120609.t.11",
+   "opponent_key": "431.l.120609.t.8",
+   "result": "W",
+   "score": [
+    8,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 40,
+    "HR": 15,
+    "RBI": 36,
+    "SB": 6,
+    "TB": 130,
+    "AVG": 0.279,
+    "OBP": 0.336,
+    "IP": 149,
+    "K": 53,
+    "ERA": 1.27,
+    "WHIP": 0.83,
+    "SV+H": 9
+   },
+   "parts": {
+    "H": 67,
+    "AB": 240,
+    "outs": 149,
+    "ER": 7,
+    "WH": 41
+   }
+  },
+  {
+   "week": 13,
+   "team_key": "431.l.120609.t.1",
+   "opponent_key": "431.l.120609.t.13",
+   "result": "W",
+   "score": [
+    10,
+    2
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 34,
+    "HR": 11,
+    "RBI": 40,
+    "SB": 7,
+    "TB": 100,
+    "AVG": 0.239,
+    "OBP": 0.324,
+    "IP": 192,
+    "K": 51,
+    "ERA": 3.94,
+    "WHIP": 1.08,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 54,
+    "AB": 226,
+    "outs": 192,
+    "ER": 28,
+    "WH": 69
+   }
+  },
+  {
+   "week": 13,
+   "team_key": "431.l.120609.t.13",
+   "opponent_key": "431.l.120609.t.1",
+   "result": "L",
+   "score": [
+    2,
+    10
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 22,
+    "HR": 2,
+    "RBI": 12,
+    "SB": 3,
+    "TB": 55,
+    "AVG": 0.202,
+    "OBP": 0.255,
+    "IP": 185,
+    "K": 64,
+    "ERA": 5.25,
+    "WHIP": 1.59,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 39,
+    "AB": 193,
+    "outs": 185,
+    "ER": 36,
+    "WH": 98
+   }
+  },
+  {
+   "week": 13,
+   "team_key": "431.l.120609.t.2",
+   "opponent_key": "431.l.120609.t.8",
+   "result": "W",
+   "score": [
+    8,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 34,
+    "HR": 12,
+    "RBI": 38,
+    "SB": 3,
+    "TB": 119,
+    "AVG": 0.282,
+    "OBP": 0.337,
+    "IP": 94,
+    "K": 31,
+    "ERA": 0.86,
+    "WHIP": 0.8,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 67,
+    "AB": 238,
+    "outs": 94,
+    "ER": 3,
+    "WH": 25
+   }
+  },
+  {
+   "week": 13,
+   "team_key": "431.l.120609.t.8",
+   "opponent_key": "431.l.120609.t.2",
+   "result": "L",
+   "score": [
+    4,
+    8
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 36,
+    "HR": 8,
+    "RBI": 32,
+    "SB": 1,
+    "TB": 81,
+    "AVG": 0.222,
+    "OBP": 0.318,
+    "IP": 183,
+    "K": 48,
+    "ERA": 5.31,
+    "WHIP": 1.28,
+    "SV+H": 6
+   },
+   "parts": {
+    "H": 46,
+    "AB": 207,
+    "outs": 183,
+    "ER": 36,
+    "WH": 78
+   }
+  },
+  {
+   "week": 13,
+   "team_key": "431.l.120609.t.3",
+   "opponent_key": "431.l.120609.t.12",
+   "result": "W",
+   "score": [
+    9,
+    3
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 38,
+    "HR": 8,
+    "RBI": 34,
+    "SB": 7,
+    "TB": 129,
+    "AVG": 0.318,
+    "OBP": 0.396,
+    "IP": 229,
+    "K": 70,
+    "ERA": 3.54,
+    "WHIP": 1.18,
+    "SV+H": 1
+   },
+   "parts": {
+    "H": 76,
+    "AB": 239,
+    "outs": 229,
+    "ER": 30,
+    "WH": 90
+   }
+  },
+  {
+   "week": 13,
+   "team_key": "431.l.120609.t.12",
+   "opponent_key": "431.l.120609.t.3",
+   "result": "L",
+   "score": [
+    3,
+    9
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 33,
+    "HR": 7,
+    "RBI": 29,
+    "SB": 5,
+    "TB": 94,
+    "AVG": 0.258,
+    "OBP": 0.332,
+    "IP": 127,
+    "K": 43,
+    "ERA": 3.19,
+    "WHIP": 1.13,
+    "SV+H": 6
+   },
+   "parts": {
+    "H": 58,
+    "AB": 225,
+    "outs": 127,
+    "ER": 15,
+    "WH": 48
+   }
+  },
+  {
+   "week": 13,
+   "team_key": "431.l.120609.t.4",
+   "opponent_key": "431.l.120609.t.7",
+   "result": "W",
+   "score": [
+    12,
+    0
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 42,
+    "HR": 12,
+    "RBI": 34,
+    "SB": 3,
+    "TB": 109,
+    "AVG": 0.256,
+    "OBP": 0.371,
+    "IP": 198,
+    "K": 77,
+    "ERA": 3.55,
+    "WHIP": 1.23,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 60,
+    "AB": 234,
+    "outs": 198,
+    "ER": 26,
+    "WH": 81
+   }
+  },
+  {
+   "week": 13,
+   "team_key": "431.l.120609.t.7",
+   "opponent_key": "431.l.120609.t.4",
+   "result": "L",
+   "score": [
+    0,
+    12
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 29,
+    "HR": 6,
+    "RBI": 32,
+    "SB": 0,
+    "TB": 78,
+    "AVG": 0.207,
+    "OBP": 0.27,
+    "IP": 145,
+    "K": 56,
+    "ERA": 5.77,
+    "WHIP": 1.57,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 46,
+    "AB": 222,
+    "outs": 145,
+    "ER": 31,
+    "WH": 76
+   }
+  },
+  {
+   "week": 13,
+   "team_key": "431.l.120609.t.5",
+   "opponent_key": "431.l.120609.t.6",
+   "result": "L",
+   "score": [
+    1,
+    11
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 33,
+    "HR": 10,
+    "RBI": 31,
+    "SB": 8,
+    "TB": 101,
+    "AVG": 0.263,
+    "OBP": 0.328,
+    "IP": 113,
+    "K": 35,
+    "ERA": 5.26,
+    "WHIP": 1.33,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 57,
+    "AB": 217,
+    "outs": 113,
+    "ER": 22,
+    "WH": 50
+   }
+  },
+  {
+   "week": 13,
+   "team_key": "431.l.120609.t.6",
+   "opponent_key": "431.l.120609.t.5",
+   "result": "W",
+   "score": [
+    11,
+    1
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 39,
+    "HR": 11,
+    "RBI": 44,
+    "SB": 2,
+    "TB": 121,
+    "AVG": 0.291,
+    "OBP": 0.34,
+    "IP": 157,
+    "K": 55,
+    "ERA": 3.27,
+    "WHIP": 0.97,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 71,
+    "AB": 244,
+    "outs": 157,
+    "ER": 19,
+    "WH": 51
+   }
+  },
+  {
+   "week": 13,
+   "team_key": "431.l.120609.t.9",
+   "opponent_key": "431.l.120609.t.14",
+   "result": "L",
+   "score": [
+    5,
+    6
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 32,
+    "HR": 7,
+    "RBI": 32,
+    "SB": 5,
+    "TB": 88,
+    "AVG": 0.262,
+    "OBP": 0.364,
+    "IP": 216,
+    "K": 64,
+    "ERA": 6.63,
+    "WHIP": 1.56,
+    "SV+H": 2
+   },
+   "parts": {
+    "H": 56,
+    "AB": 214,
+    "outs": 216,
+    "ER": 53,
+    "WH": 112
+   }
+  },
+  {
+   "week": 13,
+   "team_key": "431.l.120609.t.14",
+   "opponent_key": "431.l.120609.t.9",
+   "result": "W",
+   "score": [
+    6,
+    5
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 35,
+    "HR": 9,
+    "RBI": 28,
+    "SB": 8,
+    "TB": 95,
+    "AVG": 0.225,
+    "OBP": 0.293,
+    "IP": 102,
+    "K": 38,
+    "ERA": 3.97,
+    "WHIP": 1.29,
+    "SV+H": 2
+   },
+   "parts": {
+    "H": 59,
+    "AB": 262,
+    "outs": 102,
+    "ER": 15,
+    "WH": 44
+   }
+  },
+  {
+   "week": 13,
+   "team_key": "431.l.120609.t.10",
+   "opponent_key": "431.l.120609.t.11",
+   "result": "L",
+   "score": [
+    3,
+    8
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 34,
+    "HR": 9,
+    "RBI": 28,
+    "SB": 4,
+    "TB": 109,
+    "AVG": 0.27,
+    "OBP": 0.347,
+    "IP": 159,
+    "K": 50,
+    "ERA": 3.91,
+    "WHIP": 1.26,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 60,
+    "AB": 222,
+    "outs": 159,
+    "ER": 23,
+    "WH": 67
+   }
+  },
+  {
+   "week": 13,
+   "team_key": "431.l.120609.t.11",
+   "opponent_key": "431.l.120609.t.10",
+   "result": "W",
+   "score": [
+    8,
+    3
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 29,
+    "HR": 14,
+    "RBI": 46,
+    "SB": 5,
+    "TB": 117,
+    "AVG": 0.27,
+    "OBP": 0.353,
+    "IP": 148,
+    "K": 50,
+    "ERA": 3.47,
+    "WHIP": 1.09,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 64,
+    "AB": 237,
+    "outs": 148,
+    "ER": 19,
+    "WH": 54
+   }
+  },
+  {
+   "week": 14,
+   "team_key": "431.l.120609.t.1",
+   "opponent_key": "431.l.120609.t.14",
+   "result": "W",
+   "score": [
+    9,
+    3
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 30,
+    "HR": 8,
+    "RBI": 28,
+    "SB": 6,
+    "TB": 94,
+    "AVG": 0.236,
+    "OBP": 0.297,
+    "IP": 176,
+    "K": 58,
+    "ERA": 6.44,
+    "WHIP": 1.31,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 54,
+    "AB": 229,
+    "outs": 176,
+    "ER": 42,
+    "WH": 77
+   }
+  },
+  {
+   "week": 14,
+   "team_key": "431.l.120609.t.14",
+   "opponent_key": "431.l.120609.t.1",
+   "result": "L",
+   "score": [
+    3,
+    9
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 16,
+    "HR": 6,
+    "RBI": 33,
+    "SB": 1,
+    "TB": 81,
+    "AVG": 0.232,
+    "OBP": 0.29,
+    "IP": 169,
+    "K": 57,
+    "ERA": 4.95,
+    "WHIP": 1.4,
+    "SV+H": 7
+   },
+   "parts": {
+    "H": 54,
+    "AB": 233,
+    "outs": 169,
+    "ER": 31,
+    "WH": 79
+   }
+  },
+  {
+   "week": 14,
+   "team_key": "431.l.120609.t.2",
+   "opponent_key": "431.l.120609.t.10",
+   "result": "L",
+   "score": [
+    3,
+    9
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 30,
+    "HR": 12,
+    "RBI": 38,
+    "SB": 4,
+    "TB": 112,
+    "AVG": 0.29,
+    "OBP": 0.358,
+    "IP": 172,
+    "K": 53,
+    "ERA": 4.08,
+    "WHIP": 1.13,
+    "SV+H": 7
+   },
+   "parts": {
+    "H": 64,
+    "AB": 221,
+    "outs": 172,
+    "ER": 26,
+    "WH": 65
+   }
+  },
+  {
+   "week": 14,
+   "team_key": "431.l.120609.t.10",
+   "opponent_key": "431.l.120609.t.2",
+   "result": "W",
+   "score": [
+    9,
+    3
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 36,
+    "HR": 15,
+    "RBI": 45,
+    "SB": 3,
+    "TB": 125,
+    "AVG": 0.306,
+    "OBP": 0.367,
+    "IP": 160,
+    "K": 65,
+    "ERA": 3.04,
+    "WHIP": 0.9,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 66,
+    "AB": 216,
+    "outs": 160,
+    "ER": 18,
+    "WH": 48
+   }
+  },
+  {
+   "week": 14,
+   "team_key": "431.l.120609.t.3",
+   "opponent_key": "431.l.120609.t.7",
+   "result": "L",
+   "score": [
+    5,
+    7
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 41,
+    "HR": 15,
+    "RBI": 43,
+    "SB": 9,
+    "TB": 124,
+    "AVG": 0.266,
+    "OBP": 0.333,
+    "IP": 205,
+    "K": 62,
+    "ERA": 5.66,
+    "WHIP": 1.49,
+    "SV+H": 2
+   },
+   "parts": {
+    "H": 64,
+    "AB": 241,
+    "outs": 205,
+    "ER": 43,
+    "WH": 102
+   }
+  },
+  {
+   "week": 14,
+   "team_key": "431.l.120609.t.7",
+   "opponent_key": "431.l.120609.t.3",
+   "result": "W",
+   "score": [
+    7,
+    5
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 32,
+    "HR": 6,
+    "RBI": 26,
+    "SB": 5,
+    "TB": 79,
+    "AVG": 0.281,
+    "OBP": 0.373,
+    "IP": 226,
+    "K": 84,
+    "ERA": 4.3,
+    "WHIP": 1.21,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 47,
+    "AB": 167,
+    "outs": 226,
+    "ER": 36,
+    "WH": 91
+   }
+  },
+  {
+   "week": 14,
+   "team_key": "431.l.120609.t.4",
+   "opponent_key": "431.l.120609.t.11",
+   "result": "L",
+   "score": [
+    5,
+    7
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 34,
+    "HR": 7,
+    "RBI": 27,
+    "SB": 6,
+    "TB": 93,
+    "AVG": 0.265,
+    "OBP": 0.355,
+    "IP": 211,
+    "K": 67,
+    "ERA": 3.97,
+    "WHIP": 1.09,
+    "SV+H": 7
+   },
+   "parts": {
+    "H": 60,
+    "AB": 226,
+    "outs": 211,
+    "ER": 31,
+    "WH": 77
+   }
+  },
+  {
+   "week": 14,
+   "team_key": "431.l.120609.t.11",
+   "opponent_key": "431.l.120609.t.4",
+   "result": "W",
+   "score": [
+    7,
+    5
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 35,
+    "HR": 10,
+    "RBI": 33,
+    "SB": 5,
+    "TB": 111,
+    "AVG": 0.28,
+    "OBP": 0.337,
+    "IP": 128,
+    "K": 49,
+    "ERA": 2.95,
+    "WHIP": 1.05,
+    "SV+H": 6
+   },
+   "parts": {
+    "H": 68,
+    "AB": 243,
+    "outs": 128,
+    "ER": 14,
+    "WH": 45
+   }
+  },
+  {
+   "week": 14,
+   "team_key": "431.l.120609.t.5",
+   "opponent_key": "431.l.120609.t.8",
+   "result": "W",
+   "score": [
+    8,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 40,
+    "HR": 13,
+    "RBI": 33,
+    "SB": 10,
+    "TB": 110,
+    "AVG": 0.252,
+    "OBP": 0.325,
+    "IP": 144,
+    "K": 60,
+    "ERA": 2.06,
+    "WHIP": 0.9,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 56,
+    "AB": 222,
+    "outs": 144,
+    "ER": 11,
+    "WH": 43
+   }
+  },
+  {
+   "week": 14,
+   "team_key": "431.l.120609.t.8",
+   "opponent_key": "431.l.120609.t.5",
+   "result": "L",
+   "score": [
+    4,
+    8
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 28,
+    "HR": 10,
+    "RBI": 32,
+    "SB": 7,
+    "TB": 103,
+    "AVG": 0.267,
+    "OBP": 0.348,
+    "IP": 163,
+    "K": 55,
+    "ERA": 5.63,
+    "WHIP": 1.51,
+    "SV+H": 7
+   },
+   "parts": {
+    "H": 63,
+    "AB": 236,
+    "outs": 163,
+    "ER": 34,
+    "WH": 82
+   }
+  },
+  {
+   "week": 14,
+   "team_key": "431.l.120609.t.6",
+   "opponent_key": "431.l.120609.t.13",
+   "result": "T",
+   "score": [
+    6,
+    6
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 36,
+    "HR": 5,
+    "RBI": 30,
+    "SB": 4,
+    "TB": 94,
+    "AVG": 0.293,
+    "OBP": 0.352,
+    "IP": 167,
+    "K": 56,
+    "ERA": 4.37,
+    "WHIP": 1.53,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 65,
+    "AB": 222,
+    "outs": 167,
+    "ER": 27,
+    "WH": 85
+   }
+  },
+  {
+   "week": 14,
+   "team_key": "431.l.120609.t.13",
+   "opponent_key": "431.l.120609.t.6",
+   "result": "T",
+   "score": [
+    6,
+    6
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 29,
+    "HR": 7,
+    "RBI": 21,
+    "SB": 5,
+    "TB": 84,
+    "AVG": 0.244,
+    "OBP": 0.291,
+    "IP": 184,
+    "K": 64,
+    "ERA": 3.23,
+    "WHIP": 1.13,
+    "SV+H": 1
+   },
+   "parts": {
+    "H": 52,
+    "AB": 213,
+    "outs": 184,
+    "ER": 22,
+    "WH": 69
+   }
+  },
+  {
+   "week": 14,
+   "team_key": "431.l.120609.t.9",
+   "opponent_key": "431.l.120609.t.12",
+   "result": "W",
+   "score": [
+    8,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 42,
+    "HR": 14,
+    "RBI": 35,
+    "SB": 3,
+    "TB": 117,
+    "AVG": 0.278,
+    "OBP": 0.369,
+    "IP": 228,
+    "K": 63,
+    "ERA": 4.5,
+    "WHIP": 1.3,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 59,
+    "AB": 212,
+    "outs": 228,
+    "ER": 38,
+    "WH": 99
+   }
+  },
+  {
+   "week": 14,
+   "team_key": "431.l.120609.t.12",
+   "opponent_key": "431.l.120609.t.9",
+   "result": "L",
+   "score": [
+    4,
+    8
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 33,
+    "HR": 6,
+    "RBI": 18,
+    "SB": 5,
+    "TB": 83,
+    "AVG": 0.248,
+    "OBP": 0.31,
+    "IP": 184,
+    "K": 55,
+    "ERA": 2.35,
+    "WHIP": 0.98,
+    "SV+H": 6
+   },
+   "parts": {
+    "H": 56,
+    "AB": 226,
+    "outs": 184,
+    "ER": 16,
+    "WH": 60
+   }
+  },
+  {
+   "week": 15,
+   "team_key": "431.l.120609.t.1",
+   "opponent_key": "431.l.120609.t.12",
+   "result": "L",
+   "score": [
+    4,
+    7
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 44,
+    "HR": 11,
+    "RBI": 31,
+    "SB": 7,
+    "TB": 138,
+    "AVG": 0.277,
+    "OBP": 0.337,
+    "IP": 225,
+    "K": 80,
+    "ERA": 3.48,
+    "WHIP": 1.27,
+    "SV+H": 7
+   },
+   "parts": {
+    "H": 88,
+    "AB": 318,
+    "outs": 225,
+    "ER": 29,
+    "WH": 95
+   }
+  },
+  {
+   "week": 15,
+   "team_key": "431.l.120609.t.12",
+   "opponent_key": "431.l.120609.t.1",
+   "result": "W",
+   "score": [
+    7,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 44,
+    "HR": 15,
+    "RBI": 49,
+    "SB": 11,
+    "TB": 146,
+    "AVG": 0.238,
+    "OBP": 0.305,
+    "IP": 241,
+    "K": 65,
+    "ERA": 3.7,
+    "WHIP": 1.17,
+    "SV+H": 9
+   },
+   "parts": {
+    "H": 81,
+    "AB": 341,
+    "outs": 241,
+    "ER": 33,
+    "WH": 94
+   }
+  },
+  {
+   "week": 15,
+   "team_key": "431.l.120609.t.2",
+   "opponent_key": "431.l.120609.t.4",
+   "result": "T",
+   "score": [
+    6,
+    6
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 31,
+    "HR": 11,
+    "RBI": 39,
+    "SB": 4,
+    "TB": 129,
+    "AVG": 0.247,
+    "OBP": 0.305,
+    "IP": 260,
+    "K": 88,
+    "ERA": 4.47,
+    "WHIP": 1.22,
+    "SV+H": 18
+   },
+   "parts": {
+    "H": 78,
+    "AB": 316,
+    "outs": 260,
+    "ER": 43,
+    "WH": 106
+   }
+  },
+  {
+   "week": 15,
+   "team_key": "431.l.120609.t.4",
+   "opponent_key": "431.l.120609.t.2",
+   "result": "T",
+   "score": [
+    6,
+    6
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 46,
+    "HR": 18,
+    "RBI": 50,
+    "SB": 9,
+    "TB": 157,
+    "AVG": 0.22,
+    "OBP": 0.299,
+    "IP": 278,
+    "K": 74,
+    "ERA": 4.95,
+    "WHIP": 1.26,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 83,
+    "AB": 377,
+    "outs": 278,
+    "ER": 51,
+    "WH": 117
+   }
+  },
+  {
+   "week": 15,
+   "team_key": "431.l.120609.t.3",
+   "opponent_key": "431.l.120609.t.11",
+   "result": "L",
+   "score": [
+    4,
+    8
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 44,
+    "HR": 11,
+    "RBI": 39,
+    "SB": 13,
+    "TB": 119,
+    "AVG": 0.226,
+    "OBP": 0.344,
+    "IP": 303,
+    "K": 95,
+    "ERA": 4.19,
+    "WHIP": 1.25,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 75,
+    "AB": 332,
+    "outs": 303,
+    "ER": 47,
+    "WH": 126
+   }
+  },
+  {
+   "week": 15,
+   "team_key": "431.l.120609.t.11",
+   "opponent_key": "431.l.120609.t.3",
+   "result": "W",
+   "score": [
+    8,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 48,
+    "HR": 18,
+    "RBI": 56,
+    "SB": 4,
+    "TB": 180,
+    "AVG": 0.27,
+    "OBP": 0.314,
+    "IP": 194,
+    "K": 59,
+    "ERA": 3.62,
+    "WHIP": 1.04,
+    "SV+H": 8
+   },
+   "parts": {
+    "H": 100,
+    "AB": 371,
+    "outs": 194,
+    "ER": 26,
+    "WH": 67
+   }
+  },
+  {
+   "week": 15,
+   "team_key": "431.l.120609.t.5",
+   "opponent_key": "431.l.120609.t.10",
+   "result": "L",
+   "score": [
+    4,
+    8
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 49,
+    "HR": 15,
+    "RBI": 44,
+    "SB": 14,
+    "TB": 148,
+    "AVG": 0.269,
+    "OBP": 0.352,
+    "IP": 152,
+    "K": 56,
+    "ERA": 4.09,
+    "WHIP": 1.07,
+    "SV+H": 7
+   },
+   "parts": {
+    "H": 81,
+    "AB": 301,
+    "outs": 152,
+    "ER": 23,
+    "WH": 54
+   }
+  },
+  {
+   "week": 15,
+   "team_key": "431.l.120609.t.10",
+   "opponent_key": "431.l.120609.t.5",
+   "result": "W",
+   "score": [
+    8,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 43,
+    "HR": 16,
+    "RBI": 57,
+    "SB": 10,
+    "TB": 168,
+    "AVG": 0.278,
+    "OBP": 0.336,
+    "IP": 215,
+    "K": 70,
+    "ERA": 3.14,
+    "WHIP": 0.96,
+    "SV+H": 6
+   },
+   "parts": {
+    "H": 97,
+    "AB": 349,
+    "outs": 215,
+    "ER": 25,
+    "WH": 69
+   }
+  },
+  {
+   "week": 15,
+   "team_key": "431.l.120609.t.6",
+   "opponent_key": "431.l.120609.t.8",
+   "result": "W",
+   "score": [
+    7,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 54,
+    "HR": 18,
+    "RBI": 58,
+    "SB": 4,
+    "TB": 181,
+    "AVG": 0.306,
+    "OBP": 0.37,
+    "IP": 228,
+    "K": 76,
+    "ERA": 4.14,
+    "WHIP": 1.32,
+    "SV+H": 6
+   },
+   "parts": {
+    "H": 105,
+    "AB": 343,
+    "outs": 228,
+    "ER": 35,
+    "WH": 100
+   }
+  },
+  {
+   "week": 15,
+   "team_key": "431.l.120609.t.8",
+   "opponent_key": "431.l.120609.t.6",
+   "result": "L",
+   "score": [
+    4,
+    7
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 51,
+    "HR": 18,
+    "RBI": 48,
+    "SB": 6,
+    "TB": 143,
+    "AVG": 0.244,
+    "OBP": 0.318,
+    "IP": 198,
+    "K": 73,
+    "ERA": 1.91,
+    "WHIP": 1.03,
+    "SV+H": 10
+   },
+   "parts": {
+    "H": 83,
+    "AB": 340,
+    "outs": 198,
+    "ER": 14,
+    "WH": 68
+   }
+  },
+  {
+   "week": 15,
+   "team_key": "431.l.120609.t.7",
+   "opponent_key": "431.l.120609.t.9",
+   "result": "W",
+   "score": [
+    8,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 38,
+    "HR": 13,
+    "RBI": 38,
+    "SB": 5,
+    "TB": 122,
+    "AVG": 0.252,
+    "OBP": 0.322,
+    "IP": 209,
+    "K": 76,
+    "ERA": 3.36,
+    "WHIP": 1.12,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 68,
+    "AB": 270,
+    "outs": 209,
+    "ER": 26,
+    "WH": 78
+   }
+  },
+  {
+   "week": 15,
+   "team_key": "431.l.120609.t.9",
+   "opponent_key": "431.l.120609.t.7",
+   "result": "L",
+   "score": [
+    4,
+    8
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 35,
+    "HR": 12,
+    "RBI": 29,
+    "SB": 4,
+    "TB": 116,
+    "AVG": 0.232,
+    "OBP": 0.346,
+    "IP": 317,
+    "K": 96,
+    "ERA": 4,
+    "WHIP": 1.33,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 66,
+    "AB": 284,
+    "outs": 317,
+    "ER": 47,
+    "WH": 141
+   }
+  },
+  {
+   "week": 15,
+   "team_key": "431.l.120609.t.13",
+   "opponent_key": "431.l.120609.t.14",
+   "result": "L",
+   "score": [
+    5,
+    6
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 36,
+    "HR": 11,
+    "RBI": 30,
+    "SB": 3,
+    "TB": 105,
+    "AVG": 0.211,
+    "OBP": 0.302,
+    "IP": 261,
+    "K": 91,
+    "ERA": 3.62,
+    "WHIP": 1.24,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 60,
+    "AB": 285,
+    "outs": 261,
+    "ER": 35,
+    "WH": 108
+   }
+  },
+  {
+   "week": 15,
+   "team_key": "431.l.120609.t.14",
+   "opponent_key": "431.l.120609.t.13",
+   "result": "W",
+   "score": [
+    6,
+    5
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 41,
+    "HR": 9,
+    "RBI": 31,
+    "SB": 7,
+    "TB": 128,
+    "AVG": 0.246,
+    "OBP": 0.299,
+    "IP": 279,
+    "K": 77,
+    "ERA": 3.97,
+    "WHIP": 1.32,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 84,
+    "AB": 341,
+    "outs": 279,
+    "ER": 41,
+    "WH": 123
+   }
+  },
+  {
+   "week": 16,
+   "team_key": "431.l.120609.t.1",
+   "opponent_key": "431.l.120609.t.7",
+   "result": "L",
+   "score": [
+    4,
+    7
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 28,
+    "HR": 10,
+    "RBI": 31,
+    "SB": 7,
+    "TB": 91,
+    "AVG": 0.229,
+    "OBP": 0.316,
+    "IP": 176,
+    "K": 67,
+    "ERA": 3.99,
+    "WHIP": 1.28,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 48,
+    "AB": 210,
+    "outs": 176,
+    "ER": 26,
+    "WH": 75
+   }
+  },
+  {
+   "week": 16,
+   "team_key": "431.l.120609.t.7",
+   "opponent_key": "431.l.120609.t.1",
+   "result": "W",
+   "score": [
+    7,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 31,
+    "HR": 10,
+    "RBI": 34,
+    "SB": 4,
+    "TB": 103,
+    "AVG": 0.265,
+    "OBP": 0.338,
+    "IP": 197,
+    "K": 63,
+    "ERA": 4.66,
+    "WHIP": 1.4,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 56,
+    "AB": 211,
+    "outs": 197,
+    "ER": 34,
+    "WH": 92
+   }
+  },
+  {
+   "week": 16,
+   "team_key": "431.l.120609.t.2",
+   "opponent_key": "431.l.120609.t.3",
+   "result": "L",
+   "score": [
+    1,
+    10
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 32,
+    "HR": 6,
+    "RBI": 27,
+    "SB": 5,
+    "TB": 97,
+    "AVG": 0.271,
+    "OBP": 0.34,
+    "IP": 152,
+    "K": 55,
+    "ERA": 4.44,
+    "WHIP": 1.4,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 60,
+    "AB": 221,
+    "outs": 152,
+    "ER": 25,
+    "WH": 71
+   }
+  },
+  {
+   "week": 16,
+   "team_key": "431.l.120609.t.3",
+   "opponent_key": "431.l.120609.t.2",
+   "result": "W",
+   "score": [
+    10,
+    1
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 36,
+    "HR": 13,
+    "RBI": 34,
+    "SB": 8,
+    "TB": 108,
+    "AVG": 0.261,
+    "OBP": 0.363,
+    "IP": 160,
+    "K": 61,
+    "ERA": 2.87,
+    "WHIP": 1.24,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 58,
+    "AB": 222,
+    "outs": 160,
+    "ER": 17,
+    "WH": 66
+   }
+  },
+  {
+   "week": 16,
+   "team_key": "431.l.120609.t.4",
+   "opponent_key": "431.l.120609.t.5",
+   "result": "W",
+   "score": [
+    8,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 37,
+    "HR": 13,
+    "RBI": 35,
+    "SB": 5,
+    "TB": 109,
+    "AVG": 0.265,
+    "OBP": 0.328,
+    "IP": 207,
+    "K": 62,
+    "ERA": 4.57,
+    "WHIP": 1.19,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 61,
+    "AB": 230,
+    "outs": 207,
+    "ER": 35,
+    "WH": 82
+   }
+  },
+  {
+   "week": 16,
+   "team_key": "431.l.120609.t.5",
+   "opponent_key": "431.l.120609.t.4",
+   "result": "L",
+   "score": [
+    4,
+    8
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 20,
+    "HR": 7,
+    "RBI": 27,
+    "SB": 15,
+    "TB": 77,
+    "AVG": 0.22,
+    "OBP": 0.296,
+    "IP": 131,
+    "K": 49,
+    "ERA": 2.27,
+    "WHIP": 0.94,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 44,
+    "AB": 200,
+    "outs": 131,
+    "ER": 11,
+    "WH": 41
+   }
+  },
+  {
+   "week": 16,
+   "team_key": "431.l.120609.t.6",
+   "opponent_key": "431.l.120609.t.10",
+   "result": "W",
+   "score": [
+    8,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 43,
+    "HR": 14,
+    "RBI": 43,
+    "SB": 7,
+    "TB": 119,
+    "AVG": 0.297,
+    "OBP": 0.391,
+    "IP": 144,
+    "K": 49,
+    "ERA": 4.13,
+    "WHIP": 1.33,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 66,
+    "AB": 222,
+    "outs": 144,
+    "ER": 22,
+    "WH": 64
+   }
+  },
+  {
+   "week": 16,
+   "team_key": "431.l.120609.t.10",
+   "opponent_key": "431.l.120609.t.6",
+   "result": "L",
+   "score": [
+    4,
+    8
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 29,
+    "HR": 9,
+    "RBI": 33,
+    "SB": 4,
+    "TB": 109,
+    "AVG": 0.268,
+    "OBP": 0.315,
+    "IP": 182,
+    "K": 60,
+    "ERA": 2.08,
+    "WHIP": 0.99,
+    "SV+H": 2
+   },
+   "parts": {
+    "H": 62,
+    "AB": 231,
+    "outs": 182,
+    "ER": 14,
+    "WH": 60
+   }
+  },
+  {
+   "week": 16,
+   "team_key": "431.l.120609.t.8",
+   "opponent_key": "431.l.120609.t.13",
+   "result": "W",
+   "score": [
+    10,
+    2
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 32,
+    "HR": 11,
+    "RBI": 36,
+    "SB": 8,
+    "TB": 117,
+    "AVG": 0.277,
+    "OBP": 0.359,
+    "IP": 167,
+    "K": 55,
+    "ERA": 2.91,
+    "WHIP": 1.04,
+    "SV+H": 1
+   },
+   "parts": {
+    "H": 65,
+    "AB": 235,
+    "outs": 167,
+    "ER": 18,
+    "WH": 58
+   }
+  },
+  {
+   "week": 16,
+   "team_key": "431.l.120609.t.13",
+   "opponent_key": "431.l.120609.t.8",
+   "result": "L",
+   "score": [
+    2,
+    10
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 36,
+    "HR": 10,
+    "RBI": 34,
+    "SB": 2,
+    "TB": 110,
+    "AVG": 0.274,
+    "OBP": 0.354,
+    "IP": 163,
+    "K": 50,
+    "ERA": 4.97,
+    "WHIP": 1.34,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 64,
+    "AB": 234,
+    "outs": 163,
+    "ER": 30,
+    "WH": 73
+   }
+  },
+  {
+   "week": 16,
+   "team_key": "431.l.120609.t.9",
+   "opponent_key": "431.l.120609.t.11",
+   "result": "L",
+   "score": [
+    4,
+    8
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 27,
+    "HR": 5,
+    "RBI": 29,
+    "SB": 6,
+    "TB": 82,
+    "AVG": 0.235,
+    "OBP": 0.323,
+    "IP": 217,
+    "K": 52,
+    "ERA": 3.86,
+    "WHIP": 1.31,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 51,
+    "AB": 217,
+    "outs": 217,
+    "ER": 31,
+    "WH": 95
+   }
+  },
+  {
+   "week": 16,
+   "team_key": "431.l.120609.t.11",
+   "opponent_key": "431.l.120609.t.9",
+   "result": "W",
+   "score": [
+    8,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 28,
+    "HR": 11,
+    "RBI": 32,
+    "SB": 3,
+    "TB": 108,
+    "AVG": 0.265,
+    "OBP": 0.322,
+    "IP": 147,
+    "K": 50,
+    "ERA": 3.49,
+    "WHIP": 0.92,
+    "SV+H": 7
+   },
+   "parts": {
+    "H": 62,
+    "AB": 234,
+    "outs": 147,
+    "ER": 19,
+    "WH": 45
+   }
+  },
+  {
+   "week": 16,
+   "team_key": "431.l.120609.t.12",
+   "opponent_key": "431.l.120609.t.14",
+   "result": "L",
+   "score": [
+    4,
+    7
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 32,
+    "HR": 4,
+    "RBI": 24,
+    "SB": 6,
+    "TB": 90,
+    "AVG": 0.263,
+    "OBP": 0.335,
+    "IP": 195,
+    "K": 65,
+    "ERA": 3.74,
+    "WHIP": 1.09,
+    "SV+H": 6
+   },
+   "parts": {
+    "H": 57,
+    "AB": 217,
+    "outs": 195,
+    "ER": 27,
+    "WH": 71
+   }
+  },
+  {
+   "week": 16,
+   "team_key": "431.l.120609.t.14",
+   "opponent_key": "431.l.120609.t.12",
+   "result": "W",
+   "score": [
+    7,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 32,
+    "HR": 13,
+    "RBI": 37,
+    "SB": 4,
+    "TB": 116,
+    "AVG": 0.271,
+    "OBP": 0.309,
+    "IP": 203,
+    "K": 52,
+    "ERA": 2.93,
+    "WHIP": 1.05,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 67,
+    "AB": 247,
+    "outs": 203,
+    "ER": 22,
+    "WH": 71
+   }
+  },
+  {
+   "week": 17,
+   "team_key": "431.l.120609.t.1",
+   "opponent_key": "431.l.120609.t.11",
+   "result": "W",
+   "score": [
+    9,
+    2
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 51,
+    "HR": 16,
+    "RBI": 46,
+    "SB": 5,
+    "TB": 134,
+    "AVG": 0.313,
+    "OBP": 0.374,
+    "IP": 146,
+    "K": 62,
+    "ERA": 5.92,
+    "WHIP": 1.32,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 71,
+    "AB": 227,
+    "outs": 146,
+    "ER": 32,
+    "WH": 64
+   }
+  },
+  {
+   "week": 17,
+   "team_key": "431.l.120609.t.11",
+   "opponent_key": "431.l.120609.t.1",
+   "result": "L",
+   "score": [
+    2,
+    9
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 46,
+    "HR": 9,
+    "RBI": 43,
+    "SB": 4,
+    "TB": 111,
+    "AVG": 0.266,
+    "OBP": 0.336,
+    "IP": 126,
+    "K": 34,
+    "ERA": 3.43,
+    "WHIP": 1.17,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 66,
+    "AB": 248,
+    "outs": 126,
+    "ER": 16,
+    "WH": 49
+   }
+  },
+  {
+   "week": 17,
+   "team_key": "431.l.120609.t.2",
+   "opponent_key": "431.l.120609.t.9",
+   "result": "L",
+   "score": [
+    5,
+    6
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 41,
+    "HR": 9,
+    "RBI": 32,
+    "SB": 2,
+    "TB": 107,
+    "AVG": 0.288,
+    "OBP": 0.338,
+    "IP": 131,
+    "K": 32,
+    "ERA": 4.74,
+    "WHIP": 1.47,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 62,
+    "AB": 215,
+    "outs": 131,
+    "ER": 23,
+    "WH": 64
+   }
+  },
+  {
+   "week": 17,
+   "team_key": "431.l.120609.t.9",
+   "opponent_key": "431.l.120609.t.2",
+   "result": "W",
+   "score": [
+    6,
+    5
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 29,
+    "HR": 10,
+    "RBI": 34,
+    "SB": 2,
+    "TB": 86,
+    "AVG": 0.232,
+    "OBP": 0.341,
+    "IP": 155,
+    "K": 56,
+    "ERA": 6.1,
+    "WHIP": 1.35,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 48,
+    "AB": 207,
+    "outs": 155,
+    "ER": 35,
+    "WH": 70
+   }
+  },
+  {
+   "week": 17,
+   "team_key": "431.l.120609.t.3",
+   "opponent_key": "431.l.120609.t.5",
+   "result": "W",
+   "score": [
+    8,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 34,
+    "HR": 8,
+    "RBI": 20,
+    "SB": 4,
+    "TB": 82,
+    "AVG": 0.227,
+    "OBP": 0.302,
+    "IP": 161,
+    "K": 55,
+    "ERA": 5.7,
+    "WHIP": 1.45,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 48,
+    "AB": 211,
+    "outs": 161,
+    "ER": 34,
+    "WH": 78
+   }
+  },
+  {
+   "week": 17,
+   "team_key": "431.l.120609.t.5",
+   "opponent_key": "431.l.120609.t.3",
+   "result": "L",
+   "score": [
+    4,
+    8
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 24,
+    "HR": 7,
+    "RBI": 21,
+    "SB": 8,
+    "TB": 67,
+    "AVG": 0.193,
+    "OBP": 0.282,
+    "IP": 91,
+    "K": 30,
+    "ERA": 3.26,
+    "WHIP": 1.15,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 39,
+    "AB": 202,
+    "outs": 91,
+    "ER": 11,
+    "WH": 35
+   }
+  },
+  {
+   "week": 17,
+   "team_key": "431.l.120609.t.4",
+   "opponent_key": "431.l.120609.t.6",
+   "result": "W",
+   "score": [
+    9,
+    3
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 41,
+    "HR": 16,
+    "RBI": 48,
+    "SB": 5,
+    "TB": 134,
+    "AVG": 0.282,
+    "OBP": 0.326,
+    "IP": 193,
+    "K": 62,
+    "ERA": 4.2,
+    "WHIP": 1.24,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 74,
+    "AB": 262,
+    "outs": 193,
+    "ER": 30,
+    "WH": 80
+   }
+  },
+  {
+   "week": 17,
+   "team_key": "431.l.120609.t.6",
+   "opponent_key": "431.l.120609.t.4",
+   "result": "L",
+   "score": [
+    3,
+    9
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 35,
+    "HR": 10,
+    "RBI": 31,
+    "SB": 0,
+    "TB": 112,
+    "AVG": 0.29,
+    "OBP": 0.346,
+    "IP": 178,
+    "K": 61,
+    "ERA": 5.46,
+    "WHIP": 1.5,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 63,
+    "AB": 217,
+    "outs": 178,
+    "ER": 36,
+    "WH": 89
+   }
+  },
+  {
+   "week": 17,
+   "team_key": "431.l.120609.t.7",
+   "opponent_key": "431.l.120609.t.14",
+   "result": "L",
+   "score": [
+    4,
+    7
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 34,
+    "HR": 9,
+    "RBI": 32,
+    "SB": 4,
+    "TB": 89,
+    "AVG": 0.281,
+    "OBP": 0.366,
+    "IP": 223,
+    "K": 68,
+    "ERA": 4.24,
+    "WHIP": 1.25,
+    "SV+H": 6
+   },
+   "parts": {
+    "H": 50,
+    "AB": 178,
+    "outs": 223,
+    "ER": 35,
+    "WH": 93
+   }
+  },
+  {
+   "week": 17,
+   "team_key": "431.l.120609.t.14",
+   "opponent_key": "431.l.120609.t.7",
+   "result": "W",
+   "score": [
+    7,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 46,
+    "HR": 12,
+    "RBI": 32,
+    "SB": 14,
+    "TB": 117,
+    "AVG": 0.297,
+    "OBP": 0.361,
+    "IP": 211,
+    "K": 71,
+    "ERA": 4.48,
+    "WHIP": 1.18,
+    "SV+H": 1
+   },
+   "parts": {
+    "H": 68,
+    "AB": 229,
+    "outs": 211,
+    "ER": 35,
+    "WH": 83
+   }
+  },
+  {
+   "week": 17,
+   "team_key": "431.l.120609.t.8",
+   "opponent_key": "431.l.120609.t.10",
+   "result": "L",
+   "score": [
+    3,
+    8
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 32,
+    "HR": 7,
+    "RBI": 30,
+    "SB": 4,
+    "TB": 76,
+    "AVG": 0.225,
+    "OBP": 0.327,
+    "IP": 167,
+    "K": 59,
+    "ERA": 4.53,
+    "WHIP": 1.4,
+    "SV+H": 6
+   },
+   "parts": {
+    "H": 50,
+    "AB": 222,
+    "outs": 167,
+    "ER": 28,
+    "WH": 78
+   }
+  },
+  {
+   "week": 17,
+   "team_key": "431.l.120609.t.10",
+   "opponent_key": "431.l.120609.t.8",
+   "result": "W",
+   "score": [
+    8,
+    3
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 43,
+    "HR": 15,
+    "RBI": 35,
+    "SB": 4,
+    "TB": 123,
+    "AVG": 0.266,
+    "OBP": 0.32,
+    "IP": 170,
+    "K": 56,
+    "ERA": 4.13,
+    "WHIP": 1.24,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 62,
+    "AB": 233,
+    "outs": 170,
+    "ER": 26,
+    "WH": 70
+   }
+  },
+  {
+   "week": 17,
+   "team_key": "431.l.120609.t.12",
+   "opponent_key": "431.l.120609.t.13",
+   "result": "W",
+   "score": [
+    8,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 32,
+    "HR": 12,
+    "RBI": 32,
+    "SB": 5,
+    "TB": 104,
+    "AVG": 0.251,
+    "OBP": 0.329,
+    "IP": 138,
+    "K": 48,
+    "ERA": 5.28,
+    "WHIP": 1.15,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 54,
+    "AB": 215,
+    "outs": 138,
+    "ER": 27,
+    "WH": 53
+   }
+  },
+  {
+   "week": 17,
+   "team_key": "431.l.120609.t.13",
+   "opponent_key": "431.l.120609.t.12",
+   "result": "L",
+   "score": [
+    4,
+    8
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 28,
+    "HR": 11,
+    "RBI": 27,
+    "SB": 2,
+    "TB": 94,
+    "AVG": 0.225,
+    "OBP": 0.287,
+    "IP": 165,
+    "K": 70,
+    "ERA": 4.25,
+    "WHIP": 1.07,
+    "SV+H": 0
+   },
+   "parts": {
+    "H": 50,
+    "AB": 222,
+    "outs": 165,
+    "ER": 26,
+    "WH": 59
+   }
+  },
+  {
+   "week": 18,
+   "team_key": "431.l.120609.t.1",
+   "opponent_key": "431.l.120609.t.2",
+   "result": "W",
+   "score": [
+    9,
+    3
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 33,
+    "HR": 15,
+    "RBI": 34,
+    "SB": 9,
+    "TB": 105,
+    "AVG": 0.233,
+    "OBP": 0.31,
+    "IP": 177,
+    "K": 61,
+    "ERA": 3.51,
+    "WHIP": 1.1,
+    "SV+H": 6
+   },
+   "parts": {
+    "H": 52,
+    "AB": 223,
+    "outs": 177,
+    "ER": 23,
+    "WH": 65
+   }
+  },
+  {
+   "week": 18,
+   "team_key": "431.l.120609.t.2",
+   "opponent_key": "431.l.120609.t.1",
+   "result": "L",
+   "score": [
+    3,
+    9
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 37,
+    "HR": 6,
+    "RBI": 21,
+    "SB": 10,
+    "TB": 89,
+    "AVG": 0.232,
+    "OBP": 0.324,
+    "IP": 151,
+    "K": 47,
+    "ERA": 4.11,
+    "WHIP": 1.47,
+    "SV+H": 0
+   },
+   "parts": {
+    "H": 56,
+    "AB": 241,
+    "outs": 151,
+    "ER": 23,
+    "WH": 74
+   }
+  },
+  {
+   "week": 18,
+   "team_key": "431.l.120609.t.3",
+   "opponent_key": "431.l.120609.t.6",
+   "result": "L",
+   "score": [
+    4,
+    8
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 24,
+    "HR": 6,
+    "RBI": 27,
+    "SB": 2,
+    "TB": 82,
+    "AVG": 0.227,
+    "OBP": 0.289,
+    "IP": 174,
+    "K": 86,
+    "ERA": 4.66,
+    "WHIP": 1.4,
+    "SV+H": 6
+   },
+   "parts": {
+    "H": 53,
+    "AB": 233,
+    "outs": 174,
+    "ER": 30,
+    "WH": 81
+   }
+  },
+  {
+   "week": 18,
+   "team_key": "431.l.120609.t.6",
+   "opponent_key": "431.l.120609.t.3",
+   "result": "W",
+   "score": [
+    8,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 35,
+    "HR": 14,
+    "RBI": 43,
+    "SB": 3,
+    "TB": 126,
+    "AVG": 0.319,
+    "OBP": 0.382,
+    "IP": 162,
+    "K": 56,
+    "ERA": 5.17,
+    "WHIP": 1.5,
+    "SV+H": 7
+   },
+   "parts": {
+    "H": 72,
+    "AB": 226,
+    "outs": 162,
+    "ER": 31,
+    "WH": 81
+   }
+  },
+  {
+   "week": 18,
+   "team_key": "431.l.120609.t.4",
+   "opponent_key": "431.l.120609.t.8",
+   "result": "W",
+   "score": [
+    7,
+    5
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 37,
+    "HR": 15,
+    "RBI": 38,
+    "SB": 4,
+    "TB": 115,
+    "AVG": 0.237,
+    "OBP": 0.323,
+    "IP": 192,
+    "K": 67,
+    "ERA": 4.78,
+    "WHIP": 1.33,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 55,
+    "AB": 232,
+    "outs": 192,
+    "ER": 34,
+    "WH": 85
+   }
+  },
+  {
+   "week": 18,
+   "team_key": "431.l.120609.t.8",
+   "opponent_key": "431.l.120609.t.4",
+   "result": "L",
+   "score": [
+    5,
+    7
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 40,
+    "HR": 13,
+    "RBI": 32,
+    "SB": 10,
+    "TB": 111,
+    "AVG": 0.243,
+    "OBP": 0.312,
+    "IP": 154,
+    "K": 56,
+    "ERA": 2.98,
+    "WHIP": 1.38,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 61,
+    "AB": 251,
+    "outs": 154,
+    "ER": 17,
+    "WH": 71
+   }
+  },
+  {
+   "week": 18,
+   "team_key": "431.l.120609.t.5",
+   "opponent_key": "431.l.120609.t.9",
+   "result": "L",
+   "score": [
+    3,
+    9
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 26,
+    "HR": 10,
+    "RBI": 30,
+    "SB": 6,
+    "TB": 104,
+    "AVG": 0.286,
+    "OBP": 0.336,
+    "IP": 66,
+    "K": 24,
+    "ERA": 3.68,
+    "WHIP": 1.36,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 62,
+    "AB": 217,
+    "outs": 66,
+    "ER": 9,
+    "WH": 30
+   }
+  },
+  {
+   "week": 18,
+   "team_key": "431.l.120609.t.9",
+   "opponent_key": "431.l.120609.t.5",
+   "result": "W",
+   "score": [
+    9,
+    3
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 36,
+    "HR": 9,
+    "RBI": 37,
+    "SB": 7,
+    "TB": 95,
+    "AVG": 0.281,
+    "OBP": 0.387,
+    "IP": 135,
+    "K": 45,
+    "ERA": 3.6,
+    "WHIP": 1.07,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 57,
+    "AB": 203,
+    "outs": 135,
+    "ER": 18,
+    "WH": 48
+   }
+  },
+  {
+   "week": 18,
+   "team_key": "431.l.120609.t.7",
+   "opponent_key": "431.l.120609.t.12",
+   "result": "T",
+   "score": [
+    6,
+    6
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 34,
+    "HR": 15,
+    "RBI": 35,
+    "SB": 8,
+    "TB": 121,
+    "AVG": 0.283,
+    "OBP": 0.342,
+    "IP": 180,
+    "K": 51,
+    "ERA": 3.15,
+    "WHIP": 1.07,
+    "SV+H": 8
+   },
+   "parts": {
+    "H": 62,
+    "AB": 219,
+    "outs": 180,
+    "ER": 21,
+    "WH": 64
+   }
+  },
+  {
+   "week": 18,
+   "team_key": "431.l.120609.t.12",
+   "opponent_key": "431.l.120609.t.7",
+   "result": "T",
+   "score": [
+    6,
+    6
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 42,
+    "HR": 12,
+    "RBI": 44,
+    "SB": 7,
+    "TB": 124,
+    "AVG": 0.303,
+    "OBP": 0.366,
+    "IP": 169,
+    "K": 58,
+    "ERA": 4.63,
+    "WHIP": 1.3,
+    "SV+H": 7
+   },
+   "parts": {
+    "H": 70,
+    "AB": 231,
+    "outs": 169,
+    "ER": 29,
+    "WH": 73
+   }
+  },
+  {
+   "week": 18,
+   "team_key": "431.l.120609.t.10",
+   "opponent_key": "431.l.120609.t.13",
+   "result": "W",
+   "score": [
+    8,
+    2
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 43,
+    "HR": 14,
+    "RBI": 45,
+    "SB": 3,
+    "TB": 128,
+    "AVG": 0.307,
+    "OBP": 0.383,
+    "IP": 199,
+    "K": 76,
+    "ERA": 4.07,
+    "WHIP": 1.16,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 66,
+    "AB": 215,
+    "outs": 199,
+    "ER": 30,
+    "WH": 77
+   }
+  },
+  {
+   "week": 18,
+   "team_key": "431.l.120609.t.13",
+   "opponent_key": "431.l.120609.t.10",
+   "result": "L",
+   "score": [
+    2,
+    8
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 29,
+    "HR": 11,
+    "RBI": 27,
+    "SB": 3,
+    "TB": 94,
+    "AVG": 0.227,
+    "OBP": 0.28,
+    "IP": 109,
+    "K": 26,
+    "ERA": 3.72,
+    "WHIP": 1.13,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 50,
+    "AB": 220,
+    "outs": 109,
+    "ER": 15,
+    "WH": 41
+   }
+  },
+  {
+   "week": 18,
+   "team_key": "431.l.120609.t.11",
+   "opponent_key": "431.l.120609.t.14",
+   "result": "W",
+   "score": [
+    8,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 30,
+    "HR": 11,
+    "RBI": 32,
+    "SB": 5,
+    "TB": 114,
+    "AVG": 0.272,
+    "OBP": 0.315,
+    "IP": 121,
+    "K": 36,
+    "ERA": 2.23,
+    "WHIP": 0.89,
+    "SV+H": 7
+   },
+   "parts": {
+    "H": 65,
+    "AB": 239,
+    "outs": 121,
+    "ER": 10,
+    "WH": 36
+   }
+  },
+  {
+   "week": 18,
+   "team_key": "431.l.120609.t.14",
+   "opponent_key": "431.l.120609.t.11",
+   "result": "L",
+   "score": [
+    4,
+    8
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 34,
+    "HR": 9,
+    "RBI": 28,
+    "SB": 6,
+    "TB": 95,
+    "AVG": 0.232,
+    "OBP": 0.294,
+    "IP": 170,
+    "K": 52,
+    "ERA": 5.72,
+    "WHIP": 1.54,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 54,
+    "AB": 233,
+    "outs": 170,
+    "ER": 36,
+    "WH": 87
+   }
+  },
+  {
+   "week": 19,
+   "team_key": "431.l.120609.t.1",
+   "opponent_key": "431.l.120609.t.5",
+   "result": "W",
+   "score": [
+    11,
+    0
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 35,
+    "HR": 8,
+    "RBI": 30,
+    "SB": 10,
+    "TB": 98,
+    "AVG": 0.298,
+    "OBP": 0.401,
+    "IP": 95,
+    "K": 39,
+    "ERA": 4.26,
+    "WHIP": 1.14,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 57,
+    "AB": 191,
+    "outs": 95,
+    "ER": 15,
+    "WH": 36
+   }
+  },
+  {
+   "week": 19,
+   "team_key": "431.l.120609.t.5",
+   "opponent_key": "431.l.120609.t.1",
+   "result": "L",
+   "score": [
+    0,
+    11
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 16,
+    "HR": 6,
+    "RBI": 13,
+    "SB": 6,
+    "TB": 61,
+    "AVG": 0.198,
+    "OBP": 0.27,
+    "IP": 83,
+    "K": 34,
+    "ERA": 7.16,
+    "WHIP": 1.63,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 35,
+    "AB": 177,
+    "outs": 83,
+    "ER": 22,
+    "WH": 45
+   }
+  },
+  {
+   "week": 19,
+   "team_key": "431.l.120609.t.2",
+   "opponent_key": "431.l.120609.t.14",
+   "result": "W",
+   "score": [
+    10,
+    2
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 28,
+    "HR": 6,
+    "RBI": 32,
+    "SB": 4,
+    "TB": 95,
+    "AVG": 0.254,
+    "OBP": 0.313,
+    "IP": 175,
+    "K": 61,
+    "ERA": 3.24,
+    "WHIP": 1.2,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 57,
+    "AB": 224,
+    "outs": 175,
+    "ER": 21,
+    "WH": 70
+   }
+  },
+  {
+   "week": 19,
+   "team_key": "431.l.120609.t.14",
+   "opponent_key": "431.l.120609.t.2",
+   "result": "L",
+   "score": [
+    2,
+    10
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 26,
+    "HR": 4,
+    "RBI": 22,
+    "SB": 5,
+    "TB": 74,
+    "AVG": 0.243,
+    "OBP": 0.303,
+    "IP": 188,
+    "K": 58,
+    "ERA": 6.03,
+    "WHIP": 1.45,
+    "SV+H": 2
+   },
+   "parts": {
+    "H": 51,
+    "AB": 210,
+    "outs": 188,
+    "ER": 42,
+    "WH": 91
+   }
+  },
+  {
+   "week": 19,
+   "team_key": "431.l.120609.t.3",
+   "opponent_key": "431.l.120609.t.8",
+   "result": "L",
+   "score": [
+    5,
+    7
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 30,
+    "HR": 7,
+    "RBI": 22,
+    "SB": 1,
+    "TB": 91,
+    "AVG": 0.292,
+    "OBP": 0.376,
+    "IP": 211,
+    "K": 67,
+    "ERA": 4.09,
+    "WHIP": 1.19,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 59,
+    "AB": 202,
+    "outs": 211,
+    "ER": 32,
+    "WH": 84
+   }
+  },
+  {
+   "week": 19,
+   "team_key": "431.l.120609.t.8",
+   "opponent_key": "431.l.120609.t.3",
+   "result": "W",
+   "score": [
+    7,
+    5
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 32,
+    "HR": 9,
+    "RBI": 23,
+    "SB": 6,
+    "TB": 87,
+    "AVG": 0.217,
+    "OBP": 0.298,
+    "IP": 201,
+    "K": 69,
+    "ERA": 2.42,
+    "WHIP": 0.93,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 49,
+    "AB": 226,
+    "outs": 201,
+    "ER": 18,
+    "WH": 62
+   }
+  },
+  {
+   "week": 19,
+   "team_key": "431.l.120609.t.4",
+   "opponent_key": "431.l.120609.t.10",
+   "result": "L",
+   "score": [
+    3,
+    9
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 28,
+    "HR": 10,
+    "RBI": 21,
+    "SB": 7,
+    "TB": 91,
+    "AVG": 0.216,
+    "OBP": 0.294,
+    "IP": 207,
+    "K": 65,
+    "ERA": 5.35,
+    "WHIP": 1.48,
+    "SV+H": 2
+   },
+   "parts": {
+    "H": 49,
+    "AB": 227,
+    "outs": 207,
+    "ER": 41,
+    "WH": 102
+   }
+  },
+  {
+   "week": 19,
+   "team_key": "431.l.120609.t.10",
+   "opponent_key": "431.l.120609.t.4",
+   "result": "W",
+   "score": [
+    9,
+    3
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 31,
+    "HR": 12,
+    "RBI": 32,
+    "SB": 4,
+    "TB": 98,
+    "AVG": 0.233,
+    "OBP": 0.301,
+    "IP": 181,
+    "K": 63,
+    "ERA": 2.24,
+    "WHIP": 1.08,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 52,
+    "AB": 223,
+    "outs": 181,
+    "ER": 15,
+    "WH": 65
+   }
+  },
+  {
+   "week": 19,
+   "team_key": "431.l.120609.t.6",
+   "opponent_key": "431.l.120609.t.9",
+   "result": "T",
+   "score": [
+    6,
+    6
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 24,
+    "HR": 11,
+    "RBI": 31,
+    "SB": 2,
+    "TB": 97,
+    "AVG": 0.248,
+    "OBP": 0.308,
+    "IP": 217,
+    "K": 73,
+    "ERA": 2.86,
+    "WHIP": 0.86,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 56,
+    "AB": 226,
+    "outs": 217,
+    "ER": 23,
+    "WH": 62
+   }
+  },
+  {
+   "week": 19,
+   "team_key": "431.l.120609.t.9",
+   "opponent_key": "431.l.120609.t.6",
+   "result": "T",
+   "score": [
+    6,
+    6
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 26,
+    "HR": 7,
+    "RBI": 24,
+    "SB": 5,
+    "TB": 85,
+    "AVG": 0.27,
+    "OBP": 0.335,
+    "IP": 232,
+    "K": 74,
+    "ERA": 4.07,
+    "WHIP": 1.22,
+    "SV+H": 2
+   },
+   "parts": {
+    "H": 53,
+    "AB": 196,
+    "outs": 232,
+    "ER": 35,
+    "WH": 94
+   }
+  },
+  {
+   "week": 19,
+   "team_key": "431.l.120609.t.7",
+   "opponent_key": "431.l.120609.t.13",
+   "result": "W",
+   "score": [
+    8,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 25,
+    "HR": 9,
+    "RBI": 27,
+    "SB": 5,
+    "TB": 103,
+    "AVG": 0.261,
+    "OBP": 0.301,
+    "IP": 191,
+    "K": 70,
+    "ERA": 2.97,
+    "WHIP": 1.23,
+    "SV+H": 6
+   },
+   "parts": {
+    "H": 60,
+    "AB": 230,
+    "outs": 191,
+    "ER": 21,
+    "WH": 78
+   }
+  },
+  {
+   "week": 19,
+   "team_key": "431.l.120609.t.13",
+   "opponent_key": "431.l.120609.t.7",
+   "result": "L",
+   "score": [
+    4,
+    8
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 27,
+    "HR": 5,
+    "RBI": 24,
+    "SB": 2,
+    "TB": 76,
+    "AVG": 0.227,
+    "OBP": 0.305,
+    "IP": 185,
+    "K": 63,
+    "ERA": 2.77,
+    "WHIP": 1.01,
+    "SV+H": 2
+   },
+   "parts": {
+    "H": 50,
+    "AB": 220,
+    "outs": 185,
+    "ER": 19,
+    "WH": 62
+   }
+  },
+  {
+   "week": 19,
+   "team_key": "431.l.120609.t.11",
+   "opponent_key": "431.l.120609.t.12",
+   "result": "L",
+   "score": [
+    5,
+    6
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 31,
+    "HR": 11,
+    "RBI": 37,
+    "SB": 4,
+    "TB": 104,
+    "AVG": 0.258,
+    "OBP": 0.336,
+    "IP": 120,
+    "K": 39,
+    "ERA": 1.58,
+    "WHIP": 0.83,
+    "SV+H": 7
+   },
+   "parts": {
+    "H": 56,
+    "AB": 217,
+    "outs": 120,
+    "ER": 7,
+    "WH": 33
+   }
+  },
+  {
+   "week": 19,
+   "team_key": "431.l.120609.t.12",
+   "opponent_key": "431.l.120609.t.11",
+   "result": "W",
+   "score": [
+    6,
+    5
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 33,
+    "HR": 13,
+    "RBI": 27,
+    "SB": 7,
+    "TB": 105,
+    "AVG": 0.258,
+    "OBP": 0.309,
+    "IP": 147,
+    "K": 60,
+    "ERA": 2.94,
+    "WHIP": 1.08,
+    "SV+H": 2
+   },
+   "parts": {
+    "H": 56,
+    "AB": 217,
+    "outs": 147,
+    "ER": 16,
+    "WH": 53
+   }
+  },
+  {
+   "week": 20,
+   "team_key": "431.l.120609.t.1",
+   "opponent_key": "431.l.120609.t.6",
+   "result": "L",
+   "score": [
+    3,
+    9
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 24,
+    "HR": 11,
+    "RBI": 33,
+    "SB": 6,
+    "TB": 75,
+    "AVG": 0.183,
+    "OBP": 0.268,
+    "IP": 107,
+    "K": 41,
+    "ERA": 5.05,
+    "WHIP": 1.46,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 39,
+    "AB": 213,
+    "outs": 107,
+    "ER": 20,
+    "WH": 52
+   }
+  },
+  {
+   "week": 20,
+   "team_key": "431.l.120609.t.6",
+   "opponent_key": "431.l.120609.t.1",
+   "result": "W",
+   "score": [
+    9,
+    3
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 25,
+    "HR": 8,
+    "RBI": 26,
+    "SB": 2,
+    "TB": 89,
+    "AVG": 0.238,
+    "OBP": 0.328,
+    "IP": 164,
+    "K": 55,
+    "ERA": 4.77,
+    "WHIP": 1.34,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 53,
+    "AB": 223,
+    "outs": 164,
+    "ER": 29,
+    "WH": 73
+   }
+  },
+  {
+   "week": 20,
+   "team_key": "431.l.120609.t.2",
+   "opponent_key": "431.l.120609.t.12",
+   "result": "L",
+   "score": [
+    3,
+    9
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 33,
+    "HR": 9,
+    "RBI": 37,
+    "SB": 7,
+    "TB": 93,
+    "AVG": 0.236,
+    "OBP": 0.311,
+    "IP": 182,
+    "K": 56,
+    "ERA": 4.75,
+    "WHIP": 1.38,
+    "SV+H": 6
+   },
+   "parts": {
+    "H": 54,
+    "AB": 229,
+    "outs": 182,
+    "ER": 32,
+    "WH": 84
+   }
+  },
+  {
+   "week": 20,
+   "team_key": "431.l.120609.t.12",
+   "opponent_key": "431.l.120609.t.2",
+   "result": "W",
+   "score": [
+    9,
+    3
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 41,
+    "HR": 12,
+    "RBI": 35,
+    "SB": 5,
+    "TB": 114,
+    "AVG": 0.281,
+    "OBP": 0.358,
+    "IP": 193,
+    "K": 69,
+    "ERA": 2.66,
+    "WHIP": 1.09,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 62,
+    "AB": 221,
+    "outs": 193,
+    "ER": 19,
+    "WH": 70
+   }
+  },
+  {
+   "week": 20,
+   "team_key": "431.l.120609.t.3",
+   "opponent_key": "431.l.120609.t.10",
+   "result": "W",
+   "score": [
+    9,
+    2
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 31,
+    "HR": 9,
+    "RBI": 36,
+    "SB": 7,
+    "TB": 106,
+    "AVG": 0.282,
+    "OBP": 0.344,
+    "IP": 173,
+    "K": 58,
+    "ERA": 4.53,
+    "WHIP": 1.13,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 62,
+    "AB": 220,
+    "outs": 173,
+    "ER": 29,
+    "WH": 65
+   }
+  },
+  {
+   "week": 20,
+   "team_key": "431.l.120609.t.10",
+   "opponent_key": "431.l.120609.t.3",
+   "result": "L",
+   "score": [
+    2,
+    9
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 27,
+    "HR": 10,
+    "RBI": 43,
+    "SB": 5,
+    "TB": 95,
+    "AVG": 0.223,
+    "OBP": 0.28,
+    "IP": 165,
+    "K": 58,
+    "ERA": 4.58,
+    "WHIP": 1.18,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 51,
+    "AB": 229,
+    "outs": 165,
+    "ER": 28,
+    "WH": 65
+   }
+  },
+  {
+   "week": 20,
+   "team_key": "431.l.120609.t.4",
+   "opponent_key": "431.l.120609.t.13",
+   "result": "L",
+   "score": [
+    0,
+    10
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 19,
+    "HR": 5,
+    "RBI": 25,
+    "SB": 3,
+    "TB": 80,
+    "AVG": 0.228,
+    "OBP": 0.272,
+    "IP": 209,
+    "K": 72,
+    "ERA": 4.13,
+    "WHIP": 1.51,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 54,
+    "AB": 237,
+    "outs": 209,
+    "ER": 32,
+    "WH": 105
+   }
+  },
+  {
+   "week": 20,
+   "team_key": "431.l.120609.t.13",
+   "opponent_key": "431.l.120609.t.4",
+   "result": "W",
+   "score": [
+    10,
+    0
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 31,
+    "HR": 9,
+    "RBI": 33,
+    "SB": 3,
+    "TB": 110,
+    "AVG": 0.259,
+    "OBP": 0.317,
+    "IP": 227,
+    "K": 87,
+    "ERA": 3.21,
+    "WHIP": 1.16,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 60,
+    "AB": 232,
+    "outs": 227,
+    "ER": 27,
+    "WH": 88
+   }
+  },
+  {
+   "week": 20,
+   "team_key": "431.l.120609.t.5",
+   "opponent_key": "431.l.120609.t.14",
+   "result": "W",
+   "score": [
+    6,
+    5
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 32,
+    "HR": 5,
+    "RBI": 26,
+    "SB": 8,
+    "TB": 83,
+    "AVG": 0.283,
+    "OBP": 0.324,
+    "IP": 94,
+    "K": 24,
+    "ERA": 2.59,
+    "WHIP": 1.44,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 54,
+    "AB": 191,
+    "outs": 94,
+    "ER": 9,
+    "WH": 45
+   }
+  },
+  {
+   "week": 20,
+   "team_key": "431.l.120609.t.14",
+   "opponent_key": "431.l.120609.t.5",
+   "result": "L",
+   "score": [
+    5,
+    6
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 25,
+    "HR": 8,
+    "RBI": 24,
+    "SB": 9,
+    "TB": 81,
+    "AVG": 0.201,
+    "OBP": 0.3,
+    "IP": 172,
+    "K": 51,
+    "ERA": 3.77,
+    "WHIP": 0.99,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 44,
+    "AB": 219,
+    "outs": 172,
+    "ER": 24,
+    "WH": 57
+   }
+  },
+  {
+   "week": 20,
+   "team_key": "431.l.120609.t.7",
+   "opponent_key": "431.l.120609.t.11",
+   "result": "W",
+   "score": [
+    7,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 34,
+    "HR": 4,
+    "RBI": 23,
+    "SB": 7,
+    "TB": 77,
+    "AVG": 0.233,
+    "OBP": 0.303,
+    "IP": 166,
+    "K": 59,
+    "ERA": 3.74,
+    "WHIP": 1.23,
+    "SV+H": 10
+   },
+   "parts": {
+    "H": 50,
+    "AB": 215,
+    "outs": 166,
+    "ER": 23,
+    "WH": 68
+   }
+  },
+  {
+   "week": 20,
+   "team_key": "431.l.120609.t.11",
+   "opponent_key": "431.l.120609.t.7",
+   "result": "L",
+   "score": [
+    4,
+    7
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 32,
+    "HR": 6,
+    "RBI": 24,
+    "SB": 4,
+    "TB": 77,
+    "AVG": 0.196,
+    "OBP": 0.279,
+    "IP": 152,
+    "K": 57,
+    "ERA": 2.13,
+    "WHIP": 0.81,
+    "SV+H": 7
+   },
+   "parts": {
+    "H": 47,
+    "AB": 240,
+    "outs": 152,
+    "ER": 12,
+    "WH": 41
+   }
+  },
+  {
+   "week": 20,
+   "team_key": "431.l.120609.t.8",
+   "opponent_key": "431.l.120609.t.9",
+   "result": "W",
+   "score": [
+    8,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 29,
+    "HR": 9,
+    "RBI": 31,
+    "SB": 5,
+    "TB": 106,
+    "AVG": 0.272,
+    "OBP": 0.347,
+    "IP": 209,
+    "K": 61,
+    "ERA": 1.94,
+    "WHIP": 1,
+    "SV+H": 1
+   },
+   "parts": {
+    "H": 61,
+    "AB": 224,
+    "outs": 209,
+    "ER": 15,
+    "WH": 70
+   }
+  },
+  {
+   "week": 20,
+   "team_key": "431.l.120609.t.9",
+   "opponent_key": "431.l.120609.t.8",
+   "result": "L",
+   "score": [
+    4,
+    8
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 33,
+    "HR": 10,
+    "RBI": 25,
+    "SB": 8,
+    "TB": 88,
+    "AVG": 0.254,
+    "OBP": 0.343,
+    "IP": 208,
+    "K": 57,
+    "ERA": 4.8,
+    "WHIP": 1.43,
+    "SV+H": 2
+   },
+   "parts": {
+    "H": 48,
+    "AB": 189,
+    "outs": 208,
+    "ER": 37,
+    "WH": 99
+   }
+  },
+  {
+   "week": 21,
+   "team_key": "431.l.120609.t.1",
+   "opponent_key": "431.l.120609.t.8",
+   "result": "W",
+   "score": [
+    9,
+    2
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 37,
+    "HR": 4,
+    "RBI": 22,
+    "SB": 10,
+    "TB": 106,
+    "AVG": 0.277,
+    "OBP": 0.345,
+    "IP": 119,
+    "K": 47,
+    "ERA": 2.04,
+    "WHIP": 0.98,
+    "SV+H": 6
+   },
+   "parts": {
+    "H": 69,
+    "AB": 249,
+    "outs": 119,
+    "ER": 9,
+    "WH": 39
+   }
+  },
+  {
+   "week": 21,
+   "team_key": "431.l.120609.t.8",
+   "opponent_key": "431.l.120609.t.1",
+   "result": "L",
+   "score": [
+    2,
+    9
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 26,
+    "HR": 4,
+    "RBI": 14,
+    "SB": 4,
+    "TB": 68,
+    "AVG": 0.216,
+    "OBP": 0.302,
+    "IP": 168,
+    "K": 53,
+    "ERA": 3.54,
+    "WHIP": 1.2,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 45,
+    "AB": 208,
+    "outs": 168,
+    "ER": 22,
+    "WH": 67
+   }
+  },
+  {
+   "week": 21,
+   "team_key": "431.l.120609.t.2",
+   "opponent_key": "431.l.120609.t.7",
+   "result": "W",
+   "score": [
+    9,
+    3
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 33,
+    "HR": 12,
+    "RBI": 29,
+    "SB": 6,
+    "TB": 95,
+    "AVG": 0.218,
+    "OBP": 0.301,
+    "IP": 171,
+    "K": 54,
+    "ERA": 2.53,
+    "WHIP": 1.09,
+    "SV+H": 7
+   },
+   "parts": {
+    "H": 52,
+    "AB": 238,
+    "outs": 171,
+    "ER": 16,
+    "WH": 62
+   }
+  },
+  {
+   "week": 21,
+   "team_key": "431.l.120609.t.7",
+   "opponent_key": "431.l.120609.t.2",
+   "result": "L",
+   "score": [
+    3,
+    9
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 20,
+    "HR": 6,
+    "RBI": 25,
+    "SB": 3,
+    "TB": 70,
+    "AVG": 0.208,
+    "OBP": 0.267,
+    "IP": 172,
+    "K": 61,
+    "ERA": 5.97,
+    "WHIP": 1.31,
+    "SV+H": 8
+   },
+   "parts": {
+    "H": 44,
+    "AB": 212,
+    "outs": 172,
+    "ER": 38,
+    "WH": 75
+   }
+  },
+  {
+   "week": 21,
+   "team_key": "431.l.120609.t.3",
+   "opponent_key": "431.l.120609.t.4",
+   "result": "L",
+   "score": [
+    4,
+    6
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 31,
+    "HR": 5,
+    "RBI": 29,
+    "SB": 4,
+    "TB": 83,
+    "AVG": 0.256,
+    "OBP": 0.313,
+    "IP": 223,
+    "K": 70,
+    "ERA": 2.78,
+    "WHIP": 1.17,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 55,
+    "AB": 215,
+    "outs": 223,
+    "ER": 23,
+    "WH": 87
+   }
+  },
+  {
+   "week": 21,
+   "team_key": "431.l.120609.t.4",
+   "opponent_key": "431.l.120609.t.3",
+   "result": "W",
+   "score": [
+    6,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 30,
+    "HR": 8,
+    "RBI": 27,
+    "SB": 5,
+    "TB": 105,
+    "AVG": 0.275,
+    "OBP": 0.327,
+    "IP": 228,
+    "K": 70,
+    "ERA": 4.62,
+    "WHIP": 1.29,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 65,
+    "AB": 236,
+    "outs": 228,
+    "ER": 39,
+    "WH": 98
+   }
+  },
+  {
+   "week": 21,
+   "team_key": "431.l.120609.t.5",
+   "opponent_key": "431.l.120609.t.12",
+   "result": "L",
+   "score": [
+    1,
+    11
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 32,
+    "HR": 8,
+    "RBI": 21,
+    "SB": 11,
+    "TB": 82,
+    "AVG": 0.254,
+    "OBP": 0.341,
+    "IP": 76,
+    "K": 20,
+    "ERA": 5.68,
+    "WHIP": 1.38,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 49,
+    "AB": 193,
+    "outs": 76,
+    "ER": 16,
+    "WH": 35
+   }
+  },
+  {
+   "week": 21,
+   "team_key": "431.l.120609.t.12",
+   "opponent_key": "431.l.120609.t.5",
+   "result": "W",
+   "score": [
+    11,
+    1
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 50,
+    "HR": 16,
+    "RBI": 44,
+    "SB": 8,
+    "TB": 141,
+    "AVG": 0.33,
+    "OBP": 0.395,
+    "IP": 153,
+    "K": 51,
+    "ERA": 3.88,
+    "WHIP": 1.18,
+    "SV+H": 6
+   },
+   "parts": {
+    "H": 77,
+    "AB": 233,
+    "outs": 153,
+    "ER": 22,
+    "WH": 60
+   }
+  },
+  {
+   "week": 21,
+   "team_key": "431.l.120609.t.6",
+   "opponent_key": "431.l.120609.t.14",
+   "result": "W",
+   "score": [
+    8,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 47,
+    "HR": 14,
+    "RBI": 45,
+    "SB": 6,
+    "TB": 120,
+    "AVG": 0.272,
+    "OBP": 0.339,
+    "IP": 183,
+    "K": 76,
+    "ERA": 3.84,
+    "WHIP": 1.21,
+    "SV+H": 6
+   },
+   "parts": {
+    "H": 69,
+    "AB": 254,
+    "outs": 183,
+    "ER": 26,
+    "WH": 74
+   }
+  },
+  {
+   "week": 21,
+   "team_key": "431.l.120609.t.14",
+   "opponent_key": "431.l.120609.t.6",
+   "result": "L",
+   "score": [
+    4,
+    8
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 44,
+    "HR": 7,
+    "RBI": 39,
+    "SB": 10,
+    "TB": 98,
+    "AVG": 0.277,
+    "OBP": 0.356,
+    "IP": 225,
+    "K": 71,
+    "ERA": 5.16,
+    "WHIP": 1.37,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 65,
+    "AB": 235,
+    "outs": 225,
+    "ER": 43,
+    "WH": 103
+   }
+  },
+  {
+   "week": 21,
+   "team_key": "431.l.120609.t.9",
+   "opponent_key": "431.l.120609.t.10",
+   "result": "W",
+   "score": [
+    8,
+    3
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 33,
+    "HR": 12,
+    "RBI": 41,
+    "SB": 3,
+    "TB": 103,
+    "AVG": 0.261,
+    "OBP": 0.337,
+    "IP": 184,
+    "K": 59,
+    "ERA": 4.55,
+    "WHIP": 1.14,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 57,
+    "AB": 218,
+    "outs": 184,
+    "ER": 31,
+    "WH": 70
+   }
+  },
+  {
+   "week": 21,
+   "team_key": "431.l.120609.t.10",
+   "opponent_key": "431.l.120609.t.9",
+   "result": "L",
+   "score": [
+    3,
+    8
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 26,
+    "HR": 12,
+    "RBI": 46,
+    "SB": 6,
+    "TB": 119,
+    "AVG": 0.26,
+    "OBP": 0.318,
+    "IP": 159,
+    "K": 58,
+    "ERA": 6.28,
+    "WHIP": 1.32,
+    "SV+H": 1
+   },
+   "parts": {
+    "H": 69,
+    "AB": 265,
+    "outs": 159,
+    "ER": 37,
+    "WH": 70
+   }
+  },
+  {
+   "week": 21,
+   "team_key": "431.l.120609.t.11",
+   "opponent_key": "431.l.120609.t.13",
+   "result": "L",
+   "score": [
+    4,
+    8
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 31,
+    "HR": 8,
+    "RBI": 29,
+    "SB": 12,
+    "TB": 92,
+    "AVG": 0.223,
+    "OBP": 0.289,
+    "IP": 110,
+    "K": 41,
+    "ERA": 5.4,
+    "WHIP": 1.34,
+    "SV+H": 7
+   },
+   "parts": {
+    "H": 55,
+    "AB": 247,
+    "outs": 110,
+    "ER": 22,
+    "WH": 49
+   }
+  },
+  {
+   "week": 21,
+   "team_key": "431.l.120609.t.13",
+   "opponent_key": "431.l.120609.t.11",
+   "result": "W",
+   "score": [
+    8,
+    4
+   ],
+   "is_playoffs": false,
+   "values": {
+    "R": 33,
+    "HR": 7,
+    "RBI": 25,
+    "SB": 5,
+    "TB": 103,
+    "AVG": 0.267,
+    "OBP": 0.332,
+    "IP": 159,
+    "K": 49,
+    "ERA": 3.4,
+    "WHIP": 1.13,
+    "SV+H": 1
+   },
+   "parts": {
+    "H": 64,
+    "AB": 240,
+    "outs": 159,
+    "ER": 20,
+    "WH": 60
+   }
+  },
+  {
+   "week": 22,
+   "team_key": "431.l.120609.t.1",
+   "opponent_key": "431.l.120609.t.12",
+   "result": "L",
+   "score": [
+    4,
+    7
+   ],
+   "is_playoffs": true,
+   "values": {
+    "R": 23,
+    "HR": 6,
+    "RBI": 17,
+    "SB": 8,
+    "TB": 88,
+    "AVG": 0.254,
+    "OBP": 0.317,
+    "IP": 191,
+    "K": 70,
+    "ERA": 5.09,
+    "WHIP": 1.12,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 58,
+    "AB": 228,
+    "outs": 191,
+    "ER": 36,
+    "WH": 71
+   },
+   "round": "Quarterfinal"
+  },
+  {
+   "week": 22,
+   "team_key": "431.l.120609.t.12",
+   "opponent_key": "431.l.120609.t.1",
+   "result": "W",
+   "score": [
+    7,
+    4
+   ],
+   "is_playoffs": true,
+   "values": {
+    "R": 29,
+    "HR": 4,
+    "RBI": 22,
+    "SB": 11,
+    "TB": 85,
+    "AVG": 0.284,
+    "OBP": 0.35,
+    "IP": 200,
+    "K": 68,
+    "ERA": 4.46,
+    "WHIP": 1.31,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 62,
+    "AB": 218,
+    "outs": 200,
+    "ER": 33,
+    "WH": 87
+   },
+   "round": "Quarterfinal"
+  },
+  {
+   "week": 22,
+   "team_key": "431.l.120609.t.4",
+   "opponent_key": "431.l.120609.t.10",
+   "result": "L",
+   "score": [
+    4,
+    7
+   ],
+   "is_playoffs": true,
+   "values": {
+    "R": 27,
+    "HR": 6,
+    "RBI": 25,
+    "SB": 2,
+    "TB": 72,
+    "AVG": 0.19,
+    "OBP": 0.291,
+    "IP": 188,
+    "K": 60,
+    "ERA": 2.87,
+    "WHIP": 1.23,
+    "SV+H": 7
+   },
+   "parts": {
+    "H": 42,
+    "AB": 221,
+    "outs": 188,
+    "ER": 20,
+    "WH": 77
+   },
+   "round": "Quarterfinal"
+  },
+  {
+   "week": 22,
+   "team_key": "431.l.120609.t.10",
+   "opponent_key": "431.l.120609.t.4",
+   "result": "W",
+   "score": [
+    7,
+    4
+   ],
+   "is_playoffs": true,
+   "values": {
+    "R": 36,
+    "HR": 8,
+    "RBI": 24,
+    "SB": 5,
+    "TB": 93,
+    "AVG": 0.24,
+    "OBP": 0.303,
+    "IP": 166,
+    "K": 60,
+    "ERA": 3.09,
+    "WHIP": 1.17,
+    "SV+H": 2
+   },
+   "parts": {
+    "H": 55,
+    "AB": 229,
+    "outs": 166,
+    "ER": 19,
+    "WH": 65
+   },
+   "round": "Quarterfinal"
+  },
+  {
+   "week": 22,
+   "team_key": "431.l.120609.t.6",
+   "opponent_key": "431.l.120609.t.11",
+   "result": "L",
+   "score": [
+    3,
+    9
+   ],
+   "is_playoffs": true,
+   "values": {
+    "R": 32,
+    "HR": 8,
+    "RBI": 39,
+    "SB": 5,
+    "TB": 91,
+    "AVG": 0.238,
+    "OBP": 0.296,
+    "IP": 165,
+    "K": 62,
+    "ERA": 4.09,
+    "WHIP": 1.24,
+    "SV+H": 1
+   },
+   "parts": {
+    "H": 54,
+    "AB": 227,
+    "outs": 165,
+    "ER": 25,
+    "WH": 68
+   },
+   "round": "Quarterfinal"
+  },
+  {
+   "week": 22,
+   "team_key": "431.l.120609.t.11",
+   "opponent_key": "431.l.120609.t.6",
+   "result": "W",
+   "score": [
+    9,
+    3
+   ],
+   "is_playoffs": true,
+   "values": {
+    "R": 36,
+    "HR": 11,
+    "RBI": 33,
+    "SB": 9,
+    "TB": 123,
+    "AVG": 0.317,
+    "OBP": 0.399,
+    "IP": 137,
+    "K": 45,
+    "ERA": 1.97,
+    "WHIP": 1.09,
+    "SV+H": 10
+   },
+   "parts": {
+    "H": 73,
+    "AB": 230,
+    "outs": 137,
+    "ER": 10,
+    "WH": 50
+   },
+   "round": "Quarterfinal"
+  },
+  {
+   "week": 22,
+   "team_key": "431.l.120609.t.7",
+   "opponent_key": "431.l.120609.t.9",
+   "result": "L",
+   "score": [
+    3,
+    8
+   ],
+   "is_playoffs": true,
+   "values": {
+    "R": 32,
+    "HR": 5,
+    "RBI": 21,
+    "SB": 5,
+    "TB": 71,
+    "AVG": 0.196,
+    "OBP": 0.266,
+    "IP": 126,
+    "K": 44,
+    "ERA": 3.43,
+    "WHIP": 1.19,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 47,
+    "AB": 240,
+    "outs": 126,
+    "ER": 16,
+    "WH": 50
+   },
+   "round": "Quarterfinal"
+  },
+  {
+   "week": 22,
+   "team_key": "431.l.120609.t.9",
+   "opponent_key": "431.l.120609.t.7",
+   "result": "W",
+   "score": [
+    8,
+    3
+   ],
+   "is_playoffs": true,
+   "values": {
+    "R": 31,
+    "HR": 8,
+    "RBI": 34,
+    "SB": 3,
+    "TB": 93,
+    "AVG": 0.262,
+    "OBP": 0.333,
+    "IP": 200,
+    "K": 62,
+    "ERA": 4.73,
+    "WHIP": 1.13,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 55,
+    "AB": 210,
+    "outs": 200,
+    "ER": 35,
+    "WH": 75
+   },
+   "round": "Quarterfinal"
+  },
+  {
+   "week": 23,
+   "team_key": "431.l.120609.t.1",
+   "opponent_key": "431.l.120609.t.7",
+   "result": "L",
+   "score": [
+    4,
+    8
+   ],
+   "is_playoffs": true,
+   "values": {
+    "R": 27,
+    "HR": 2,
+    "RBI": 12,
+    "SB": 7,
+    "TB": 55,
+    "AVG": 0.194,
+    "OBP": 0.286,
+    "IP": 161,
+    "K": 58,
+    "ERA": 3.86,
+    "WHIP": 1.21,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 42,
+    "AB": 216,
+    "outs": 161,
+    "ER": 23,
+    "WH": 65
+   },
+   "round": "Consolation (5th–8th)"
+  },
+  {
+   "week": 23,
+   "team_key": "431.l.120609.t.7",
+   "opponent_key": "431.l.120609.t.1",
+   "result": "W",
+   "score": [
+    8,
+    4
+   ],
+   "is_playoffs": true,
+   "values": {
+    "R": 25,
+    "HR": 10,
+    "RBI": 26,
+    "SB": 4,
+    "TB": 84,
+    "AVG": 0.236,
+    "OBP": 0.319,
+    "IP": 153,
+    "K": 52,
+    "ERA": 3.35,
+    "WHIP": 1.02,
+    "SV+H": 6
+   },
+   "parts": {
+    "H": 43,
+    "AB": 182,
+    "outs": 153,
+    "ER": 19,
+    "WH": 52
+   },
+   "round": "Consolation (5th–8th)"
+  },
+  {
+   "week": 23,
+   "team_key": "431.l.120609.t.4",
+   "opponent_key": "431.l.120609.t.6",
+   "result": "L",
+   "score": [
+    3,
+    9
+   ],
+   "is_playoffs": true,
+   "values": {
+    "R": 30,
+    "HR": 10,
+    "RBI": 37,
+    "SB": 4,
+    "TB": 100,
+    "AVG": 0.25,
+    "OBP": 0.318,
+    "IP": 141,
+    "K": 43,
+    "ERA": 2.49,
+    "WHIP": 0.98,
+    "SV+H": 2
+   },
+   "parts": {
+    "H": 53,
+    "AB": 212,
+    "outs": 141,
+    "ER": 13,
+    "WH": 46
+   },
+   "round": "Consolation (5th–8th)"
+  },
+  {
+   "week": 23,
+   "team_key": "431.l.120609.t.6",
+   "opponent_key": "431.l.120609.t.4",
+   "result": "W",
+   "score": [
+    9,
+    3
+   ],
+   "is_playoffs": true,
+   "values": {
+    "R": 39,
+    "HR": 11,
+    "RBI": 43,
+    "SB": 3,
+    "TB": 113,
+    "AVG": 0.301,
+    "OBP": 0.375,
+    "IP": 137,
+    "K": 42,
+    "ERA": 2.36,
+    "WHIP": 0.96,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 69,
+    "AB": 229,
+    "outs": 137,
+    "ER": 12,
+    "WH": 44
+   },
+   "round": "Consolation (5th–8th)"
+  },
+  {
+   "week": 23,
+   "team_key": "431.l.120609.t.9",
+   "opponent_key": "431.l.120609.t.12",
+   "result": "W",
+   "score": [
+    9,
+    3
+   ],
+   "is_playoffs": true,
+   "values": {
+    "R": 36,
+    "HR": 11,
+    "RBI": 30,
+    "SB": 8,
+    "TB": 102,
+    "AVG": 0.258,
+    "OBP": 0.314,
+    "IP": 279,
+    "K": 83,
+    "ERA": 3.1,
+    "WHIP": 1.16,
+    "SV+H": 1
+   },
+   "parts": {
+    "H": 62,
+    "AB": 240,
+    "outs": 279,
+    "ER": 32,
+    "WH": 108
+   },
+   "round": "Semifinal"
+  },
+  {
+   "week": 23,
+   "team_key": "431.l.120609.t.12",
+   "opponent_key": "431.l.120609.t.9",
+   "result": "L",
+   "score": [
+    3,
+    9
+   ],
+   "is_playoffs": true,
+   "values": {
+    "R": 35,
+    "HR": 5,
+    "RBI": 20,
+    "SB": 6,
+    "TB": 92,
+    "AVG": 0.278,
+    "OBP": 0.344,
+    "IP": 224,
+    "K": 80,
+    "ERA": 3.98,
+    "WHIP": 1.38,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 62,
+    "AB": 223,
+    "outs": 224,
+    "ER": 33,
+    "WH": 103
+   },
+   "round": "Semifinal"
+  },
+  {
+   "week": 23,
+   "team_key": "431.l.120609.t.10",
+   "opponent_key": "431.l.120609.t.11",
+   "result": "L",
+   "score": [
+    6,
+    6
+   ],
+   "is_playoffs": true,
+   "values": {
+    "R": 30,
+    "HR": 8,
+    "RBI": 32,
+    "SB": 8,
+    "TB": 103,
+    "AVG": 0.268,
+    "OBP": 0.333,
+    "IP": 140,
+    "K": 50,
+    "ERA": 5.21,
+    "WHIP": 1.22,
+    "SV+H": 1
+   },
+   "parts": {
+    "H": 61,
+    "AB": 228,
+    "outs": 140,
+    "ER": 27,
+    "WH": 57
+   },
+   "round": "Semifinal"
+  },
+  {
+   "week": 23,
+   "team_key": "431.l.120609.t.11",
+   "opponent_key": "431.l.120609.t.10",
+   "result": "W",
+   "score": [
+    6,
+    6
+   ],
+   "is_playoffs": true,
+   "values": {
+    "R": 33,
+    "HR": 13,
+    "RBI": 30,
+    "SB": 4,
+    "TB": 108,
+    "AVG": 0.244,
+    "OBP": 0.346,
+    "IP": 111,
+    "K": 40,
+    "ERA": 3.65,
+    "WHIP": 1.3,
+    "SV+H": 6
+   },
+   "parts": {
+    "H": 57,
+    "AB": 234,
+    "outs": 111,
+    "ER": 15,
+    "WH": 48
+   },
+   "round": "Semifinal"
+  },
+  {
+   "week": 24,
+   "team_key": "431.l.120609.t.1",
+   "opponent_key": "431.l.120609.t.4",
+   "result": "L",
+   "score": [
+    5,
+    6
+   ],
+   "is_playoffs": true,
+   "values": {
+    "R": 32,
+    "HR": 8,
+    "RBI": 19,
+    "SB": 12,
+    "TB": 91,
+    "AVG": 0.247,
+    "OBP": 0.315,
+    "IP": 145,
+    "K": 48,
+    "ERA": 3.54,
+    "WHIP": 1.24,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 54,
+    "AB": 219,
+    "outs": 145,
+    "ER": 19,
+    "WH": 60
+   },
+   "round": "7th place game"
+  },
+  {
+   "week": 24,
+   "team_key": "431.l.120609.t.4",
+   "opponent_key": "431.l.120609.t.1",
+   "result": "W",
+   "score": [
+    6,
+    5
+   ],
+   "is_playoffs": true,
+   "values": {
+    "R": 40,
+    "HR": 16,
+    "RBI": 44,
+    "SB": 8,
+    "TB": 121,
+    "AVG": 0.261,
+    "OBP": 0.347,
+    "IP": 126,
+    "K": 44,
+    "ERA": 5.14,
+    "WHIP": 1.31,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 62,
+    "AB": 238,
+    "outs": 126,
+    "ER": 24,
+    "WH": 55
+   },
+   "round": "7th place game"
+  },
+  {
+   "week": 24,
+   "team_key": "431.l.120609.t.6",
+   "opponent_key": "431.l.120609.t.7",
+   "result": "W",
+   "score": [
+    8,
+    3
+   ],
+   "is_playoffs": true,
+   "values": {
+    "R": 35,
+    "HR": 10,
+    "RBI": 44,
+    "SB": 3,
+    "TB": 118,
+    "AVG": 0.311,
+    "OBP": 0.353,
+    "IP": 163,
+    "K": 67,
+    "ERA": 3.48,
+    "WHIP": 1.27,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 76,
+    "AB": 244,
+    "outs": 163,
+    "ER": 21,
+    "WH": 69
+   },
+   "round": "5th place game"
+  },
+  {
+   "week": 24,
+   "team_key": "431.l.120609.t.7",
+   "opponent_key": "431.l.120609.t.6",
+   "result": "L",
+   "score": [
+    3,
+    8
+   ],
+   "is_playoffs": true,
+   "values": {
+    "R": 30,
+    "HR": 6,
+    "RBI": 18,
+    "SB": 5,
+    "TB": 75,
+    "AVG": 0.234,
+    "OBP": 0.323,
+    "IP": 133,
+    "K": 46,
+    "ERA": 3.45,
+    "WHIP": 1.22,
+    "SV+H": 3
+   },
+   "parts": {
+    "H": 51,
+    "AB": 218,
+    "outs": 133,
+    "ER": 17,
+    "WH": 54
+   },
+   "round": "5th place game"
+  },
+  {
+   "week": 24,
+   "team_key": "431.l.120609.t.9",
+   "opponent_key": "431.l.120609.t.11",
+   "result": "L",
+   "score": [
+    5,
+    7
+   ],
+   "is_playoffs": true,
+   "values": {
+    "R": 41,
+    "HR": 12,
+    "RBI": 33,
+    "SB": 5,
+    "TB": 109,
+    "AVG": 0.272,
+    "OBP": 0.355,
+    "IP": 174,
+    "K": 60,
+    "ERA": 5.12,
+    "WHIP": 1.45,
+    "SV+H": 0
+   },
+   "parts": {
+    "H": 61,
+    "AB": 224,
+    "outs": 174,
+    "ER": 33,
+    "WH": 84
+   },
+   "round": "Championship"
+  },
+  {
+   "week": 24,
+   "team_key": "431.l.120609.t.11",
+   "opponent_key": "431.l.120609.t.9",
+   "result": "W",
+   "score": [
+    7,
+    5
+   ],
+   "is_playoffs": true,
+   "values": {
+    "R": 31,
+    "HR": 11,
+    "RBI": 36,
+    "SB": 7,
+    "TB": 116,
+    "AVG": 0.278,
+    "OBP": 0.355,
+    "IP": 140,
+    "K": 53,
+    "ERA": 1.35,
+    "WHIP": 0.71,
+    "SV+H": 4
+   },
+   "parts": {
+    "H": 72,
+    "AB": 259,
+    "outs": 140,
+    "ER": 7,
+    "WH": 33
+   },
+   "round": "Championship"
+  },
+  {
+   "week": 24,
+   "team_key": "431.l.120609.t.10",
+   "opponent_key": "431.l.120609.t.12",
+   "result": "W",
+   "score": [
+    8,
+    4
+   ],
+   "is_playoffs": true,
+   "values": {
+    "R": 36,
+    "HR": 17,
+    "RBI": 43,
+    "SB": 5,
+    "TB": 136,
+    "AVG": 0.303,
+    "OBP": 0.358,
+    "IP": 187,
+    "K": 79,
+    "ERA": 3.32,
+    "WHIP": 0.93,
+    "SV+H": 5
+   },
+   "parts": {
+    "H": 70,
+    "AB": 231,
+    "outs": 187,
+    "ER": 23,
+    "WH": 58
+   },
+   "round": "3rd place game"
+  },
+  {
+   "week": 24,
+   "team_key": "431.l.120609.t.12",
+   "opponent_key": "431.l.120609.t.10",
+   "result": "L",
+   "score": [
+    4,
+    8
+   ],
+   "is_playoffs": true,
+   "values": {
+    "R": 32,
+    "HR": 7,
+    "RBI": 28,
+    "SB": 12,
+    "TB": 85,
+    "AVG": 0.244,
+    "OBP": 0.356,
+    "IP": 252,
+    "K": 100,
+    "ERA": 3,
+    "WHIP": 1.12,
+    "SV+H": 1
+   },
+   "parts": {
+    "H": 49,
+    "AB": 201,
+    "outs": 252,
+    "ER": 28,
+    "WH": 94
+   },
+   "round": "3rd place game"
+  }
+ ]
+}

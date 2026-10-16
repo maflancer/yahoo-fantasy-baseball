@@ -1,14 +1,10 @@
-"""Load config.toml and environment-provided settings."""
+"""Load config.toml."""
 
 from __future__ import annotations
 
-import json
-import os
 import tomllib
 from dataclasses import dataclass
 from pathlib import Path
-
-NAME_MAP_ENV = "TEAM_NAME_MAP"
 
 
 @dataclass(frozen=True)
@@ -56,15 +52,3 @@ def load_config(path: Path) -> Config:
         oauth_file=base / raw.get("oauth_file", "oauth2.json"),
         seasons=seasons,
     )
-
-
-def load_name_map(env: dict[str, str] | None = None) -> dict[str, str]:
-    """Optional manager-nickname -> display-name overrides from the TEAM_NAME_MAP env var (JSON)."""
-    env = os.environ if env is None else env
-    raw = env.get(NAME_MAP_ENV, "").strip()
-    if not raw:
-        return {}
-    mapping = json.loads(raw)
-    if not isinstance(mapping, dict):
-        raise ValueError(f"{NAME_MAP_ENV} must be a JSON object of nickname -> display name")
-    return {str(k): str(v) for k, v in mapping.items()}

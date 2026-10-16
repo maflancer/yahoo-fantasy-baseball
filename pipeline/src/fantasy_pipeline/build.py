@@ -31,13 +31,10 @@ class RawSeason:
     matchups: list[dict[str, Any]]  # league.matchups(week) for each completed week
 
 
-def team_directory(
-    teams: dict[str, dict[str, Any]], name_map: dict[str, str]
-) -> list[dict[str, str]]:
-    """Public team list. Only manager nicknames (or their mapped names) are exposed,
-    never Yahoo team names."""
+def team_directory(teams: dict[str, dict[str, Any]]) -> list[dict[str, str]]:
+    """Public team list. Teams are named by manager nickname, never by Yahoo team name."""
     return [
-        {"team_key": key, "name": name_map.get(nickname, nickname)}
+        {"team_key": key, "name": nickname}
         for key, nickname in sorted(managers_by_team(teams).items())
     ]
 
@@ -61,7 +58,7 @@ def build_standings(raw: RawSeason) -> list[dict[str, Any]]:
     return sorted(rows, key=lambda r: (r["rank"] is None, r["rank"]))
 
 
-def build_season(raw: RawSeason, name_map: dict[str, str]) -> dict[str, dict[str, Any]]:
+def build_season(raw: RawSeason) -> dict[str, dict[str, Any]]:
     """Returns {filename: document} for one season."""
     categories: list[StatCategory] = parse_stat_categories(raw.settings_raw)
     display_stats = parse_stat_categories(raw.settings_raw, display_only=True)
@@ -89,7 +86,7 @@ def build_season(raw: RawSeason, name_map: dict[str, str]) -> dict[str, dict[str
         labelled.sort(key=lambda pair: pair[1].order if pair[1] else 0)
         week["matchups"] = [matchup_json(m, label) for m, label in labelled]
 
-    teams = team_directory(raw.teams, name_map)
+    teams = team_directory(raw.teams)
     return {
         "standings.json": {"teams": teams, "standings": build_standings(raw)},
         "scoreboard.json": {

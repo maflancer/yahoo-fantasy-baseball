@@ -1,9 +1,9 @@
 import { useCallback, useEffect, useState } from "react";
 
-// Hash routing (#/leaders?season=2026&week=5) works on GitHub Pages without a
+// Hash routing (#/scoreboard?season=2026&week=5) works on GitHub Pages without a
 // 404 fallback and keeps every view linkable.
 
-export type Page = "standings" | "leaders";
+export type Page = "standings" | "scoreboard";
 
 export interface Route {
   page: Page;
@@ -12,7 +12,8 @@ export interface Route {
 
 function parseHash(): Route {
   const [path, query = ""] = window.location.hash.replace(/^#\/?/, "").split("?");
-  const page: Page = path === "leaders" ? "leaders" : "standings";
+  // "leaders" was the old name of the scoreboard page; keep those links working.
+  const page: Page = path === "scoreboard" || path === "leaders" ? "scoreboard" : "standings";
   return { page, params: new URLSearchParams(query) };
 }
 

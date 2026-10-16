@@ -6,18 +6,32 @@ from fantasy_pipeline.output import update_seasons_index, write_season
 
 def test_build_season_documents(raw_season):
     docs = build_season(raw_season, name_map={})
-    assert set(docs) == {"standings.json", "leaders.json", "weekly.json"}
+    assert set(docs) == {"standings.json", "scoreboard.json"}
 
     standings = docs["standings.json"]["standings"]
     assert len(standings) == 14
     assert [r["rank"] for r in standings] == list(range(1, 15))
     assert all(isinstance(r["wins"], int) for r in standings)
 
-    weeks = docs["leaders.json"]["weeks"]
+    weeks = docs["scoreboard.json"]["weeks"]
     assert [w["week"] for w in weeks] == [1, 23]
     assert [w["is_playoffs"] for w in weeks] == [False, True]
 
-    assert len(docs["weekly.json"]["rows"]) == 14 + 8
+    assert [len(w["matchups"]) for w in weeks] == [7, 4]
+    assert all(w["leaders"] for w in weeks)
+
+
+def test_scoreboard_matchup_shape(raw_season):
+    week1 = build_season(raw_season, {})["scoreboard.json"]["weeks"][0]
+    tie, win = week1["matchups"][0], week1["matchups"][1]
+
+    assert tie["winner_key"] is None
+    assert [t["points"] for t in tie["teams"]] == [6, 6]
+
+    assert [t["points"] for t in win["teams"]] == [9, 3]
+    assert win["winner_key"] == win["teams"][0]["team_key"]
+    assert len(win["stat_winners"]) == 12
+    assert set(win["stat_winners"].values()) <= {t["team_key"] for t in win["teams"]} | {None}
 
 
 def test_team_names_never_exposed(raw_season):
@@ -51,7 +65,7 @@ def test_season_summary(raw_season):
 def test_write_season_reports_changes(tmp_path, raw_season):
     docs = build_season(raw_season, {})
     assert write_season(tmp_path, 2026, docs) is True
-    assert (tmp_path / "2026" / "leaders.json").exists()
+    assert (tmp_path / "2026" / "scoreboard.json").exists()
     assert write_season(tmp_path, 2026, docs) is False
 
 

@@ -31,8 +31,8 @@ interface TableRow {
 }
 
 const PERIODS: { id: Period; label: string }[] = [
-  { id: "all", label: "Full season" },
   { id: "regular", label: "Regular season" },
+  { id: "all", label: "Full season" },
   { id: "playoffs", label: "Playoffs" },
   { id: "range", label: "Custom weeks" },
 ];
@@ -51,7 +51,12 @@ export default function Stats({ season, params, onParamsChange }: Props) {
   const file = useData<StatsFile>(`${season.year}/stats.json`);
 
   const view = oneOf<View>(params.get("view"), ["totals", "log"], "totals");
-  const period = oneOf<Period>(params.get("period"), ["all", "regular", "playoffs", "range"], "all");
+  // Regular season by default so every team's totals cover the same weeks.
+  const period = oneOf<Period>(
+    params.get("period"),
+    ["all", "regular", "playoffs", "range"],
+    "regular",
+  );
   const group = oneOf<Group>(params.get("group"), ["all", "B", "P"], "all");
   const perWeek = params.get("per") === "week";
   const team = params.get("team") ?? "";
@@ -199,7 +204,9 @@ export default function Stats({ season, params, onParamsChange }: Props) {
           <span>Weeks</span>
           <select
             value={period}
-            onChange={(e) => set({ period: e.target.value === "all" ? undefined : e.target.value })}
+            onChange={(e) =>
+              set({ period: e.target.value === "regular" ? undefined : e.target.value })
+            }
           >
             {PERIODS.map((p) => (
               <option key={p.id} value={p.id}>

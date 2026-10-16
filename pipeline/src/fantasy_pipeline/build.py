@@ -5,6 +5,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import Any
 
+from fantasy_pipeline.bracket import RoundLabel, replay_playoffs
 from fantasy_pipeline.leaders import season_leaders
 from fantasy_pipeline.parse import (
     Matchup,
@@ -73,9 +74,18 @@ def build_season(raw: RawSeason, name_map: dict[str, str]) -> dict[str, dict[str
         matchups_by_week[week] = week_matchups
         dates[week] = week_dates(week_raw)
 
+    labels, _ = replay_playoffs(
+        matchups_by_week, _int_or_none(raw.settings.get("num_playoff_teams"))
+    )
     weeks = season_leaders(rows, categories, dates)
     for week in weeks:
-        week["matchups"] = [matchup_json(m) for m in matchups_by_week.get(week["week"], [])]
+        labelled = [
+            (m, labels.get((week["week"], i)))
+            for i, m in enumerate(matchups_by_week.get(week["week"], []))
+        ]
+        # Title games first, then placement games from the top down.
+        labelled.sort(key=lambda pair: pair[1].order if pair[1] else 0)
+        week["matchups"] = [matchup_json(m, label) for m, label in labelled]
 
     teams = team_directory(raw.teams, name_map)
     return {
@@ -88,8 +98,8 @@ def build_season(raw: RawSeason, name_map: dict[str, str]) -> dict[str, dict[str
     }
 
 
-def matchup_json(matchup: Matchup) -> dict[str, Any]:
-    return {
+def matchup_json(matchup: Matchup, label: RoundLabel | None = None) -> dict[str, Any]:
+    doc: dict[str, Any] = {
         "winner_key": matchup.winner_key,
         "is_playoffs": matchup.is_playoffs,
         "is_consolation": matchup.is_consolation,
@@ -99,6 +109,10 @@ def matchup_json(matchup: Matchup) -> dict[str, Any]:
         ],
         "stat_winners": matchup.stat_winners,
     }
+    if label:
+        doc["round"] = label.name
+        doc["for_title"] = label.for_title
+    return doc
 
 
 def season_summary(raw: RawSeason, updated_at: str) -> dict[str, Any]:

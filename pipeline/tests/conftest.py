@@ -48,6 +48,7 @@ def raw_season(settings_raw, week1, week23):
             "num_teams": 14,
             "playoff_start_week": "23",
             "is_finished": 1,
+            "num_playoff_teams": "8",
         },
         settings_raw=settings_raw,
         standings=load("standings"),

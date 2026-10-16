@@ -115,6 +115,11 @@ export default function Scoreboard({ season, week, onWeekChange }: Props) {
   );
 }
 
+function roundClass(matchup: Matchup): string {
+  if (matchup.round === "Championship") return "round championship";
+  return matchup.for_title ? "round title" : "round placement";
+}
+
 function MatchupCard({
   matchup,
   categories,
@@ -134,12 +139,22 @@ function MatchupCard({
     <li className="matchup card">
       <details>
         <summary>
+          {matchup.round && (
+            <span className={roundClass(matchup)}>
+              {matchup.round === "Championship" && <span aria-hidden>🏆 </span>}
+              {matchup.round}
+            </span>
+          )}
           <span className={`side left ${outcome(a.team_key)}`}>{nameOf(a.team_key)}</span>
           <span className="score">
             <span className={outcome(a.team_key)}>{a.points}</span>
             <span className="dash">–</span>
             <span className={outcome(b.team_key)}>{b.points}</span>
-            {ties > 0 && <span className="ties">{ties} tied</span>}
+            {a.points === b.points && matchup.winner_key ? (
+              <span className="ties">won on tiebreaker</span>
+            ) : (
+              ties > 0 && <span className="ties">{ties} tied</span>
+            )}
           </span>
           <span className={`side right ${outcome(b.team_key)}`}>{nameOf(b.team_key)}</span>
         </summary>
@@ -164,7 +179,6 @@ function MatchupCard({
           </tbody>
         </table>
       </details>
-      {matchup.is_consolation && <span className="badge matchup-badge">Consolation</span>}
     </li>
   );
 }

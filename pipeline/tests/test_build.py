@@ -34,6 +34,13 @@ def test_scoreboard_matchup_shape(raw_season):
     assert set(win["stat_winners"].values()) <= {t["team_key"] for t in win["teams"]} | {None}
 
 
+def test_playoff_rounds_labelled(raw_season):
+    week1, week23 = build_season(raw_season, {})["scoreboard.json"]["weeks"]
+    assert all("round" not in m for m in week1["matchups"])
+    assert [m["round"] for m in week23["matchups"]] == ["Quarterfinal"] * 4
+    assert all(m["for_title"] for m in week23["matchups"])
+
+
 def test_team_names_never_exposed(raw_season):
     docs = build_season(raw_season, name_map={})
     text = json.dumps(docs)

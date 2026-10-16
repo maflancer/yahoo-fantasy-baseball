@@ -58,6 +58,10 @@ export interface Matchup {
   teams: MatchupTeam[];
   /** Category abbr -> winning team key, or null when tied. */
   stat_winners: Record<string, string | null>;
+  /** Playoff round, e.g. "Semifinal" or "5th place game". Absent in the regular season. */
+  round?: string;
+  /** True while the winner can still finish first. */
+  for_title?: boolean;
 }
 
 export interface ScoreboardWeek {

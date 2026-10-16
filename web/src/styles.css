@@ -9,6 +9,8 @@
   --stripe: #f8f9fb;
   --badge-bg: #fff3d6;
   --badge-text: #7a5300;
+  --good: #1a7f37;
+  --bad: #c62828;
   color-scheme: light;
 }
 
@@ -24,6 +26,8 @@
     --stripe: #1c2530;
     --badge-bg: #3a2f14;
     --badge-text: #f3cf7a;
+    --good: #4cc26b;
+    --bad: #ff7b72;
     color-scheme: dark;
   }
 }
@@ -441,6 +445,68 @@ select {
   background: var(--stripe);
 }
 
+/* Draft page */
+
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.highlight ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.highlight li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 0;
+  border-top: 1px solid var(--border);
+}
+
+.highlight li:first-child {
+  border-top: 0;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.player-meta {
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.value {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.value.good {
+  color: var(--good);
+}
+
+.value.bad {
+  color: var(--bad);
+}
+
+.draft-table td {
+  vertical-align: middle;
+}
+
+.draft-table td .player {
+  white-space: normal;
+  min-width: 140px;
+}
+
 /* Scoreboard matchups */
 
 .matchups {
@@ -603,8 +669,14 @@ select {
   }
 
   .stats-table th,
-  .stats-table td {
-    padding: 6px 8px;
+  .stats-table td,
+  .draft-table th,
+  .draft-table td {
+    padding: 6px;
+  }
+
+  .draft-table td .player {
+    min-width: 110px;
   }
 
   .matchups {

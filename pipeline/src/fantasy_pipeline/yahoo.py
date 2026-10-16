@@ -29,6 +29,35 @@ def last_completed_week(settings: dict) -> int:
     return int(settings["current_week"]) - 1
 
 
+# Yahoo returns at most 25 players per request.
+PLAYERS_PAGE = 25
+# How many of the season's top-ranked players to fetch, to find standouts nobody drafted.
+TOP_RANKED = 100
+
+
+def fetch_draft_players(league: yfa.League, draft_results: list[dict]) -> list[dict]:
+    """Raw player-collection pages (with ranks) for every drafted player and the
+    season's top-ranked players."""
+    league_key = league.league_id
+    game_id = league_key.split(".")[0]
+    keys = [f"{game_id}.p.{pick['player_id']}" for pick in draft_results if "player_id" in pick]
+
+    pages = []
+    for i in range(0, len(keys), PLAYERS_PAGE):
+        batch = ",".join(keys[i : i + PLAYERS_PAGE])
+        pages.append(
+            league.yhandler.get(f"league/{league_key}/players;player_keys={batch};out=ranks")
+        )
+    for start in range(0, TOP_RANKED, PLAYERS_PAGE):
+        pages.append(
+            league.yhandler.get(
+                f"league/{league_key}/players;sort=AR;sort_type=season;"
+                f"start={start};count={PLAYERS_PAGE};out=ranks"
+            )
+        )
+    return pages
+
+
 def fetch_season(oauth: OAuth2, game_code: str, season: Season) -> RawSeason:
     game = yfa.Game(oauth, game_code)
     league_id = season.league_id
@@ -43,6 +72,8 @@ def fetch_season(oauth: OAuth2, game_code: str, season: Season) -> RawSeason:
     settings = league.settings()
     last_week = last_completed_week(settings)
     logger.info("Fetching weeks 1-%s", last_week)
+    draft_results = league.draft_results()
+    logger.info("Fetching %s draft picks", len(draft_results))
 
     return RawSeason(
         year=season.year,
@@ -51,4 +82,6 @@ def fetch_season(oauth: OAuth2, game_code: str, season: Season) -> RawSeason:
         standings=league.standings(),
         teams=league.teams(),
         matchups=[league.matchups(week) for week in range(1, last_week + 1)],
+        draft_results=draft_results,
+        players=fetch_draft_players(league, draft_results) if draft_results else [],
     )

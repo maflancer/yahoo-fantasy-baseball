@@ -7,6 +7,7 @@ export interface SeasonSummary {
   num_teams: number | null;
   playoff_start_week: number | null;
   is_finished: boolean;
+  has_draft?: boolean;
   updated_at: string;
 }
 
@@ -108,4 +109,33 @@ export interface StatsFile {
   teams: Team[];
   categories: StatsCategory[];
   rows: StatsRow[];
+}
+
+export interface DraftPick {
+  pick: number;
+  round: number;
+  team_key: string;
+  player_key: string;
+  name: string;
+  mlb_team: string;
+  position: string;
+  /** Yahoo season rank; null if unavailable. */
+  rank: number | null;
+  /** Pick number minus season rank (capped at one past the last pick); positive = steal. */
+  value: number | null;
+}
+
+export interface UndraftedPlayer {
+  player_key: string;
+  name: string;
+  mlb_team: string;
+  position: string;
+  rank: number;
+}
+
+export interface DraftFile {
+  teams: Team[];
+  num_picks: number;
+  picks: DraftPick[];
+  undrafted: UndraftedPlayer[];
 }

@@ -1,4 +1,5 @@
 import { useData } from "./data";
+import Draft from "./pages/Draft";
 import Scoreboard from "./pages/Scoreboard";
 import Standings from "./pages/Standings";
 import Stats from "./pages/Stats";
@@ -9,6 +10,7 @@ const PAGES: { id: Page; label: string }[] = [
   { id: "standings", label: "Standings" },
   { id: "scoreboard", label: "Scoreboard" },
   { id: "stats", label: "Stats" },
+  { id: "draft", label: "Draft" },
 ];
 
 // Required by the Yahoo Fantasy API terms on every page showing Yahoo data:
@@ -90,6 +92,19 @@ export default function App() {
             season={season}
             week={Number(route.params.get("week")) || undefined}
             onWeekChange={(week) => navigate("scoreboard", { season: season.year, week }, true)}
+          />
+        )}
+        {route.page === "draft" && (
+          <Draft
+            season={season}
+            params={route.params}
+            onParamsChange={(updates) =>
+              navigate(
+                "draft",
+                { ...Object.fromEntries(route.params), season: season.year, ...updates },
+                true,
+              )
+            }
           />
         )}
         {route.page === "stats" && (

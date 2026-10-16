@@ -57,6 +57,7 @@ def test_season_summary(raw_season):
         "num_teams": 14,
         "playoff_start_week": 23,
         "is_finished": True,
+        "has_draft": False,
         "updated_at": "2026-10-01T00:00:00+00:00",
     }
 

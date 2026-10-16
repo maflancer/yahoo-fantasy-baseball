@@ -2,10 +2,11 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from typing import Any
 
 from fantasy_pipeline.bracket import RoundLabel, replay_playoffs
+from fantasy_pipeline.draft import build_draft, parse_players
 from fantasy_pipeline.leaders import season_leaders
 from fantasy_pipeline.parse import (
     Matchup,
@@ -29,6 +30,8 @@ class RawSeason:
     standings: list[dict[str, Any]]  # league.standings()
     teams: dict[str, dict[str, Any]]  # league.teams()
     matchups: list[dict[str, Any]]  # league.matchups(week) for each completed week
+    draft_results: list[dict[str, Any]] = field(default_factory=list)  # league.draft_results()
+    players: list[dict[str, Any]] = field(default_factory=list)  # player pages with ranks
 
 
 def team_directory(teams: dict[str, dict[str, Any]]) -> list[dict[str, str]]:
@@ -87,7 +90,7 @@ def build_season(raw: RawSeason) -> dict[str, dict[str, Any]]:
         week["matchups"] = [matchup_json(m, label) for m, label in labelled]
 
     teams = team_directory(raw.teams)
-    return {
+    docs = {
         "standings.json": {"teams": teams, "standings": build_standings(raw)},
         "scoreboard.json": {
             "teams": teams,
@@ -103,6 +106,11 @@ def build_season(raw: RawSeason) -> dict[str, dict[str, Any]]:
             ),
         },
     }
+    if raw.draft_results:
+        game_id = raw.draft_results[0]["team_key"].split(".")[0]
+        players = parse_players(raw.players, raw.year)
+        docs["draft.json"] = {"teams": teams, **build_draft(raw.draft_results, players, game_id)}
+    return docs
 
 
 def matchup_json(matchup: Matchup, label: RoundLabel | None = None) -> dict[str, Any]:
@@ -131,6 +139,7 @@ def season_summary(raw: RawSeason, updated_at: str) -> dict[str, Any]:
         "num_teams": _int_or_none(s.get("num_teams")),
         "playoff_start_week": _int_or_none(s.get("playoff_start_week")),
         "is_finished": str(s.get("is_finished", "0")) == "1",
+        "has_draft": bool(raw.draft_results),
         "updated_at": updated_at,
     }
 

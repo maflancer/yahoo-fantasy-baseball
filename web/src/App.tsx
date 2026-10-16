@@ -1,5 +1,6 @@
 import { useData } from "./data";
 import Draft from "./pages/Draft";
+import Moves from "./pages/Moves";
 import Scoreboard from "./pages/Scoreboard";
 import Standings from "./pages/Standings";
 import Stats from "./pages/Stats";
@@ -11,6 +12,7 @@ const PAGES: { id: Page; label: string }[] = [
   { id: "scoreboard", label: "Scoreboard" },
   { id: "stats", label: "Stats" },
   { id: "draft", label: "Draft" },
+  { id: "moves", label: "Moves" },
 ];
 
 // Required by the Yahoo Fantasy API terms on every page showing Yahoo data:
@@ -101,6 +103,19 @@ export default function App() {
             onParamsChange={(updates) =>
               navigate(
                 "draft",
+                { ...Object.fromEntries(route.params), season: season.year, ...updates },
+                true,
+              )
+            }
+          />
+        )}
+        {route.page === "moves" && (
+          <Moves
+            season={season}
+            params={route.params}
+            onParamsChange={(updates) =>
+              navigate(
+                "moves",
                 { ...Object.fromEntries(route.params), season: season.year, ...updates },
                 true,
               )

@@ -5,7 +5,8 @@ A stats site for a Yahoo Fantasy Baseball league: **[maflancer.github.io/yahoo-f
 - **Standings**: final or current standings for each season
 - **Scoreboard**: each week's matchups, category by category, plus the week's category leaders
 - **Stats**: season totals for every team, filterable by week range, and a week-by-week log
-- **Draft**: every pick compared with the player's season rank, with the biggest steals and busts, each team's draft, and the best undrafted players
+- **Draft**: every pick with the player's season rank and how long the drafting team kept him, plus the biggest steals and busts
+- **Moves**: every add, drop and trade, each team's activity, and the best pickups of the season
 
 Data is pulled from Yahoo every Monday by a GitHub Action, and the site is hosted on GitHub Pages.
 

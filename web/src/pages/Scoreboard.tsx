@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useData } from "../data";
+import { formatDate } from "../format";
 import type {
   CategoryLeader,
   Matchup,
@@ -18,13 +19,6 @@ const GROUPS: { type: string; label: string }[] = [
   { type: "B", label: "Batting" },
   { type: "P", label: "Pitching" },
 ];
-
-function formatDate(iso: string): string {
-  if (!iso) return "";
-  // Dates are plain YYYY-MM-DD; parse as local to avoid a timezone shift.
-  const [y, m, d] = iso.split("-").map(Number);
-  return new Date(y, m - 1, d).toLocaleDateString(undefined, { month: "short", day: "numeric" });
-}
 
 export default function Scoreboard({ season, week, onWeekChange }: Props) {
   const file = useData<ScoreboardFile>(`${season.year}/scoreboard.json`);

@@ -101,9 +101,17 @@ select {
   gap: 4px;
   border-bottom: 1px solid var(--border);
   margin-bottom: 16px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.tabs::-webkit-scrollbar {
+  display: none;
 }
 
 .tab {
+  flex-shrink: 0;
+  white-space: nowrap;
   padding: 8px 14px;
   color: var(--muted);
   text-decoration: none;
@@ -485,21 +493,123 @@ select {
   font-weight: 400;
 }
 
-.value {
+.draft-table td {
+  vertical-align: middle;
+}
+
+.highlight-note {
+  margin: -4px 0 4px;
+}
+
+.rank-badge {
   font-weight: 700;
   font-variant-numeric: tabular-nums;
+  color: var(--accent);
 }
 
-.value.good {
-  color: var(--good);
+.tenure {
+  white-space: normal;
+  font-size: 0.85rem;
 }
 
-.value.bad {
+.tenure.moved {
   color: var(--bad);
 }
 
-.draft-table td {
-  vertical-align: middle;
+/* Moves page */
+
+.filters .search {
+  flex: 1 1 180px;
+}
+
+.filters input[type="search"] {
+  font: inherit;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 6px 10px;
+  width: 100%;
+}
+
+.move-log {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.move-date {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  margin: 14px 0 6px;
+}
+
+.move {
+  border-left: 3px solid var(--border);
+  padding: 4px 0 4px 10px;
+  margin-bottom: 6px;
+}
+
+.move.move-trade {
+  border-left-color: var(--accent);
+}
+
+.move p {
+  margin: 2px 0;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.move-badge {
+  flex-shrink: 0;
+  width: 44px;
+  text-align: center;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 1px 0;
+  background: var(--stripe);
+  color: var(--muted);
+}
+
+.move-badge.add {
+  color: var(--good);
+}
+
+.move-badge.drop {
+  color: var(--bad);
+}
+
+.move-badge.trade {
+  color: var(--accent);
+}
+
+.move-player {
+  font-weight: 500;
+}
+
+.more {
+  font: inherit;
+  display: block;
+  margin: 12px auto 0;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+}
+
+.stints {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  white-space: normal;
+  font-size: 0.85rem;
 }
 
 .draft-table td .player {

@@ -6,7 +6,7 @@ from fantasy_pipeline.output import update_seasons_index, write_season
 
 def test_build_season_documents(raw_season):
     docs = build_season(raw_season, name_map={})
-    assert set(docs) == {"standings.json", "scoreboard.json"}
+    assert set(docs) == {"standings.json", "scoreboard.json", "stats.json"}
 
     standings = docs["standings.json"]["standings"]
     assert len(standings) == 14

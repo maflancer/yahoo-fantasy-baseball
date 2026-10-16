@@ -368,6 +368,79 @@ select {
   font-weight: 500;
 }
 
+/* Stats page */
+
+.segmented {
+  display: inline-flex;
+  background: var(--stripe);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 3px;
+  margin-bottom: 12px;
+}
+
+.segmented button {
+  font: inherit;
+  font-weight: 500;
+  color: var(--muted);
+  background: none;
+  border: 0;
+  border-radius: 999px;
+  padding: 6px 14px;
+  cursor: pointer;
+}
+
+.segmented button.active {
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.12);
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 10px 14px;
+  margin-bottom: 12px;
+}
+
+.filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.filters label.checkbox {
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text);
+  padding-bottom: 7px;
+}
+
+.stats-table td.best {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+/* Keep the first column visible while scrolling sideways. */
+.stats-table th:first-child,
+.stats-table td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background: var(--surface);
+}
+
+.stats-table tbody tr:nth-child(even) td:first-child {
+  background: var(--stripe);
+}
+
 /* Scoreboard matchups */
 
 .matchups {
@@ -521,6 +594,19 @@ select {
 }
 
 @media (max-width: 480px) {
+  .filters label:not(.checkbox) {
+    flex: 1 1 40%;
+  }
+
+  .filters select {
+    width: 100%;
+  }
+
+  .stats-table th,
+  .stats-table td {
+    padding: 6px 8px;
+  }
+
   .matchups {
     grid-template-columns: 1fr;
   }

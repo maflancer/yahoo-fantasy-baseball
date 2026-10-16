@@ -61,13 +61,19 @@ def manager_nickname(team_info: dict[str, Any]) -> str:
     return f"Team {team_info.get('team_id', '?')}"
 
 
-def parse_stat_categories(settings_raw: dict[str, Any]) -> list[StatCategory]:
-    """Scoring categories from the raw league settings, excluding display-only stats."""
+def parse_stat_categories(
+    settings_raw: dict[str, Any], display_only: bool = False
+) -> list[StatCategory]:
+    """Scoring categories from the raw league settings.
+
+    With display_only=True, returns the display-only stats instead (e.g. H/AB),
+    which aren't scored but are needed to total rate stats exactly.
+    """
     settings = _league_section(settings_raw)["settings"][0]
     categories = []
     for entry in settings["stat_categories"]["stats"]:
         stat = entry["stat"]
-        if _flag(stat.get("is_only_display_stat")):
+        if _flag(stat.get("is_only_display_stat")) != display_only:
             continue
         categories.append(
             StatCategory(
@@ -100,12 +106,20 @@ class Matchup:
     stat_winners: dict[str, str | None]
 
 
-def parse_scoreboard(matchups_raw: dict[str, Any], categories: list[StatCategory]) -> list[Matchup]:
-    """Every matchup in `league.matchups(week)`, however many Yahoo returns."""
+def parse_scoreboard(
+    matchups_raw: dict[str, Any],
+    categories: list[StatCategory],
+    display_stats: list[StatCategory] | None = None,
+) -> list[Matchup]:
+    """Every matchup in `league.matchups(week)`, however many Yahoo returns.
+
+    Side stats include the scoring categories plus any display_stats given.
+    """
     scoreboard = _league_section(matchups_raw)["scoreboard"]
     week = int(scoreboard["week"])
     matchups = scoreboard["0"]["matchups"]
     abbr_by_id = {c.stat_id: c.abbr for c in categories}
+    stat_abbr_by_id = {c.stat_id: c.abbr for c in [*categories, *(display_stats or [])]}
 
     parsed: list[Matchup] = []
     for i in range(int(matchups["count"])):
@@ -117,9 +131,9 @@ def parse_scoreboard(matchups_raw: dict[str, Any], categories: list[StatCategory
             team = teams[str(j)]["team"]
             info = _flatten(team[0])
             stats = {
-                abbr_by_id[str(s["stat"]["stat_id"])]: s["stat"]["value"]
+                stat_abbr_by_id[str(s["stat"]["stat_id"])]: s["stat"]["value"]
                 for s in team[1]["team_stats"]["stats"]
-                if str(s["stat"]["stat_id"]) in abbr_by_id
+                if str(s["stat"]["stat_id"]) in stat_abbr_by_id
             }
             points = team[1].get("team_points", {}).get("total", 0)
             sides.append(

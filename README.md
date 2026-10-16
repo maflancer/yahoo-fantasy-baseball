@@ -4,6 +4,7 @@ A small dashboard for a Yahoo Fantasy Baseball league: **[maflancer.github.io/ya
 
 - **Standings**: sortable league standings for each season
 - **Scoreboard**: every week's matchups with category-by-category results, plus that week's category leaders
+- **Stats**: season totals for every team (or any range of weeks, or per-week averages), and a sortable week-by-week log
 
 ## How it works
 
@@ -62,4 +63,5 @@ Past seasons can also be backfilled from GitHub: **Actions → Update data → R
 | --- | --- |
 | `seasons.json` | Every season: year, league name, team count, last updated |
 | `{year}/standings.json` | Final or current standings |
+| `{year}/stats.json` | One row per team per week, with the parts needed to total rate stats (H, AB, outs, ER, H+BB) |
 | `{year}/scoreboard.json` | For each completed week: matchups (scores, stats, category winners) and category leaders |

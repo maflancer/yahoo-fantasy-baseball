@@ -78,3 +78,34 @@ export interface ScoreboardFile {
   categories: StatCategory[];
   weeks: ScoreboardWeek[];
 }
+
+export type Aggregation =
+  | { type: "sum" }
+  | { type: "innings" }
+  | { type: "ratio"; num: string; den: string; scale: number; decimals: number }
+  | { type: "weighted"; weight: string; decimals: number; approximate: true };
+
+export interface StatsCategory extends StatCategory {
+  agg: Aggregation;
+}
+
+export interface StatsRow {
+  week: number;
+  team_key: string;
+  opponent_key: string | null;
+  result: "W" | "L" | "T";
+  /** [categories won, categories the opponent won] */
+  score: [number, number];
+  is_playoffs: boolean;
+  round?: string;
+  /** Numeric weekly values; innings are stored as outs. */
+  values: Record<string, number | null>;
+  /** Components for totalling rate stats: H, AB, outs, ER, WH. */
+  parts: Record<string, number>;
+}
+
+export interface StatsFile {
+  teams: Team[];
+  categories: StatsCategory[];
+  rows: StatsRow[];
+}

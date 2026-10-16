@@ -3,7 +3,7 @@
 A small dashboard for a Yahoo Fantasy Baseball league: **[maflancer.github.io/yahoo-fantasy-baseball](https://maflancer.github.io/yahoo-fantasy-baseball/)**
 
 - **Standings**: sortable league standings for each season
-- **Weekly Leaders**: who led every scoring category, week by week
+- **Scoreboard**: every week's matchups with category-by-category results, plus that week's category leaders
 
 ## How it works
 
@@ -16,6 +16,8 @@ Yahoo Fantasy API ──▶ pipeline/ (Python) ──▶ web/public/data/*.json 
 3. **`web/`** is a static React + TypeScript app with no UI libraries. It reads the JSON files and is deployed to GitHub Pages on every push to `main`.
 
 Only manager nicknames are published, never Yahoo team names.
+
+Fantasy data provided by [Yahoo Fantasy](https://sports.yahoo.com/fantasy/).
 
 ## Configuration
 
@@ -60,5 +62,4 @@ Past seasons can also be backfilled from GitHub: **Actions → Update data → R
 | --- | --- |
 | `seasons.json` | Every season: year, league name, team count, last updated |
 | `{year}/standings.json` | Final or current standings |
-| `{year}/leaders.json` | Category leaders for each completed week |
-| `{year}/weekly.json` | Every team's stats and result for every week |
+| `{year}/scoreboard.json` | For each completed week: matchups (scores, stats, category winners) and category leaders |

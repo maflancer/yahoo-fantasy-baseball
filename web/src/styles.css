@@ -141,8 +141,35 @@ select {
 .footer {
   color: var(--muted);
   font-size: 0.8rem;
-  text-align: center;
   margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 16px;
+}
+
+.attribution {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* The logo's "fantasy" text is black, so keep it on white in dark mode too. */
+.attribution img {
+  background: #fff;
+  border-radius: 4px;
+  padding: 3px 5px;
+  box-sizing: content-box;
+}
+
+.attribution:hover {
+  text-decoration: underline;
 }
 
 /* Standings table */
@@ -216,7 +243,19 @@ select {
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  margin-bottom: 8px;
+  padding: 12px;
+  position: sticky;
+  top: 8px;
+  z-index: 1;
+}
+
+.section {
+  margin-top: 20px;
+}
+
+.section-title {
+  font-size: 1rem;
+  margin: 0 0 8px;
 }
 
 .week-title {
@@ -269,7 +308,7 @@ select {
   cursor: default;
 }
 
-.leader-group h2 {
+.leader-group h3 {
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -329,7 +368,163 @@ select {
   font-weight: 500;
 }
 
+/* Scoreboard matchups */
+
+.matchups {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 8px;
+}
+
+.matchup {
+  position: relative;
+  padding: 0;
+}
+
+.matchup summary {
+  list-style: none;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 12px;
+}
+
+.matchup summary::-webkit-details-marker {
+  display: none;
+}
+
+.matchup summary:hover {
+  background: var(--stripe);
+  border-radius: 12px;
+}
+
+.side {
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.side.right {
+  text-align: right;
+}
+
+.side.won {
+  font-weight: 700;
+}
+
+.side.lost {
+  color: var(--muted);
+}
+
+.score {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 4px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.score .won {
+  color: var(--accent);
+}
+
+.score .lost,
+.score .dash {
+  color: var(--muted);
+}
+
+.ties {
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.round {
+  grid-column: 1 / -1;
+  justify-self: center;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: -4px;
+}
+
+.round.title {
+  color: var(--accent);
+}
+
+.round.placement {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.round.championship {
+  background: var(--badge-bg);
+  color: var(--badge-text);
+  border-radius: 999px;
+  padding: 2px 10px;
+}
+
+.matchup:has(.round.championship) {
+  border-color: var(--badge-text);
+}
+
+.breakdown {
+  width: 100%;
+  border-collapse: collapse;
+  border-top: 1px solid var(--border);
+  font-variant-numeric: tabular-nums;
+}
+
+.breakdown td,
+.breakdown th {
+  padding: 5px 12px;
+}
+
+.breakdown td:first-child {
+  text-align: left;
+}
+
+.breakdown td:last-child {
+  text-align: right;
+}
+
+.breakdown th {
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.breakdown tr:nth-child(even) {
+  background: var(--stripe);
+}
+
+.breakdown td.won {
+  color: var(--accent);
+  font-weight: 700;
+}
+
 @media (max-width: 480px) {
+  .matchups {
+    grid-template-columns: 1fr;
+  }
+
   .shell {
     padding: 12px;
   }

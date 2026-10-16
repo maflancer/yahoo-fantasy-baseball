@@ -81,19 +81,36 @@ def parse_stat_categories(settings_raw: dict[str, Any]) -> list[StatCategory]:
     return categories
 
 
-def parse_matchups(matchups_raw: dict[str, Any], categories: list[StatCategory]) -> list[TeamWeek]:
-    """One TeamWeek per team that played, from `league.matchups(week)`."""
+@dataclass(frozen=True)
+class MatchupSide:
+    team_key: str
+    manager: str
+    points: int  # categories won
+    stats: dict[str, str]  # keyed by category abbr, raw Yahoo values
+
+
+@dataclass(frozen=True)
+class Matchup:
+    week: int
+    sides: tuple[MatchupSide, ...]
+    winner_key: str | None  # None for a tie
+    is_playoffs: bool
+    is_consolation: bool
+    # Category abbr -> winning team key, or None when that category was tied.
+    stat_winners: dict[str, str | None]
+
+
+def parse_scoreboard(matchups_raw: dict[str, Any], categories: list[StatCategory]) -> list[Matchup]:
+    """Every matchup in `league.matchups(week)`, however many Yahoo returns."""
     scoreboard = _league_section(matchups_raw)["scoreboard"]
     week = int(scoreboard["week"])
     matchups = scoreboard["0"]["matchups"]
     abbr_by_id = {c.stat_id: c.abbr for c in categories}
 
-    rows: list[TeamWeek] = []
+    parsed: list[Matchup] = []
     for i in range(int(matchups["count"])):
         matchup = matchups[str(i)]["matchup"]
         teams = matchup["0"]["teams"]
-        is_tied = _flag(matchup.get("is_tied"))
-        winner = matchup.get("winner_team_key")
 
         sides = []
         for j in range(int(teams["count"])):
@@ -104,24 +121,59 @@ def parse_matchups(matchups_raw: dict[str, Any], categories: list[StatCategory])
                 for s in team[1]["team_stats"]["stats"]
                 if str(s["stat"]["stat_id"]) in abbr_by_id
             }
-            sides.append((info, stats))
-
-        for j, (info, stats) in enumerate(sides):
-            opponent = sides[1 - j][0] if len(sides) == 2 else {}
-            if is_tied or not winner:
-                result = "T"
-            else:
-                result = "W" if info["team_key"] == winner else "L"
-            rows.append(
-                TeamWeek(
-                    week=week,
+            points = team[1].get("team_points", {}).get("total", 0)
+            sides.append(
+                MatchupSide(
                     team_key=info["team_key"],
                     manager=manager_nickname(info),
-                    opponent_key=opponent.get("team_key", ""),
-                    result=result,
-                    is_playoffs=_flag(matchup.get("is_playoffs")),
-                    is_consolation=_flag(matchup.get("is_consolation")),
+                    points=int(float(points or 0)),
                     stats=stats,
+                )
+            )
+
+        stat_winners: dict[str, str | None] = {}
+        for entry in matchup.get("stat_winners", []):
+            winner = entry["stat_winner"]
+            abbr = abbr_by_id.get(str(winner["stat_id"]))
+            if abbr:
+                stat_winners[abbr] = (
+                    None if _flag(winner.get("is_tied")) else winner.get("winner_team_key")
+                )
+
+        is_tied = _flag(matchup.get("is_tied"))
+        parsed.append(
+            Matchup(
+                week=week,
+                sides=tuple(sides),
+                winner_key=None if is_tied else matchup.get("winner_team_key"),
+                is_playoffs=_flag(matchup.get("is_playoffs")),
+                is_consolation=_flag(matchup.get("is_consolation")),
+                stat_winners=stat_winners,
+            )
+        )
+    return parsed
+
+
+def parse_matchups(matchups_raw: dict[str, Any], categories: list[StatCategory]) -> list[TeamWeek]:
+    """One TeamWeek per team that played, from `league.matchups(week)`."""
+    rows: list[TeamWeek] = []
+    for matchup in parse_scoreboard(matchups_raw, categories):
+        for j, side in enumerate(matchup.sides):
+            opponent = matchup.sides[1 - j].team_key if len(matchup.sides) == 2 else ""
+            if matchup.winner_key is None:
+                result = "T"
+            else:
+                result = "W" if side.team_key == matchup.winner_key else "L"
+            rows.append(
+                TeamWeek(
+                    week=matchup.week,
+                    team_key=side.team_key,
+                    manager=side.manager,
+                    opponent_key=opponent,
+                    result=result,
+                    is_playoffs=matchup.is_playoffs,
+                    is_consolation=matchup.is_consolation,
+                    stats=side.stats,
                 )
             )
     return rows

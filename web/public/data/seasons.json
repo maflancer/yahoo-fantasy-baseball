@@ -6,7 +6,7 @@
   "num_teams": 14,
   "playoff_start_week": 23,
   "is_finished": true,
-  "updated_at": "2026-10-16T04:18:10+00:00"
+  "updated_at": "2026-10-16T04:59:12+00:00"
  },
  {
   "year": 2025,
@@ -15,7 +15,7 @@
   "num_teams": 14,
   "playoff_start_week": 22,
   "is_finished": true,
-  "updated_at": "2026-10-16T04:18:10+00:00"
+  "updated_at": "2026-10-16T04:59:12+00:00"
  },
  {
   "year": 2024,
@@ -24,7 +24,7 @@
   "num_teams": 14,
   "playoff_start_week": 22,
   "is_finished": true,
-  "updated_at": "2026-10-16T04:18:10+00:00"
+  "updated_at": "2026-10-16T04:59:12+00:00"
  },
  {
   "year": 2023,
@@ -33,6 +33,6 @@
   "num_teams": 12,
   "playoff_start_week": 23,
   "is_finished": true,
-  "updated_at": "2026-10-16T04:18:10+00:00"
+  "updated_at": "2026-10-16T04:59:12+00:00"
  }
 ]

@@ -45,16 +45,36 @@ export interface CategoryLeader {
   team_keys: string[];
 }
 
-export interface LeaderWeek {
+export interface MatchupTeam {
+  team_key: string;
+  points: number;
+  stats: Record<string, string>;
+}
+
+export interface Matchup {
+  winner_key: string | null;
+  is_playoffs: boolean;
+  is_consolation: boolean;
+  teams: MatchupTeam[];
+  /** Category abbr -> winning team key, or null when tied. */
+  stat_winners: Record<string, string | null>;
+  /** Playoff round, e.g. "Semifinal" or "5th place game". Absent in the regular season. */
+  round?: string;
+  /** True while the winner can still finish first. */
+  for_title?: boolean;
+}
+
+export interface ScoreboardWeek {
   week: number;
   start: string;
   end: string;
   is_playoffs: boolean;
+  matchups: Matchup[];
   leaders: CategoryLeader[];
 }
 
-export interface LeadersFile {
+export interface ScoreboardFile {
   teams: Team[];
   categories: StatCategory[];
-  weeks: LeaderWeek[];
+  weeks: ScoreboardWeek[];
 }

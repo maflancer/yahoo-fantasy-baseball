@@ -1,4 +1,4 @@
-from fantasy_pipeline.parse import managers_by_team, parse_matchups, week_dates
+from fantasy_pipeline.parse import managers_by_team, parse_matchups, parse_scoreboard, week_dates
 
 
 def test_stat_categories_skip_display_only_and_read_sort_order(categories):
@@ -51,3 +51,22 @@ def test_managers_by_team(teams):
     managers = managers_by_team(teams)
     assert len(managers) == 14
     assert all(not name.startswith("Team ") for name in managers.values())
+
+
+def test_scoreboard_points_and_tied_categories(week1, categories):
+    matchups = parse_scoreboard(week1, categories)
+    assert len(matchups) == 7
+    # Matchup 3 went 7-4 with home runs tied.
+    m = matchups[3]
+    assert [side.points for side in m.sides] == [7, 4]
+    assert m.stat_winners["HR"] is None
+    assert sum(winner is None for winner in m.stat_winners.values()) == 1
+    # Points match the number of categories each side won.
+    for side in m.sides:
+        assert side.points == sum(w == side.team_key for w in m.stat_winners.values())
+
+
+def test_scoreboard_playoff_week(week23, categories):
+    matchups = parse_scoreboard(week23, categories)
+    assert len(matchups) == 4
+    assert all(m.is_playoffs and m.winner_key for m in matchups)

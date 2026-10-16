@@ -1,13 +1,31 @@
 import { useData } from "./data";
-import Leaders from "./pages/Leaders";
+import Scoreboard from "./pages/Scoreboard";
 import Standings from "./pages/Standings";
 import { type Page, useRoute } from "./route";
 import type { SeasonSummary } from "./types";
 
 const PAGES: { id: Page; label: string }[] = [
   { id: "standings", label: "Standings" },
-  { id: "leaders", label: "Weekly Leaders" },
+  { id: "scoreboard", label: "Scoreboard" },
 ];
+
+// Required by the Yahoo Fantasy API terms on every page showing Yahoo data:
+// the exact phrase, a link to Yahoo Fantasy, and the unmodified official logo.
+// https://sports.yahoo.com/developer/
+const YAHOO_FANTASY_URL = "https://sports.yahoo.com/fantasy/";
+// The official SVG is a 293x293 square with the wordmark in a thin band; the
+// #svgView fragment frames just that band without altering the logo itself.
+const YAHOO_FANTASY_LOGO =
+  "https://763445962456-brand-assets.s3.us-west-2.amazonaws.com/brandwebsite/s3fs-public/Yahoo_Fantasy.svg#svgView(viewBox(58,131,177,31))";
+
+function YahooAttribution() {
+  return (
+    <a className="attribution" href={YAHOO_FANTASY_URL} target="_blank" rel="noopener noreferrer">
+      <img src={YAHOO_FANTASY_LOGO} alt="Yahoo Fantasy" width={103} height={18} />
+      Fantasy data provided by Yahoo Fantasy
+    </a>
+  );
+}
 
 export default function App() {
   const { route, navigate } = useRoute();
@@ -67,18 +85,17 @@ export default function App() {
         {route.page === "standings" ? (
           <Standings season={season} />
         ) : (
-          <Leaders
+          <Scoreboard
             season={season}
             week={Number(route.params.get("week")) || undefined}
-            onWeekChange={(week) =>
-              navigate("leaders", { season: season.year, week }, true)
-            }
+            onWeekChange={(week) => navigate("scoreboard", { season: season.year, week }, true)}
           />
         )}
       </main>
 
       <footer className="footer">
-        Data from Yahoo Fantasy · updated {new Date(season.updated_at).toLocaleDateString()}
+        <YahooAttribution />
+        <span>Updated {new Date(season.updated_at).toLocaleDateString()}</span>
       </footer>
     </div>
   );

@@ -5,7 +5,7 @@ from fantasy_pipeline.output import update_seasons_index, write_season
 
 
 def test_build_season_documents(raw_season):
-    docs = build_season(raw_season, name_map={})
+    docs = build_season(raw_season)
     assert set(docs) == {"standings.json", "scoreboard.json", "stats.json"}
 
     standings = docs["standings.json"]["standings"]
@@ -22,7 +22,7 @@ def test_build_season_documents(raw_season):
 
 
 def test_scoreboard_matchup_shape(raw_season):
-    week1 = build_season(raw_season, {})["scoreboard.json"]["weeks"][0]
+    week1 = build_season(raw_season)["scoreboard.json"]["weeks"][0]
     tie, win = week1["matchups"][0], week1["matchups"][1]
 
     assert tie["winner_key"] is None
@@ -35,25 +35,17 @@ def test_scoreboard_matchup_shape(raw_season):
 
 
 def test_playoff_rounds_labelled(raw_season):
-    week1, week23 = build_season(raw_season, {})["scoreboard.json"]["weeks"]
+    week1, week23 = build_season(raw_season)["scoreboard.json"]["weeks"]
     assert all("round" not in m for m in week1["matchups"])
     assert [m["round"] for m in week23["matchups"]] == ["Quarterfinal"] * 4
     assert all(m["for_title"] for m in week23["matchups"])
 
 
 def test_team_names_never_exposed(raw_season):
-    docs = build_season(raw_season, name_map={})
+    docs = build_season(raw_season)
     text = json.dumps(docs)
     # Fixture team names are "Team N"; output should only use manager nicknames.
     assert '"Team ' not in text
-
-
-def test_name_map_overrides_nickname(raw_season):
-    plain = build_season(raw_season, name_map={})["standings.json"]["teams"]
-    nickname = plain[0]["name"]
-    mapped = build_season(raw_season, name_map={nickname: "Renamed"})["standings.json"]["teams"]
-    assert mapped[0]["name"] == "Renamed"
-    assert [t["name"] for t in mapped[1:]] == [t["name"] for t in plain[1:]]
 
 
 def test_season_summary(raw_season):
@@ -70,7 +62,7 @@ def test_season_summary(raw_season):
 
 
 def test_write_season_reports_changes(tmp_path, raw_season):
-    docs = build_season(raw_season, {})
+    docs = build_season(raw_season)
     assert write_season(tmp_path, 2026, docs) is True
     assert (tmp_path / "2026" / "scoreboard.json").exists()
     assert write_season(tmp_path, 2026, docs) is False

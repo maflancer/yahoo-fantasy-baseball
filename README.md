@@ -16,7 +16,7 @@ Works with Yahoo head-to-head categories leagues.
 
 ### 1. Get Yahoo API access
 
-Create an app at [developer.yahoo.com/apps/create](https://developer.yahoo.com/apps/create/) with **Fantasy Sports (Read)** permission and `oob` as the redirect URI. Yahoo may ask you to describe your use case and accept the [Yahoo Fantasy developer terms](https://sports.yahoo.com/developer/). You'll get a **Client ID** and **Client Secret**.
+Create an app at [developer.yahoo.com/apps/create](https://developer.yahoo.com/apps/create/) with **Fantasy Sports (Read)** permission. Yahoo may ask you to describe your use case and accept the [Yahoo Fantasy developer terms](https://sports.yahoo.com/developer/). You'll get a **Client ID** and **Client Secret**.
 
 ### 2. Fork and configure
 
@@ -53,10 +53,6 @@ The first run prints a Yahoo URL. Open it, approve access, and paste the code ba
 4. Run **Actions → Deploy**, or push to `main`.
 
 From then on, the **Update data** workflow refreshes the data every Monday and redeploys. You can also run it manually to fetch a specific season.
-
-### Optional: display names
-
-Teams are shown by manager nickname. To rename them, add a `TEAM_NAME_MAP` secret with a JSON object, e.g. `{"nathan": "Nate"}`.
 
 ## Development
 

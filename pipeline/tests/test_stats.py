@@ -70,7 +70,7 @@ def test_row_parts_missing_stats():
 
 @pytest.fixture
 def stats_doc(raw_season):
-    return build_season(raw_season, {})["stats.json"]
+    return build_season(raw_season)["stats.json"]
 
 
 def test_one_row_per_team_week(stats_doc):

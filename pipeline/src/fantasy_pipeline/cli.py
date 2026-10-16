@@ -8,7 +8,7 @@ from datetime import UTC, datetime
 from pathlib import Path
 
 from fantasy_pipeline.build import build_season, season_summary
-from fantasy_pipeline.config import load_config, load_name_map
+from fantasy_pipeline.config import load_config
 from fantasy_pipeline.output import update_seasons_index, write_season
 
 logger = logging.getLogger("fantasy_pipeline")
@@ -35,7 +35,6 @@ def main(argv: list[str] | None = None) -> None:
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(message)s")
     args = parse_args(argv)
     config = load_config(args.config)
-    name_map = load_name_map()
 
     if args.all:
         seasons = list(config.seasons)
@@ -51,6 +50,6 @@ def main(argv: list[str] | None = None) -> None:
     updated_at = datetime.now(UTC).isoformat(timespec="seconds")
     for season in seasons:
         raw = fetch_season(oauth, config.game, season)
-        changed = write_season(config.output_dir, season.year, build_season(raw, name_map))
+        changed = write_season(config.output_dir, season.year, build_season(raw))
         update_seasons_index(config.output_dir, season_summary(raw, updated_at), changed)
         logger.info("%s: %s", season.year, "updated" if changed else "no changes")

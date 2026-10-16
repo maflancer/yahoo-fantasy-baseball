@@ -1,6 +1,6 @@
 import pytest
 
-from fantasy_pipeline.config import Season, load_config, load_name_map
+from fantasy_pipeline.config import Season, load_config
 from fantasy_pipeline.yahoo import last_completed_week
 
 
@@ -43,14 +43,6 @@ def test_repo_config_is_valid():
 
     config = load_config(Path(__file__).parents[2] / "config.toml")
     assert config.seasons
-
-
-def test_name_map():
-    assert load_name_map({}) == {}
-    assert load_name_map({"TEAM_NAME_MAP": ""}) == {}
-    assert load_name_map({"TEAM_NAME_MAP": '{"nathan": "Nate"}'}) == {"nathan": "Nate"}
-    with pytest.raises(ValueError):
-        load_name_map({"TEAM_NAME_MAP": '["nope"]'})
 
 
 @pytest.mark.parametrize(

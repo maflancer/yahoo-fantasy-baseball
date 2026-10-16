@@ -38,7 +38,6 @@ jobs:
 
       - name: Run pipeline
         env:
-          TEAM_NAME_MAP: ${{ secrets.TEAM_NAME_MAP }}
           SEASON: ${{ inputs.season }}
           ALL: ${{ inputs.all }}
         run: |

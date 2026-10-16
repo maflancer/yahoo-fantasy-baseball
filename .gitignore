@@ -1,0 +1,17 @@
+# Secrets
+oauth2.json
+.env
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# Node
+node_modules/
+dist/
+*.local
+
+.DS_Store

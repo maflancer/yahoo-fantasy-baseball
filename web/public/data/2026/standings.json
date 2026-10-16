@@ -1,0 +1,202 @@
+{
+ "teams": [
+  {
+   "team_key": "469.l.83828.t.1",
+   "name": "Jose"
+  },
+  {
+   "team_key": "469.l.83828.t.10",
+   "name": "Ian"
+  },
+  {
+   "team_key": "469.l.83828.t.11",
+   "name": "Zach"
+  },
+  {
+   "team_key": "469.l.83828.t.12",
+   "name": "JT"
+  },
+  {
+   "team_key": "469.l.83828.t.13",
+   "name": "dawson"
+  },
+  {
+   "team_key": "469.l.83828.t.14",
+   "name": "adam"
+  },
+  {
+   "team_key": "469.l.83828.t.2",
+   "name": "Jahn"
+  },
+  {
+   "team_key": "469.l.83828.t.3",
+   "name": "quinn"
+  },
+  {
+   "team_key": "469.l.83828.t.4",
+   "name": "gabriel"
+  },
+  {
+   "team_key": "469.l.83828.t.5",
+   "name": "Dante"
+  },
+  {
+   "team_key": "469.l.83828.t.6",
+   "name": "david"
+  },
+  {
+   "team_key": "469.l.83828.t.7",
+   "name": "nathan"
+  },
+  {
+   "team_key": "469.l.83828.t.8",
+   "name": "Ben"
+  },
+  {
+   "team_key": "469.l.83828.t.9",
+   "name": "Matt"
+  }
+ ],
+ "standings": [
+  {
+   "team_key": "469.l.83828.t.4",
+   "rank": 1,
+   "playoff_seed": 7,
+   "wins": 130,
+   "losses": 125,
+   "ties": 9,
+   "percentage": ".509",
+   "games_back": "24"
+  },
+  {
+   "team_key": "469.l.83828.t.11",
+   "rank": 2,
+   "playoff_seed": 4,
+   "wins": 134,
+   "losses": 122,
+   "ties": 8,
+   "percentage": ".523",
+   "games_back": "20.5"
+  },
+  {
+   "team_key": "469.l.83828.t.7",
+   "rank": 3,
+   "playoff_seed": 1,
+   "wins": 152,
+   "losses": 99,
+   "ties": 13,
+   "percentage": ".600",
+   "games_back": "-"
+  },
+  {
+   "team_key": "469.l.83828.t.12",
+   "rank": 4,
+   "playoff_seed": 3,
+   "wins": 135,
+   "losses": 119,
+   "ties": 10,
+   "percentage": ".530",
+   "games_back": "18.5"
+  },
+  {
+   "team_key": "469.l.83828.t.13",
+   "rank": 5,
+   "playoff_seed": 2,
+   "wins": 148,
+   "losses": 110,
+   "ties": 6,
+   "percentage": ".572",
+   "games_back": "7.5"
+  },
+  {
+   "team_key": "469.l.83828.t.1",
+   "rank": 6,
+   "playoff_seed": 5,
+   "wins": 133,
+   "losses": 124,
+   "ties": 7,
+   "percentage": ".517",
+   "games_back": "22"
+  },
+  {
+   "team_key": "469.l.83828.t.5",
+   "rank": 7,
+   "playoff_seed": 6,
+   "wins": 128,
+   "losses": 120,
+   "ties": 16,
+   "percentage": ".515",
+   "games_back": "22.5"
+  },
+  {
+   "team_key": "469.l.83828.t.10",
+   "rank": 8,
+   "playoff_seed": 8,
+   "wins": 129,
+   "losses": 129,
+   "ties": 6,
+   "percentage": ".500",
+   "games_back": "26.5"
+  },
+  {
+   "team_key": "469.l.83828.t.8",
+   "rank": 9,
+   "playoff_seed": null,
+   "wins": 125,
+   "losses": 127,
+   "ties": 12,
+   "percentage": ".496",
+   "games_back": "27.5"
+  },
+  {
+   "team_key": "469.l.83828.t.9",
+   "rank": 10,
+   "playoff_seed": null,
+   "wins": 125,
+   "losses": 129,
+   "ties": 10,
+   "percentage": ".492",
+   "games_back": "28.5"
+  },
+  {
+   "team_key": "469.l.83828.t.14",
+   "rank": 11,
+   "playoff_seed": null,
+   "wins": 123,
+   "losses": 131,
+   "ties": 10,
+   "percentage": ".485",
+   "games_back": "30.5"
+  },
+  {
+   "team_key": "469.l.83828.t.2",
+   "rank": 12,
+   "playoff_seed": null,
+   "wins": 119,
+   "losses": 140,
+   "ties": 5,
+   "percentage": ".460",
+   "games_back": "37"
+  },
+  {
+   "team_key": "469.l.83828.t.6",
+   "rank": 13,
+   "playoff_seed": null,
+   "wins": 104,
+   "losses": 150,
+   "ties": 10,
+   "percentage": ".413",
+   "games_back": "49.5"
+  },
+  {
+   "team_key": "469.l.83828.t.3",
+   "rank": 14,
+   "playoff_seed": null,
+   "wins": 97,
+   "losses": 157,
+   "ties": 10,
+   "percentage": ".386",
+   "games_back": "56.5"
+  }
+ ]
+}

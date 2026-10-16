@@ -1,0 +1,2478 @@
+{
+ "teams": [
+  {
+   "team_key": "422.l.132070.t.1",
+   "name": "Jose"
+  },
+  {
+   "team_key": "422.l.132070.t.10",
+   "name": "Matt"
+  },
+  {
+   "team_key": "422.l.132070.t.11",
+   "name": "Ian"
+  },
+  {
+   "team_key": "422.l.132070.t.12",
+   "name": "Zach"
+  },
+  {
+   "team_key": "422.l.132070.t.2",
+   "name": "Jahn"
+  },
+  {
+   "team_key": "422.l.132070.t.3",
+   "name": "quinn"
+  },
+  {
+   "team_key": "422.l.132070.t.4",
+   "name": "gabriel"
+  },
+  {
+   "team_key": "422.l.132070.t.5",
+   "name": "Dante"
+  },
+  {
+   "team_key": "422.l.132070.t.6",
+   "name": "Stephen"
+  },
+  {
+   "team_key": "422.l.132070.t.7",
+   "name": "david"
+  },
+  {
+   "team_key": "422.l.132070.t.8",
+   "name": "nathan"
+  },
+  {
+   "team_key": "422.l.132070.t.9",
+   "name": "Ben"
+  }
+ ],
+ "categories": [
+  {
+   "id": "7",
+   "abbr": "R",
+   "name": "Runs",
+   "higher_is_better": true,
+   "position_type": "B"
+  },
+  {
+   "id": "12",
+   "abbr": "HR",
+   "name": "Home Runs",
+   "higher_is_better": true,
+   "position_type": "B"
+  },
+  {
+   "id": "13",
+   "abbr": "RBI",
+   "name": "Runs Batted In",
+   "higher_is_better": true,
+   "position_type": "B"
+  },
+  {
+   "id": "16",
+   "abbr": "SB",
+   "name": "Stolen Bases",
+   "higher_is_better": true,
+   "position_type": "B"
+  },
+  {
+   "id": "23",
+   "abbr": "TB",
+   "name": "Total Bases",
+   "higher_is_better": true,
+   "position_type": "B"
+  },
+  {
+   "id": "3",
+   "abbr": "AVG",
+   "name": "Batting Average",
+   "higher_is_better": true,
+   "position_type": "B"
+  },
+  {
+   "id": "4",
+   "abbr": "OBP",
+   "name": "On-base Percentage",
+   "higher_is_better": true,
+   "position_type": "B"
+  },
+  {
+   "id": "50",
+   "abbr": "IP",
+   "name": "Innings Pitched",
+   "higher_is_better": true,
+   "position_type": "P"
+  },
+  {
+   "id": "42",
+   "abbr": "K",
+   "name": "Strikeouts",
+   "higher_is_better": true,
+   "position_type": "P"
+  },
+  {
+   "id": "26",
+   "abbr": "ERA",
+   "name": "Earned Run Average",
+   "higher_is_better": false,
+   "position_type": "P"
+  },
+  {
+   "id": "27",
+   "abbr": "WHIP",
+   "name": "(Walks + Hits)/ Innings Pitched",
+   "higher_is_better": false,
+   "position_type": "P"
+  },
+  {
+   "id": "89",
+   "abbr": "SV+H",
+   "name": "Saves + Holds",
+   "higher_is_better": true,
+   "position_type": "P"
+  }
+ ],
+ "weeks": [
+  {
+   "week": 1,
+   "start": "2023-03-30",
+   "end": "2023-04-09",
+   "is_playoffs": false,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "64",
+     "team_keys": [
+      "422.l.132070.t.8"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "17",
+     "team_keys": [
+      "422.l.132070.t.4",
+      "422.l.132070.t.5"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "62",
+     "team_keys": [
+      "422.l.132070.t.12"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "13",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "188",
+     "team_keys": [
+      "422.l.132070.t.12"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".309",
+     "team_keys": [
+      "422.l.132070.t.12"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".375",
+     "team_keys": [
+      "422.l.132070.t.12"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "89.1",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "103",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "1.82",
+     "team_keys": [
+      "422.l.132070.t.3"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "0.99",
+     "team_keys": [
+      "422.l.132070.t.3"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "9",
+     "team_keys": [
+      "422.l.132070.t.10",
+      "422.l.132070.t.4"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 2,
+   "start": "2023-04-10",
+   "end": "2023-04-16",
+   "is_playoffs": false,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "48",
+     "team_keys": [
+      "422.l.132070.t.4"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "17",
+     "team_keys": [
+      "422.l.132070.t.4"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "51",
+     "team_keys": [
+      "422.l.132070.t.6"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "12",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "131",
+     "team_keys": [
+      "422.l.132070.t.4"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".303",
+     "team_keys": [
+      "422.l.132070.t.9"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".404",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "68.0",
+     "team_keys": [
+      "422.l.132070.t.7"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "72",
+     "team_keys": [
+      "422.l.132070.t.7"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "1.36",
+     "team_keys": [
+      "422.l.132070.t.11"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "0.78",
+     "team_keys": [
+      "422.l.132070.t.11"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "6",
+     "team_keys": [
+      "422.l.132070.t.2",
+      "422.l.132070.t.4",
+      "422.l.132070.t.11"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 3,
+   "start": "2023-04-17",
+   "end": "2023-04-23",
+   "is_playoffs": false,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "44",
+     "team_keys": [
+      "422.l.132070.t.12"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "16",
+     "team_keys": [
+      "422.l.132070.t.12"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "45",
+     "team_keys": [
+      "422.l.132070.t.11"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "10",
+     "team_keys": [
+      "422.l.132070.t.7"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "129",
+     "team_keys": [
+      "422.l.132070.t.12"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".288",
+     "team_keys": [
+      "422.l.132070.t.4"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".363",
+     "team_keys": [
+      "422.l.132070.t.12"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "75.0",
+     "team_keys": [
+      "422.l.132070.t.4"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "86",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "1.84",
+     "team_keys": [
+      "422.l.132070.t.9"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "0.82",
+     "team_keys": [
+      "422.l.132070.t.9"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "8",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 4,
+   "start": "2023-04-24",
+   "end": "2023-04-30",
+   "is_playoffs": false,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "38",
+     "team_keys": [
+      "422.l.132070.t.4"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "12",
+     "team_keys": [
+      "422.l.132070.t.3"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "39",
+     "team_keys": [
+      "422.l.132070.t.3"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "10",
+     "team_keys": [
+      "422.l.132070.t.7"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "110",
+     "team_keys": [
+      "422.l.132070.t.3"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".284",
+     "team_keys": [
+      "422.l.132070.t.7"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".349",
+     "team_keys": [
+      "422.l.132070.t.6",
+      "422.l.132070.t.7"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "66.1",
+     "team_keys": [
+      "422.l.132070.t.12"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "75",
+     "team_keys": [
+      "422.l.132070.t.12"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "1.85",
+     "team_keys": [
+      "422.l.132070.t.9"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "0.82",
+     "team_keys": [
+      "422.l.132070.t.9"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "6",
+     "team_keys": [
+      "422.l.132070.t.1",
+      "422.l.132070.t.9",
+      "422.l.132070.t.4",
+      "422.l.132070.t.7"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 5,
+   "start": "2023-05-01",
+   "end": "2023-05-07",
+   "is_playoffs": false,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "46",
+     "team_keys": [
+      "422.l.132070.t.7"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "13",
+     "team_keys": [
+      "422.l.132070.t.3",
+      "422.l.132070.t.4",
+      "422.l.132070.t.9"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "46",
+     "team_keys": [
+      "422.l.132070.t.4"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "9",
+     "team_keys": [
+      "422.l.132070.t.2"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "127",
+     "team_keys": [
+      "422.l.132070.t.4"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".305",
+     "team_keys": [
+      "422.l.132070.t.3"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".392",
+     "team_keys": [
+      "422.l.132070.t.3"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "67.1",
+     "team_keys": [
+      "422.l.132070.t.8"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "65",
+     "team_keys": [
+      "422.l.132070.t.12"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "2.55",
+     "team_keys": [
+      "422.l.132070.t.7"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "0.98",
+     "team_keys": [
+      "422.l.132070.t.7"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "10",
+     "team_keys": [
+      "422.l.132070.t.4"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 6,
+   "start": "2023-05-08",
+   "end": "2023-05-14",
+   "is_playoffs": false,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "37",
+     "team_keys": [
+      "422.l.132070.t.12"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "11",
+     "team_keys": [
+      "422.l.132070.t.2",
+      "422.l.132070.t.8"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "41",
+     "team_keys": [
+      "422.l.132070.t.4"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "10",
+     "team_keys": [
+      "422.l.132070.t.9",
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "107",
+     "team_keys": [
+      "422.l.132070.t.7"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".277",
+     "team_keys": [
+      "422.l.132070.t.4"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".346",
+     "team_keys": [
+      "422.l.132070.t.12"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "76.0",
+     "team_keys": [
+      "422.l.132070.t.2"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "85",
+     "team_keys": [
+      "422.l.132070.t.8"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "2.14",
+     "team_keys": [
+      "422.l.132070.t.4"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "0.84",
+     "team_keys": [
+      "422.l.132070.t.6"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "10",
+     "team_keys": [
+      "422.l.132070.t.4"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 7,
+   "start": "2023-05-15",
+   "end": "2023-05-21",
+   "is_playoffs": false,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "42",
+     "team_keys": [
+      "422.l.132070.t.12"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "15",
+     "team_keys": [
+      "422.l.132070.t.8"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "46",
+     "team_keys": [
+      "422.l.132070.t.8"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "13",
+     "team_keys": [
+      "422.l.132070.t.7"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "128",
+     "team_keys": [
+      "422.l.132070.t.8"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".302",
+     "team_keys": [
+      "422.l.132070.t.3"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".385",
+     "team_keys": [
+      "422.l.132070.t.3"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "71.1",
+     "team_keys": [
+      "422.l.132070.t.1"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "74",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "2.33",
+     "team_keys": [
+      "422.l.132070.t.6"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "1.09",
+     "team_keys": [
+      "422.l.132070.t.6"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "9",
+     "team_keys": [
+      "422.l.132070.t.4"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 8,
+   "start": "2023-05-22",
+   "end": "2023-05-28",
+   "is_playoffs": false,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "43",
+     "team_keys": [
+      "422.l.132070.t.6"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "14",
+     "team_keys": [
+      "422.l.132070.t.6"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "44",
+     "team_keys": [
+      "422.l.132070.t.1"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "10",
+     "team_keys": [
+      "422.l.132070.t.2"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "128",
+     "team_keys": [
+      "422.l.132070.t.6"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".308",
+     "team_keys": [
+      "422.l.132070.t.6"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".376",
+     "team_keys": [
+      "422.l.132070.t.6",
+      "422.l.132070.t.4"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "78.2",
+     "team_keys": [
+      "422.l.132070.t.3",
+      "422.l.132070.t.4"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "87",
+     "team_keys": [
+      "422.l.132070.t.4"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "2.40",
+     "team_keys": [
+      "422.l.132070.t.4"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "1.13",
+     "team_keys": [
+      "422.l.132070.t.4"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "8",
+     "team_keys": [
+      "422.l.132070.t.1"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 9,
+   "start": "2023-05-29",
+   "end": "2023-06-04",
+   "is_playoffs": false,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "33",
+     "team_keys": [
+      "422.l.132070.t.1",
+      "422.l.132070.t.8",
+      "422.l.132070.t.3"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "11",
+     "team_keys": [
+      "422.l.132070.t.11"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "36",
+     "team_keys": [
+      "422.l.132070.t.9"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "12",
+     "team_keys": [
+      "422.l.132070.t.3"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "105",
+     "team_keys": [
+      "422.l.132070.t.12"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".280",
+     "team_keys": [
+      "422.l.132070.t.12"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".347",
+     "team_keys": [
+      "422.l.132070.t.1"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "82.1",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "82",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "1.84",
+     "team_keys": [
+      "422.l.132070.t.9"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "0.99",
+     "team_keys": [
+      "422.l.132070.t.6"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "9",
+     "team_keys": [
+      "422.l.132070.t.6"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 10,
+   "start": "2023-06-05",
+   "end": "2023-06-11",
+   "is_playoffs": false,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "40",
+     "team_keys": [
+      "422.l.132070.t.10",
+      "422.l.132070.t.8"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "15",
+     "team_keys": [
+      "422.l.132070.t.8"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "41",
+     "team_keys": [
+      "422.l.132070.t.8"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "9",
+     "team_keys": [
+      "422.l.132070.t.10",
+      "422.l.132070.t.8"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "120",
+     "team_keys": [
+      "422.l.132070.t.8"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".303",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".372",
+     "team_keys": [
+      "422.l.132070.t.3"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "81.0",
+     "team_keys": [
+      "422.l.132070.t.8"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "78",
+     "team_keys": [
+      "422.l.132070.t.8"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "2.22",
+     "team_keys": [
+      "422.l.132070.t.8"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "0.78",
+     "team_keys": [
+      "422.l.132070.t.5"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "8",
+     "team_keys": [
+      "422.l.132070.t.4"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 11,
+   "start": "2023-06-12",
+   "end": "2023-06-18",
+   "is_playoffs": false,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "53",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "14",
+     "team_keys": [
+      "422.l.132070.t.1"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "46",
+     "team_keys": [
+      "422.l.132070.t.6"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "14",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "139",
+     "team_keys": [
+      "422.l.132070.t.10",
+      "422.l.132070.t.7"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".333",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".411",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "78.1",
+     "team_keys": [
+      "422.l.132070.t.1"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "92",
+     "team_keys": [
+      "422.l.132070.t.1"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "2.41",
+     "team_keys": [
+      "422.l.132070.t.4"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "1.03",
+     "team_keys": [
+      "422.l.132070.t.8"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "8",
+     "team_keys": [
+      "422.l.132070.t.6"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "start": "2023-06-19",
+   "end": "2023-06-25",
+   "is_playoffs": false,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "41",
+     "team_keys": [
+      "422.l.132070.t.8"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "16",
+     "team_keys": [
+      "422.l.132070.t.3"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "54",
+     "team_keys": [
+      "422.l.132070.t.3"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "11",
+     "team_keys": [
+      "422.l.132070.t.10",
+      "422.l.132070.t.6"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "128",
+     "team_keys": [
+      "422.l.132070.t.3"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".315",
+     "team_keys": [
+      "422.l.132070.t.4"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".396",
+     "team_keys": [
+      "422.l.132070.t.4"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "92.2",
+     "team_keys": [
+      "422.l.132070.t.8"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "97",
+     "team_keys": [
+      "422.l.132070.t.8"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "2.57",
+     "team_keys": [
+      "422.l.132070.t.9"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "1.04",
+     "team_keys": [
+      "422.l.132070.t.1"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "9",
+     "team_keys": [
+      "422.l.132070.t.4",
+      "422.l.132070.t.12"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 13,
+   "start": "2023-06-26",
+   "end": "2023-07-02",
+   "is_playoffs": false,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "42",
+     "team_keys": [
+      "422.l.132070.t.8"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "16",
+     "team_keys": [
+      "422.l.132070.t.8"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "43",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "8",
+     "team_keys": [
+      "422.l.132070.t.10",
+      "422.l.132070.t.7",
+      "422.l.132070.t.5"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "129",
+     "team_keys": [
+      "422.l.132070.t.8"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".288",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".348",
+     "team_keys": [
+      "422.l.132070.t.8",
+      "422.l.132070.t.4"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "82.2",
+     "team_keys": [
+      "422.l.132070.t.3"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "76",
+     "team_keys": [
+      "422.l.132070.t.3"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "2.66",
+     "team_keys": [
+      "422.l.132070.t.6"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "0.86",
+     "team_keys": [
+      "422.l.132070.t.11"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "8",
+     "team_keys": [
+      "422.l.132070.t.4"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 14,
+   "start": "2023-07-03",
+   "end": "2023-07-09",
+   "is_playoffs": false,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "41",
+     "team_keys": [
+      "422.l.132070.t.4",
+      "422.l.132070.t.8"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "17",
+     "team_keys": [
+      "422.l.132070.t.11"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "45",
+     "team_keys": [
+      "422.l.132070.t.11"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "13",
+     "team_keys": [
+      "422.l.132070.t.8"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "120",
+     "team_keys": [
+      "422.l.132070.t.3"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".283",
+     "team_keys": [
+      "422.l.132070.t.8"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".360",
+     "team_keys": [
+      "422.l.132070.t.8"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "82.2",
+     "team_keys": [
+      "422.l.132070.t.8"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "89",
+     "team_keys": [
+      "422.l.132070.t.8"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "1.95",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "1.00",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "8",
+     "team_keys": [
+      "422.l.132070.t.4",
+      "422.l.132070.t.7"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 15,
+   "start": "2023-07-10",
+   "end": "2023-07-23",
+   "is_playoffs": false,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "67",
+     "team_keys": [
+      "422.l.132070.t.8"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "22",
+     "team_keys": [
+      "422.l.132070.t.7",
+      "422.l.132070.t.8"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "67",
+     "team_keys": [
+      "422.l.132070.t.8"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "14",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "189",
+     "team_keys": [
+      "422.l.132070.t.8"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".290",
+     "team_keys": [
+      "422.l.132070.t.5"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".376",
+     "team_keys": [
+      "422.l.132070.t.5"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "122.2",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "111",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "3.17",
+     "team_keys": [
+      "422.l.132070.t.12"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "1.13",
+     "team_keys": [
+      "422.l.132070.t.6"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "17",
+     "team_keys": [
+      "422.l.132070.t.4"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 16,
+   "start": "2023-07-24",
+   "end": "2023-07-30",
+   "is_playoffs": false,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "43",
+     "team_keys": [
+      "422.l.132070.t.7"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "17",
+     "team_keys": [
+      "422.l.132070.t.7"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "51",
+     "team_keys": [
+      "422.l.132070.t.7"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "9",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "128",
+     "team_keys": [
+      "422.l.132070.t.7"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".292",
+     "team_keys": [
+      "422.l.132070.t.9"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".361",
+     "team_keys": [
+      "422.l.132070.t.3",
+      "422.l.132070.t.8"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "69.2",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "73",
+     "team_keys": [
+      "422.l.132070.t.8"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "2.28",
+     "team_keys": [
+      "422.l.132070.t.4"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "0.94",
+     "team_keys": [
+      "422.l.132070.t.1"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "7",
+     "team_keys": [
+      "422.l.132070.t.4"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 17,
+   "start": "2023-07-31",
+   "end": "2023-08-06",
+   "is_playoffs": false,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "44",
+     "team_keys": [
+      "422.l.132070.t.3"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "17",
+     "team_keys": [
+      "422.l.132070.t.9",
+      "422.l.132070.t.11"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "44",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "14",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "134",
+     "team_keys": [
+      "422.l.132070.t.3"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".320",
+     "team_keys": [
+      "422.l.132070.t.4"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".393",
+     "team_keys": [
+      "422.l.132070.t.4"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "92.1",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "89",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "2.84",
+     "team_keys": [
+      "422.l.132070.t.7"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "0.95",
+     "team_keys": [
+      "422.l.132070.t.7"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "9",
+     "team_keys": [
+      "422.l.132070.t.4",
+      "422.l.132070.t.12"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 18,
+   "start": "2023-08-07",
+   "end": "2023-08-13",
+   "is_playoffs": false,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "47",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "13",
+     "team_keys": [
+      "422.l.132070.t.7"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "46",
+     "team_keys": [
+      "422.l.132070.t.2"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "11",
+     "team_keys": [
+      "422.l.132070.t.9"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "126",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".331",
+     "team_keys": [
+      "422.l.132070.t.5"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".408",
+     "team_keys": [
+      "422.l.132070.t.5"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "91.2",
+     "team_keys": [
+      "422.l.132070.t.7"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "89",
+     "team_keys": [
+      "422.l.132070.t.7"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "2.13",
+     "team_keys": [
+      "422.l.132070.t.1"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "0.95",
+     "team_keys": [
+      "422.l.132070.t.11"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "7",
+     "team_keys": [
+      "422.l.132070.t.1",
+      "422.l.132070.t.3"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 19,
+   "start": "2023-08-14",
+   "end": "2023-08-20",
+   "is_playoffs": false,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "50",
+     "team_keys": [
+      "422.l.132070.t.6"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "17",
+     "team_keys": [
+      "422.l.132070.t.6"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "61",
+     "team_keys": [
+      "422.l.132070.t.6"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "9",
+     "team_keys": [
+      "422.l.132070.t.6"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "162",
+     "team_keys": [
+      "422.l.132070.t.6"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".330",
+     "team_keys": [
+      "422.l.132070.t.6"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".386",
+     "team_keys": [
+      "422.l.132070.t.6"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "75.2",
+     "team_keys": [
+      "422.l.132070.t.8"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "74",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "2.03",
+     "team_keys": [
+      "422.l.132070.t.12"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "1.06",
+     "team_keys": [
+      "422.l.132070.t.11"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "8",
+     "team_keys": [
+      "422.l.132070.t.12"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 20,
+   "start": "2023-08-21",
+   "end": "2023-08-27",
+   "is_playoffs": false,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "44",
+     "team_keys": [
+      "422.l.132070.t.8"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "18",
+     "team_keys": [
+      "422.l.132070.t.6"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "48",
+     "team_keys": [
+      "422.l.132070.t.7"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "11",
+     "team_keys": [
+      "422.l.132070.t.8",
+      "422.l.132070.t.7"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "139",
+     "team_keys": [
+      "422.l.132070.t.3"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".343",
+     "team_keys": [
+      "422.l.132070.t.3"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".396",
+     "team_keys": [
+      "422.l.132070.t.3"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "77.0",
+     "team_keys": [
+      "422.l.132070.t.3"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "88",
+     "team_keys": [
+      "422.l.132070.t.11"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "2.47",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "0.86",
+     "team_keys": [
+      "422.l.132070.t.11"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "7",
+     "team_keys": [
+      "422.l.132070.t.1",
+      "422.l.132070.t.4"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 21,
+   "start": "2023-08-28",
+   "end": "2023-09-03",
+   "is_playoffs": false,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "51",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "21",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "49",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "9",
+     "team_keys": [
+      "422.l.132070.t.5",
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "150",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".290",
+     "team_keys": [
+      "422.l.132070.t.9"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".378",
+     "team_keys": [
+      "422.l.132070.t.9"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "74.2",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "73",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "2.52",
+     "team_keys": [
+      "422.l.132070.t.6"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "1.16",
+     "team_keys": [
+      "422.l.132070.t.1"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "9",
+     "team_keys": [
+      "422.l.132070.t.2",
+      "422.l.132070.t.12"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 22,
+   "start": "2023-09-04",
+   "end": "2023-09-10",
+   "is_playoffs": false,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "47",
+     "team_keys": [
+      "422.l.132070.t.4"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "21",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "54",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "9",
+     "team_keys": [
+      "422.l.132070.t.9"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "146",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".329",
+     "team_keys": [
+      "422.l.132070.t.7"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".381",
+     "team_keys": [
+      "422.l.132070.t.4"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "76.0",
+     "team_keys": [
+      "422.l.132070.t.2"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "84",
+     "team_keys": [
+      "422.l.132070.t.2"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "2.44",
+     "team_keys": [
+      "422.l.132070.t.4"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "0.96",
+     "team_keys": [
+      "422.l.132070.t.12"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "8",
+     "team_keys": [
+      "422.l.132070.t.4"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 23,
+   "start": "2023-09-11",
+   "end": "2023-09-17",
+   "is_playoffs": true,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "44",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "14",
+     "team_keys": [
+      "422.l.132070.t.1"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "50",
+     "team_keys": [
+      "422.l.132070.t.1"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "12",
+     "team_keys": [
+      "422.l.132070.t.9"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "130",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".307",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".358",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "92.2",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "99",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "2.38",
+     "team_keys": [
+      "422.l.132070.t.4"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "1.08",
+     "team_keys": [
+      "422.l.132070.t.4"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "6",
+     "team_keys": [
+      "422.l.132070.t.4",
+      "422.l.132070.t.6",
+      "422.l.132070.t.10"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 24,
+   "start": "2023-09-18",
+   "end": "2023-09-24",
+   "is_playoffs": true,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "44",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "13",
+     "team_keys": [
+      "422.l.132070.t.7"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "42",
+     "team_keys": [
+      "422.l.132070.t.3"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "10",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "115",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".308",
+     "team_keys": [
+      "422.l.132070.t.3"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".390",
+     "team_keys": [
+      "422.l.132070.t.3"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "82.2",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "92",
+     "team_keys": [
+      "422.l.132070.t.1"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "1.80",
+     "team_keys": [
+      "422.l.132070.t.6"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "0.99",
+     "team_keys": [
+      "422.l.132070.t.4"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "8",
+     "team_keys": [
+      "422.l.132070.t.3"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 25,
+   "start": "2023-09-25",
+   "end": "2023-10-01",
+   "is_playoffs": true,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "32",
+     "team_keys": [
+      "422.l.132070.t.8"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "9",
+     "team_keys": [
+      "422.l.132070.t.7",
+      "422.l.132070.t.6"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "32",
+     "team_keys": [
+      "422.l.132070.t.4"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "9",
+     "team_keys": [
+      "422.l.132070.t.8"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "89",
+     "team_keys": [
+      "422.l.132070.t.8"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".294",
+     "team_keys": [
+      "422.l.132070.t.1"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".388",
+     "team_keys": [
+      "422.l.132070.t.4"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "85.1",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "98",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "1.99",
+     "team_keys": [
+      "422.l.132070.t.6"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "0.80",
+     "team_keys": [
+      "422.l.132070.t.10"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "11",
+     "team_keys": [
+      "422.l.132070.t.4"
+     ]
+    }
+   ]
+  }
+ ]
+}

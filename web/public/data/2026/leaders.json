@@ -1,0 +1,2479 @@
+{
+ "teams": [
+  {
+   "team_key": "469.l.83828.t.1",
+   "name": "Jose"
+  },
+  {
+   "team_key": "469.l.83828.t.10",
+   "name": "Ian"
+  },
+  {
+   "team_key": "469.l.83828.t.11",
+   "name": "Zach"
+  },
+  {
+   "team_key": "469.l.83828.t.12",
+   "name": "JT"
+  },
+  {
+   "team_key": "469.l.83828.t.13",
+   "name": "dawson"
+  },
+  {
+   "team_key": "469.l.83828.t.14",
+   "name": "adam"
+  },
+  {
+   "team_key": "469.l.83828.t.2",
+   "name": "Jahn"
+  },
+  {
+   "team_key": "469.l.83828.t.3",
+   "name": "quinn"
+  },
+  {
+   "team_key": "469.l.83828.t.4",
+   "name": "gabriel"
+  },
+  {
+   "team_key": "469.l.83828.t.5",
+   "name": "Dante"
+  },
+  {
+   "team_key": "469.l.83828.t.6",
+   "name": "david"
+  },
+  {
+   "team_key": "469.l.83828.t.7",
+   "name": "nathan"
+  },
+  {
+   "team_key": "469.l.83828.t.8",
+   "name": "Ben"
+  },
+  {
+   "team_key": "469.l.83828.t.9",
+   "name": "Matt"
+  }
+ ],
+ "categories": [
+  {
+   "id": "7",
+   "abbr": "R",
+   "name": "Runs",
+   "higher_is_better": true,
+   "position_type": "B"
+  },
+  {
+   "id": "12",
+   "abbr": "HR",
+   "name": "Home Runs",
+   "higher_is_better": true,
+   "position_type": "B"
+  },
+  {
+   "id": "13",
+   "abbr": "RBI",
+   "name": "Runs Batted In",
+   "higher_is_better": true,
+   "position_type": "B"
+  },
+  {
+   "id": "16",
+   "abbr": "SB",
+   "name": "Stolen Bases",
+   "higher_is_better": true,
+   "position_type": "B"
+  },
+  {
+   "id": "23",
+   "abbr": "TB",
+   "name": "Total Bases",
+   "higher_is_better": true,
+   "position_type": "B"
+  },
+  {
+   "id": "3",
+   "abbr": "AVG",
+   "name": "Batting Average",
+   "higher_is_better": true,
+   "position_type": "B"
+  },
+  {
+   "id": "4",
+   "abbr": "OBP",
+   "name": "On-base Percentage",
+   "higher_is_better": true,
+   "position_type": "B"
+  },
+  {
+   "id": "50",
+   "abbr": "IP",
+   "name": "Innings Pitched",
+   "higher_is_better": true,
+   "position_type": "P"
+  },
+  {
+   "id": "42",
+   "abbr": "K",
+   "name": "Strikeouts",
+   "higher_is_better": true,
+   "position_type": "P"
+  },
+  {
+   "id": "26",
+   "abbr": "ERA",
+   "name": "Earned Run Average",
+   "higher_is_better": false,
+   "position_type": "P"
+  },
+  {
+   "id": "27",
+   "abbr": "WHIP",
+   "name": "(Walks + Hits)/ Innings Pitched",
+   "higher_is_better": false,
+   "position_type": "P"
+  },
+  {
+   "id": "89",
+   "abbr": "SV+H",
+   "name": "Saves + Holds",
+   "higher_is_better": true,
+   "position_type": "P"
+  }
+ ],
+ "weeks": [
+  {
+   "week": 1,
+   "start": "2026-03-25",
+   "end": "2026-03-29",
+   "is_playoffs": false,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "24",
+     "team_keys": [
+      "469.l.83828.t.10"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "12",
+     "team_keys": [
+      "469.l.83828.t.10"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "23",
+     "team_keys": [
+      "469.l.83828.t.5",
+      "469.l.83828.t.10"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "6",
+     "team_keys": [
+      "469.l.83828.t.5"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "82",
+     "team_keys": [
+      "469.l.83828.t.10"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".284",
+     "team_keys": [
+      "469.l.83828.t.10"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".378",
+     "team_keys": [
+      "469.l.83828.t.4"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "38.0",
+     "team_keys": [
+      "469.l.83828.t.1"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "49",
+     "team_keys": [
+      "469.l.83828.t.1"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "0.32",
+     "team_keys": [
+      "469.l.83828.t.12"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "0.67",
+     "team_keys": [
+      "469.l.83828.t.12"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "6",
+     "team_keys": [
+      "469.l.83828.t.11"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 2,
+   "start": "2026-03-30",
+   "end": "2026-04-05",
+   "is_playoffs": false,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "40",
+     "team_keys": [
+      "469.l.83828.t.6",
+      "469.l.83828.t.13"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "11",
+     "team_keys": [
+      "469.l.83828.t.4"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "39",
+     "team_keys": [
+      "469.l.83828.t.6"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "12",
+     "team_keys": [
+      "469.l.83828.t.11"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "108",
+     "team_keys": [
+      "469.l.83828.t.6",
+      "469.l.83828.t.13"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".316",
+     "team_keys": [
+      "469.l.83828.t.6"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".385",
+     "team_keys": [
+      "469.l.83828.t.6"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "64.2",
+     "team_keys": [
+      "469.l.83828.t.2"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "71",
+     "team_keys": [
+      "469.l.83828.t.2"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "1.56",
+     "team_keys": [
+      "469.l.83828.t.6"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "0.78",
+     "team_keys": [
+      "469.l.83828.t.6"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "6",
+     "team_keys": [
+      "469.l.83828.t.11"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 3,
+   "start": "2026-04-06",
+   "end": "2026-04-12",
+   "is_playoffs": false,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "38",
+     "team_keys": [
+      "469.l.83828.t.8"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "11",
+     "team_keys": [
+      "469.l.83828.t.4"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "36",
+     "team_keys": [
+      "469.l.83828.t.4"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "17",
+     "team_keys": [
+      "469.l.83828.t.11"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "103",
+     "team_keys": [
+      "469.l.83828.t.7"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".293",
+     "team_keys": [
+      "469.l.83828.t.2"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".373",
+     "team_keys": [
+      "469.l.83828.t.7"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "68.2",
+     "team_keys": [
+      "469.l.83828.t.12"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "79",
+     "team_keys": [
+      "469.l.83828.t.2"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "2.10",
+     "team_keys": [
+      "469.l.83828.t.13"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "1.02",
+     "team_keys": [
+      "469.l.83828.t.13"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "6",
+     "team_keys": [
+      "469.l.83828.t.14"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 4,
+   "start": "2026-04-13",
+   "end": "2026-04-19",
+   "is_playoffs": false,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "47",
+     "team_keys": [
+      "469.l.83828.t.12"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "22",
+     "team_keys": [
+      "469.l.83828.t.12"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "47",
+     "team_keys": [
+      "469.l.83828.t.10"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "8",
+     "team_keys": [
+      "469.l.83828.t.14"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "136",
+     "team_keys": [
+      "469.l.83828.t.12"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".307",
+     "team_keys": [
+      "469.l.83828.t.10"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".380",
+     "team_keys": [
+      "469.l.83828.t.10"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "73.2",
+     "team_keys": [
+      "469.l.83828.t.13"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "74",
+     "team_keys": [
+      "469.l.83828.t.12"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "2.57",
+     "team_keys": [
+      "469.l.83828.t.13"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "0.99",
+     "team_keys": [
+      "469.l.83828.t.13"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "7",
+     "team_keys": [
+      "469.l.83828.t.12",
+      "469.l.83828.t.4"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 5,
+   "start": "2026-04-20",
+   "end": "2026-04-26",
+   "is_playoffs": false,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "40",
+     "team_keys": [
+      "469.l.83828.t.5"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "14",
+     "team_keys": [
+      "469.l.83828.t.2",
+      "469.l.83828.t.3"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "41",
+     "team_keys": [
+      "469.l.83828.t.8"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "11",
+     "team_keys": [
+      "469.l.83828.t.11"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "126",
+     "team_keys": [
+      "469.l.83828.t.3"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".323",
+     "team_keys": [
+      "469.l.83828.t.3"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".403",
+     "team_keys": [
+      "469.l.83828.t.3"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "92.0",
+     "team_keys": [
+      "469.l.83828.t.9"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "83",
+     "team_keys": [
+      "469.l.83828.t.9"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "1.58",
+     "team_keys": [
+      "469.l.83828.t.8"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "0.85",
+     "team_keys": [
+      "469.l.83828.t.8"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "8",
+     "team_keys": [
+      "469.l.83828.t.11"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 6,
+   "start": "2026-04-27",
+   "end": "2026-05-03",
+   "is_playoffs": false,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "42",
+     "team_keys": [
+      "469.l.83828.t.5"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "14",
+     "team_keys": [
+      "469.l.83828.t.12"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "46",
+     "team_keys": [
+      "469.l.83828.t.5"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "8",
+     "team_keys": [
+      "469.l.83828.t.4"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "117",
+     "team_keys": [
+      "469.l.83828.t.6"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".305",
+     "team_keys": [
+      "469.l.83828.t.6"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".387",
+     "team_keys": [
+      "469.l.83828.t.5"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "66.1",
+     "team_keys": [
+      "469.l.83828.t.9"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "66",
+     "team_keys": [
+      "469.l.83828.t.9"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "1.70",
+     "team_keys": [
+      "469.l.83828.t.3"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "1.06",
+     "team_keys": [
+      "469.l.83828.t.3"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "6",
+     "team_keys": [
+      "469.l.83828.t.11"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 7,
+   "start": "2026-05-04",
+   "end": "2026-05-10",
+   "is_playoffs": false,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "38",
+     "team_keys": [
+      "469.l.83828.t.11"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "14",
+     "team_keys": [
+      "469.l.83828.t.10"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "39",
+     "team_keys": [
+      "469.l.83828.t.4"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "12",
+     "team_keys": [
+      "469.l.83828.t.5"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "112",
+     "team_keys": [
+      "469.l.83828.t.11",
+      "469.l.83828.t.4"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".289",
+     "team_keys": [
+      "469.l.83828.t.9"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".362",
+     "team_keys": [
+      "469.l.83828.t.4"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "75.0",
+     "team_keys": [
+      "469.l.83828.t.10"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "76",
+     "team_keys": [
+      "469.l.83828.t.7"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "2.60",
+     "team_keys": [
+      "469.l.83828.t.6"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "0.92",
+     "team_keys": [
+      "469.l.83828.t.7"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "6",
+     "team_keys": [
+      "469.l.83828.t.14"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 8,
+   "start": "2026-05-11",
+   "end": "2026-05-17",
+   "is_playoffs": false,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "41",
+     "team_keys": [
+      "469.l.83828.t.7"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "11",
+     "team_keys": [
+      "469.l.83828.t.3",
+      "469.l.83828.t.10"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "38",
+     "team_keys": [
+      "469.l.83828.t.8"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "9",
+     "team_keys": [
+      "469.l.83828.t.1",
+      "469.l.83828.t.14",
+      "469.l.83828.t.11"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "106",
+     "team_keys": [
+      "469.l.83828.t.3"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".270",
+     "team_keys": [
+      "469.l.83828.t.1"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".361",
+     "team_keys": [
+      "469.l.83828.t.4"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "84.2",
+     "team_keys": [
+      "469.l.83828.t.5"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "74",
+     "team_keys": [
+      "469.l.83828.t.7"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "2.56",
+     "team_keys": [
+      "469.l.83828.t.2"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "1.09",
+     "team_keys": [
+      "469.l.83828.t.1",
+      "469.l.83828.t.12"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "5",
+     "team_keys": [
+      "469.l.83828.t.5",
+      "469.l.83828.t.6"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 9,
+   "start": "2026-05-18",
+   "end": "2026-05-24",
+   "is_playoffs": false,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "39",
+     "team_keys": [
+      "469.l.83828.t.1"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "13",
+     "team_keys": [
+      "469.l.83828.t.9",
+      "469.l.83828.t.12"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "40",
+     "team_keys": [
+      "469.l.83828.t.9"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "9",
+     "team_keys": [
+      "469.l.83828.t.1",
+      "469.l.83828.t.14",
+      "469.l.83828.t.11"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "119",
+     "team_keys": [
+      "469.l.83828.t.9"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".279",
+     "team_keys": [
+      "469.l.83828.t.1"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".400",
+     "team_keys": [
+      "469.l.83828.t.13"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "72.2",
+     "team_keys": [
+      "469.l.83828.t.9"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "76",
+     "team_keys": [
+      "469.l.83828.t.2"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "1.56",
+     "team_keys": [
+      "469.l.83828.t.12"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "0.94",
+     "team_keys": [
+      "469.l.83828.t.2"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "8",
+     "team_keys": [
+      "469.l.83828.t.11"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 10,
+   "start": "2026-05-25",
+   "end": "2026-05-31",
+   "is_playoffs": false,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "41",
+     "team_keys": [
+      "469.l.83828.t.4"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "15",
+     "team_keys": [
+      "469.l.83828.t.10"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "44",
+     "team_keys": [
+      "469.l.83828.t.1"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "9",
+     "team_keys": [
+      "469.l.83828.t.1"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "129",
+     "team_keys": [
+      "469.l.83828.t.5"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".307",
+     "team_keys": [
+      "469.l.83828.t.13"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".376",
+     "team_keys": [
+      "469.l.83828.t.5"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "77.0",
+     "team_keys": [
+      "469.l.83828.t.9"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "82",
+     "team_keys": [
+      "469.l.83828.t.1"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "0.74",
+     "team_keys": [
+      "469.l.83828.t.12"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "0.96",
+     "team_keys": [
+      "469.l.83828.t.12"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "6",
+     "team_keys": [
+      "469.l.83828.t.4",
+      "469.l.83828.t.13"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 11,
+   "start": "2026-06-01",
+   "end": "2026-06-07",
+   "is_playoffs": false,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "43",
+     "team_keys": [
+      "469.l.83828.t.8"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "15",
+     "team_keys": [
+      "469.l.83828.t.9"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "40",
+     "team_keys": [
+      "469.l.83828.t.8"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "10",
+     "team_keys": [
+      "469.l.83828.t.11"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "131",
+     "team_keys": [
+      "469.l.83828.t.9"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".308",
+     "team_keys": [
+      "469.l.83828.t.9"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".371",
+     "team_keys": [
+      "469.l.83828.t.9"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "74.0",
+     "team_keys": [
+      "469.l.83828.t.1"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "68",
+     "team_keys": [
+      "469.l.83828.t.1"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "2.48",
+     "team_keys": [
+      "469.l.83828.t.3"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "0.78",
+     "team_keys": [
+      "469.l.83828.t.3"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "7",
+     "team_keys": [
+      "469.l.83828.t.11"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "start": "2026-06-08",
+   "end": "2026-06-14",
+   "is_playoffs": false,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "43",
+     "team_keys": [
+      "469.l.83828.t.5",
+      "469.l.83828.t.8"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "17",
+     "team_keys": [
+      "469.l.83828.t.8"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "54",
+     "team_keys": [
+      "469.l.83828.t.8"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "9",
+     "team_keys": [
+      "469.l.83828.t.14"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "126",
+     "team_keys": [
+      "469.l.83828.t.8"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".301",
+     "team_keys": [
+      "469.l.83828.t.12"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".385",
+     "team_keys": [
+      "469.l.83828.t.3"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "74.2",
+     "team_keys": [
+      "469.l.83828.t.5"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "74",
+     "team_keys": [
+      "469.l.83828.t.4"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "2.98",
+     "team_keys": [
+      "469.l.83828.t.3"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "1.06",
+     "team_keys": [
+      "469.l.83828.t.10"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "8",
+     "team_keys": [
+      "469.l.83828.t.11"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 13,
+   "start": "2026-06-15",
+   "end": "2026-06-21",
+   "is_playoffs": false,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "44",
+     "team_keys": [
+      "469.l.83828.t.5"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "20",
+     "team_keys": [
+      "469.l.83828.t.5"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "45",
+     "team_keys": [
+      "469.l.83828.t.5"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "8",
+     "team_keys": [
+      "469.l.83828.t.13",
+      "469.l.83828.t.11"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "141",
+     "team_keys": [
+      "469.l.83828.t.5"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".300",
+     "team_keys": [
+      "469.l.83828.t.1"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".372",
+     "team_keys": [
+      "469.l.83828.t.14"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "74.2",
+     "team_keys": [
+      "469.l.83828.t.2"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "76",
+     "team_keys": [
+      "469.l.83828.t.1"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "1.27",
+     "team_keys": [
+      "469.l.83828.t.9"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "0.84",
+     "team_keys": [
+      "469.l.83828.t.9"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "7",
+     "team_keys": [
+      "469.l.83828.t.12"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 14,
+   "start": "2026-06-22",
+   "end": "2026-06-28",
+   "is_playoffs": false,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "36",
+     "team_keys": [
+      "469.l.83828.t.9"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "15",
+     "team_keys": [
+      "469.l.83828.t.2"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "46",
+     "team_keys": [
+      "469.l.83828.t.7"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "8",
+     "team_keys": [
+      "469.l.83828.t.11"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "120",
+     "team_keys": [
+      "469.l.83828.t.7"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".285",
+     "team_keys": [
+      "469.l.83828.t.9"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".358",
+     "team_keys": [
+      "469.l.83828.t.11"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "86.0",
+     "team_keys": [
+      "469.l.83828.t.9"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "89",
+     "team_keys": [
+      "469.l.83828.t.9"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "1.81",
+     "team_keys": [
+      "469.l.83828.t.1"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "1.00",
+     "team_keys": [
+      "469.l.83828.t.9",
+      "469.l.83828.t.6"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "7",
+     "team_keys": [
+      "469.l.83828.t.13"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 15,
+   "start": "2026-06-29",
+   "end": "2026-07-05",
+   "is_playoffs": false,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "55",
+     "team_keys": [
+      "469.l.83828.t.14"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "22",
+     "team_keys": [
+      "469.l.83828.t.14"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "57",
+     "team_keys": [
+      "469.l.83828.t.14"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "9",
+     "team_keys": [
+      "469.l.83828.t.3",
+      "469.l.83828.t.13"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "171",
+     "team_keys": [
+      "469.l.83828.t.14"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".336",
+     "team_keys": [
+      "469.l.83828.t.14"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".411",
+     "team_keys": [
+      "469.l.83828.t.6"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "79.0",
+     "team_keys": [
+      "469.l.83828.t.1"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "81",
+     "team_keys": [
+      "469.l.83828.t.2"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "2.48",
+     "team_keys": [
+      "469.l.83828.t.12"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "0.90",
+     "team_keys": [
+      "469.l.83828.t.12"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "7",
+     "team_keys": [
+      "469.l.83828.t.12"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 16,
+   "start": "2026-07-06",
+   "end": "2026-07-12",
+   "is_playoffs": false,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "45",
+     "team_keys": [
+      "469.l.83828.t.12"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "13",
+     "team_keys": [
+      "469.l.83828.t.12"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "38",
+     "team_keys": [
+      "469.l.83828.t.12"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "11",
+     "team_keys": [
+      "469.l.83828.t.10"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "116",
+     "team_keys": [
+      "469.l.83828.t.12"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".284",
+     "team_keys": [
+      "469.l.83828.t.12"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".363",
+     "team_keys": [
+      "469.l.83828.t.12"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "71.1",
+     "team_keys": [
+      "469.l.83828.t.1"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "81",
+     "team_keys": [
+      "469.l.83828.t.7"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "3.05",
+     "team_keys": [
+      "469.l.83828.t.14"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "1.02",
+     "team_keys": [
+      "469.l.83828.t.7"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "8",
+     "team_keys": [
+      "469.l.83828.t.12"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 17,
+   "start": "2026-07-13",
+   "end": "2026-07-26",
+   "is_playoffs": false,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "54",
+     "team_keys": [
+      "469.l.83828.t.5",
+      "469.l.83828.t.6"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "18",
+     "team_keys": [
+      "469.l.83828.t.1",
+      "469.l.83828.t.5"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "61",
+     "team_keys": [
+      "469.l.83828.t.5"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "10",
+     "team_keys": [
+      "469.l.83828.t.9"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "173",
+     "team_keys": [
+      "469.l.83828.t.5"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".298",
+     "team_keys": [
+      "469.l.83828.t.4"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".385",
+     "team_keys": [
+      "469.l.83828.t.4"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "100.2",
+     "team_keys": [
+      "469.l.83828.t.3"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "94",
+     "team_keys": [
+      "469.l.83828.t.1",
+      "469.l.83828.t.14"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "2.31",
+     "team_keys": [
+      "469.l.83828.t.14"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "1.04",
+     "team_keys": [
+      "469.l.83828.t.2"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "10",
+     "team_keys": [
+      "469.l.83828.t.12"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 18,
+   "start": "2026-07-27",
+   "end": "2026-08-02",
+   "is_playoffs": false,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "38",
+     "team_keys": [
+      "469.l.83828.t.9"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "13",
+     "team_keys": [
+      "469.l.83828.t.14"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "49",
+     "team_keys": [
+      "469.l.83828.t.11"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "11",
+     "team_keys": [
+      "469.l.83828.t.9"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "123",
+     "team_keys": [
+      "469.l.83828.t.14"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".291",
+     "team_keys": [
+      "469.l.83828.t.8"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".355",
+     "team_keys": [
+      "469.l.83828.t.8"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "88.1",
+     "team_keys": [
+      "469.l.83828.t.1"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "94",
+     "team_keys": [
+      "469.l.83828.t.1"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "2.85",
+     "team_keys": [
+      "469.l.83828.t.1"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "0.86",
+     "team_keys": [
+      "469.l.83828.t.2"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "8",
+     "team_keys": [
+      "469.l.83828.t.11"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 19,
+   "start": "2026-08-03",
+   "end": "2026-08-09",
+   "is_playoffs": false,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "42",
+     "team_keys": [
+      "469.l.83828.t.5"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "14",
+     "team_keys": [
+      "469.l.83828.t.4"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "40",
+     "team_keys": [
+      "469.l.83828.t.8"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "10",
+     "team_keys": [
+      "469.l.83828.t.5"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "111",
+     "team_keys": [
+      "469.l.83828.t.13"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".283",
+     "team_keys": [
+      "469.l.83828.t.11"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".347",
+     "team_keys": [
+      "469.l.83828.t.6"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "77.2",
+     "team_keys": [
+      "469.l.83828.t.14"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "67",
+     "team_keys": [
+      "469.l.83828.t.14"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "3.00",
+     "team_keys": [
+      "469.l.83828.t.3"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "1.05",
+     "team_keys": [
+      "469.l.83828.t.12"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "6",
+     "team_keys": [
+      "469.l.83828.t.13",
+      "469.l.83828.t.14"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 20,
+   "start": "2026-08-10",
+   "end": "2026-08-16",
+   "is_playoffs": false,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "37",
+     "team_keys": [
+      "469.l.83828.t.11"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "12",
+     "team_keys": [
+      "469.l.83828.t.3",
+      "469.l.83828.t.7"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "50",
+     "team_keys": [
+      "469.l.83828.t.1"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "7",
+     "team_keys": [
+      "469.l.83828.t.1"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "121",
+     "team_keys": [
+      "469.l.83828.t.7"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".308",
+     "team_keys": [
+      "469.l.83828.t.9"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".386",
+     "team_keys": [
+      "469.l.83828.t.9"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "79.1",
+     "team_keys": [
+      "469.l.83828.t.13"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "79",
+     "team_keys": [
+      "469.l.83828.t.9"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "1.34",
+     "team_keys": [
+      "469.l.83828.t.14"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "0.65",
+     "team_keys": [
+      "469.l.83828.t.14"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "9",
+     "team_keys": [
+      "469.l.83828.t.14"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 21,
+   "start": "2026-08-17",
+   "end": "2026-08-23",
+   "is_playoffs": false,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "42",
+     "team_keys": [
+      "469.l.83828.t.4"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "12",
+     "team_keys": [
+      "469.l.83828.t.13",
+      "469.l.83828.t.5"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "38",
+     "team_keys": [
+      "469.l.83828.t.10"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "9",
+     "team_keys": [
+      "469.l.83828.t.11"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "124",
+     "team_keys": [
+      "469.l.83828.t.5"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".317",
+     "team_keys": [
+      "469.l.83828.t.5"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".384",
+     "team_keys": [
+      "469.l.83828.t.7"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "70.0",
+     "team_keys": [
+      "469.l.83828.t.4"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "83",
+     "team_keys": [
+      "469.l.83828.t.2"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "2.71",
+     "team_keys": [
+      "469.l.83828.t.2"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "1.13",
+     "team_keys": [
+      "469.l.83828.t.2"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "11",
+     "team_keys": [
+      "469.l.83828.t.11"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 22,
+   "start": "2026-08-24",
+   "end": "2026-08-30",
+   "is_playoffs": false,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "40",
+     "team_keys": [
+      "469.l.83828.t.14"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "13",
+     "team_keys": [
+      "469.l.83828.t.3"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "40",
+     "team_keys": [
+      "469.l.83828.t.3"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "10",
+     "team_keys": [
+      "469.l.83828.t.12"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "119",
+     "team_keys": [
+      "469.l.83828.t.3"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".287",
+     "team_keys": [
+      "469.l.83828.t.3"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".383",
+     "team_keys": [
+      "469.l.83828.t.11"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "71.2",
+     "team_keys": [
+      "469.l.83828.t.12"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "67",
+     "team_keys": [
+      "469.l.83828.t.2"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "1.35",
+     "team_keys": [
+      "469.l.83828.t.6"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "0.93",
+     "team_keys": [
+      "469.l.83828.t.6",
+      "469.l.83828.t.12"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "6",
+     "team_keys": [
+      "469.l.83828.t.6",
+      "469.l.83828.t.7"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 23,
+   "start": "2026-08-31",
+   "end": "2026-09-06",
+   "is_playoffs": true,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "40",
+     "team_keys": [
+      "469.l.83828.t.5"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "12",
+     "team_keys": [
+      "469.l.83828.t.12"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "45",
+     "team_keys": [
+      "469.l.83828.t.12"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "9",
+     "team_keys": [
+      "469.l.83828.t.11"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "121",
+     "team_keys": [
+      "469.l.83828.t.11"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".336",
+     "team_keys": [
+      "469.l.83828.t.11"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".419",
+     "team_keys": [
+      "469.l.83828.t.11"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "75.0",
+     "team_keys": [
+      "469.l.83828.t.4"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "87",
+     "team_keys": [
+      "469.l.83828.t.4"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "3.12",
+     "team_keys": [
+      "469.l.83828.t.4"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "1.10",
+     "team_keys": [
+      "469.l.83828.t.7"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "5",
+     "team_keys": [
+      "469.l.83828.t.11",
+      "469.l.83828.t.13",
+      "469.l.83828.t.7"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 24,
+   "start": "2026-09-07",
+   "end": "2026-09-13",
+   "is_playoffs": true,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "39",
+     "team_keys": [
+      "469.l.83828.t.10"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "16",
+     "team_keys": [
+      "469.l.83828.t.4"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "41",
+     "team_keys": [
+      "469.l.83828.t.4"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "8",
+     "team_keys": [
+      "469.l.83828.t.13"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "113",
+     "team_keys": [
+      "469.l.83828.t.4"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".295",
+     "team_keys": [
+      "469.l.83828.t.11"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".361",
+     "team_keys": [
+      "469.l.83828.t.13"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "68.0",
+     "team_keys": [
+      "469.l.83828.t.4"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "70",
+     "team_keys": [
+      "469.l.83828.t.4"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "2.91",
+     "team_keys": [
+      "469.l.83828.t.4"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "0.96",
+     "team_keys": [
+      "469.l.83828.t.11"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "6",
+     "team_keys": [
+      "469.l.83828.t.7",
+      "469.l.83828.t.12"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 25,
+   "start": "2026-09-14",
+   "end": "2026-09-20",
+   "is_playoffs": true,
+   "leaders": [
+    {
+     "stat": "R",
+     "value": "44",
+     "team_keys": [
+      "469.l.83828.t.4"
+     ]
+    },
+    {
+     "stat": "HR",
+     "value": "12",
+     "team_keys": [
+      "469.l.83828.t.7"
+     ]
+    },
+    {
+     "stat": "RBI",
+     "value": "42",
+     "team_keys": [
+      "469.l.83828.t.7"
+     ]
+    },
+    {
+     "stat": "SB",
+     "value": "9",
+     "team_keys": [
+      "469.l.83828.t.5"
+     ]
+    },
+    {
+     "stat": "TB",
+     "value": "111",
+     "team_keys": [
+      "469.l.83828.t.11",
+      "469.l.83828.t.7"
+     ]
+    },
+    {
+     "stat": "AVG",
+     "value": ".293",
+     "team_keys": [
+      "469.l.83828.t.13"
+     ]
+    },
+    {
+     "stat": "OBP",
+     "value": ".401",
+     "team_keys": [
+      "469.l.83828.t.7"
+     ]
+    },
+    {
+     "stat": "IP",
+     "value": "72.1",
+     "team_keys": [
+      "469.l.83828.t.10"
+     ]
+    },
+    {
+     "stat": "K",
+     "value": "68",
+     "team_keys": [
+      "469.l.83828.t.11"
+     ]
+    },
+    {
+     "stat": "ERA",
+     "value": "2.21",
+     "team_keys": [
+      "469.l.83828.t.7"
+     ]
+    },
+    {
+     "stat": "WHIP",
+     "value": "0.97",
+     "team_keys": [
+      "469.l.83828.t.5"
+     ]
+    },
+    {
+     "stat": "SV+H",
+     "value": "8",
+     "team_keys": [
+      "469.l.83828.t.12"
+     ]
+    }
+   ]
+  }
+ ]
+}

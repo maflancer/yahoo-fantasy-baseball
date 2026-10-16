@@ -1,0 +1,178 @@
+[
+ {
+  "team_key": "469.l.83828.t.4",
+  "name": "Team 4",
+  "rank": 1,
+  "playoff_seed": "7",
+  "outcome_totals": {
+   "wins": "130",
+   "losses": "125",
+   "ties": "9",
+   "percentage": ".509"
+  },
+  "games_back": "24"
+ },
+ {
+  "team_key": "469.l.83828.t.11",
+  "name": "Team 11",
+  "rank": 2,
+  "playoff_seed": "4",
+  "outcome_totals": {
+   "wins": "134",
+   "losses": "122",
+   "ties": "8",
+   "percentage": ".523"
+  },
+  "games_back": "20.5"
+ },
+ {
+  "team_key": "469.l.83828.t.7",
+  "name": "Team 7",
+  "rank": 3,
+  "playoff_seed": "1",
+  "outcome_totals": {
+   "wins": "152",
+   "losses": "99",
+   "ties": "13",
+   "percentage": ".600"
+  },
+  "games_back": "-"
+ },
+ {
+  "team_key": "469.l.83828.t.12",
+  "name": "Team 12",
+  "rank": 4,
+  "playoff_seed": "3",
+  "outcome_totals": {
+   "wins": "135",
+   "losses": "119",
+   "ties": "10",
+   "percentage": ".530"
+  },
+  "games_back": "18.5"
+ },
+ {
+  "team_key": "469.l.83828.t.13",
+  "name": "Team 13",
+  "rank": 5,
+  "playoff_seed": "2",
+  "outcome_totals": {
+   "wins": "148",
+   "losses": "110",
+   "ties": "6",
+   "percentage": ".572"
+  },
+  "games_back": "7.5"
+ },
+ {
+  "team_key": "469.l.83828.t.1",
+  "name": "Team 1",
+  "rank": 6,
+  "playoff_seed": "5",
+  "outcome_totals": {
+   "wins": "133",
+   "losses": "124",
+   "ties": "7",
+   "percentage": ".517"
+  },
+  "games_back": "22"
+ },
+ {
+  "team_key": "469.l.83828.t.5",
+  "name": "Team 5",
+  "rank": 7,
+  "playoff_seed": "6",
+  "outcome_totals": {
+   "wins": "128",
+   "losses": "120",
+   "ties": "16",
+   "percentage": ".515"
+  },
+  "games_back": "22.5"
+ },
+ {
+  "team_key": "469.l.83828.t.10",
+  "name": "Team 10",
+  "rank": 8,
+  "playoff_seed": "8",
+  "outcome_totals": {
+   "wins": "129",
+   "losses": "129",
+   "ties": "6",
+   "percentage": ".500"
+  },
+  "games_back": "26.5"
+ },
+ {
+  "team_key": "469.l.83828.t.8",
+  "name": "Team 8",
+  "rank": "9",
+  "outcome_totals": {
+   "wins": "125",
+   "losses": "127",
+   "ties": "12",
+   "percentage": ".496"
+  },
+  "games_back": "27.5"
+ },
+ {
+  "team_key": "469.l.83828.t.9",
+  "name": "Team 9",
+  "rank": "10",
+  "outcome_totals": {
+   "wins": "125",
+   "losses": "129",
+   "ties": "10",
+   "percentage": ".492"
+  },
+  "games_back": "28.5"
+ },
+ {
+  "team_key": "469.l.83828.t.14",
+  "name": "Team 14",
+  "rank": "11",
+  "outcome_totals": {
+   "wins": "123",
+   "losses": "131",
+   "ties": "10",
+   "percentage": ".485"
+  },
+  "games_back": "30.5"
+ },
+ {
+  "team_key": "469.l.83828.t.2",
+  "name": "Team 2",
+  "rank": "12",
+  "outcome_totals": {
+   "wins": "119",
+   "losses": "140",
+   "ties": "5",
+   "percentage": ".460"
+  },
+  "games_back": "37"
+ },
+ {
+  "team_key": "469.l.83828.t.6",
+  "name": "Team 6",
+  "rank": "13",
+  "outcome_totals": {
+   "wins": "104",
+   "losses": "150",
+   "ties": "10",
+   "percentage": ".413"
+  },
+  "games_back": "49.5"
+ },
+ {
+  "team_key": "469.l.83828.t.3",
+  "name": "Team 3",
+  "rank": "14",
+  "outcome_totals": {
+   "wins": "97",
+   "losses": "157",
+   "ties": "10",
+   "percentage": ".386"
+  },
+  "games_back": "56.5"
+ }
+]

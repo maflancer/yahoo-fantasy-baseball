@@ -1,0 +1,26 @@
+# League settings for the data pipeline. Everything else (league name, teams,
+# stat categories, playoff weeks) is read from Yahoo.
+
+game = "mlb"
+
+# Relative to this file.
+output_dir = "web/public/data"
+oauth_file = "oauth2.json"
+
+# One entry per season to track. `league_id` is optional; without it the first
+# league you played in that year is used. Add a new entry each season.
+[[seasons]]
+year = 2023
+league_id = "422.l.132070"
+
+[[seasons]]
+year = 2024
+league_id = "431.l.120609"
+
+[[seasons]]
+year = 2025
+league_id = "458.l.72362"
+
+[[seasons]]
+year = 2026
+league_id = "469.l.83828"

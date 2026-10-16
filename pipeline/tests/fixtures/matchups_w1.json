@@ -1,0 +1,3044 @@
+{
+ "fantasy_content": {
+  "xml:lang": "en-US",
+  "yahoo:uri": "/fantasy/v2/league/469.l.83828/scoreboard;week=1",
+  "league": [
+   {
+    "league_key": "469.l.83828",
+    "league_id": "83828",
+    "name": "\ud83d\udcd6Page 199\ud83d\udcd6",
+    "password": "",
+    "draft_status": "postdraft",
+    "num_teams": 14,
+    "max_teams": "14",
+    "edit_key": "2026-09-20",
+    "weekly_deadline": "intraday",
+    "roster_type": "date",
+    "league_update_timestamp": "1789977753",
+    "scoring_type": "head",
+    "scoring_label": "H2H Cat",
+    "league_type": "private",
+    "renew": "458_72362",
+    "renewed": "",
+    "felo_tier": "silver",
+    "is_highscore": false,
+    "is_guillotine": "0",
+    "matchup_week": 25,
+    "allow_add_to_dl_extra_pos": 1,
+    "is_pro_league": "0",
+    "is_cash_league": "0",
+    "current_week": "25",
+    "start_week": "1",
+    "start_date": "2026-03-25",
+    "end_week": "25",
+    "end_date": "2026-09-20",
+    "is_finished": 1,
+    "current_date": "2026-09-20",
+    "is_plus_league": "0",
+    "game_code": "mlb",
+    "season": "2026"
+   },
+   {
+    "scoreboard": {
+     "week": "1",
+     "0": {
+      "matchups": {
+       "0": {
+        "matchup": {
+         "week": "1",
+         "week_start": "2026-03-25",
+         "week_end": "2026-03-29",
+         "status": "postevent",
+         "is_playoffs": "0",
+         "is_consolation": "0",
+         "is_matchup_of_the_week": "1",
+         "is_tied": 1,
+         "stat_winners": [
+          {
+           "stat_winner": {
+            "stat_id": "7",
+            "winner_team_key": "469.l.83828.t.13"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "12",
+            "winner_team_key": "469.l.83828.t.1"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "13",
+            "winner_team_key": "469.l.83828.t.1"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "16",
+            "winner_team_key": "469.l.83828.t.13"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "23",
+            "winner_team_key": "469.l.83828.t.1"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "3",
+            "winner_team_key": "469.l.83828.t.1"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "4",
+            "winner_team_key": "469.l.83828.t.13"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "50",
+            "winner_team_key": "469.l.83828.t.1"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "42",
+            "winner_team_key": "469.l.83828.t.1"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "26",
+            "winner_team_key": "469.l.83828.t.13"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "27",
+            "winner_team_key": "469.l.83828.t.13"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "89",
+            "winner_team_key": "469.l.83828.t.13"
+           }
+          }
+         ],
+         "0": {
+          "teams": {
+           "0": {
+            "team": [
+             [
+              {
+               "team_key": "469.l.83828.t.1"
+              },
+              {
+               "team_id": "1"
+              },
+              {
+               "name": "Team 1"
+              },
+              [],
+              {},
+              {},
+              {
+               "previous_season_team_rank": 5
+              },
+              [],
+              {
+               "waiver_priority": 7
+              },
+              [],
+              {
+               "number_of_moves": 121
+              },
+              {
+               "number_of_trades": "1"
+              },
+              {
+               "roster_adds": {
+                "coverage_type": "week",
+                "coverage_value": 26,
+                "value": "0"
+               }
+              },
+              {
+               "clinched_playoffs": 1
+              },
+              {
+               "league_scoring_type": "head"
+              },
+              [],
+              [],
+              {
+               "has_draft_grade": 0
+              },
+              [],
+              [],
+              [],
+              [],
+              [],
+              {
+               "managers": [
+                {
+                 "manager": {
+                  "manager_id": "1",
+                  "nickname": "Jose",
+                  "guid": "--hidden--",
+                  "is_commissioner": "1",
+                  "felo_score": "661",
+                  "felo_tier": "silver"
+                 }
+                }
+               ]
+              }
+             ],
+             {
+              "team_stats": {
+               "coverage_type": "week",
+               "week": "1",
+               "stats": [
+                {
+                 "stat": {
+                  "stat_id": "60",
+                  "value": "28/127"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "7",
+                  "value": "16"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "12",
+                  "value": "8"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "13",
+                  "value": "20"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "16",
+                  "value": "1"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "23",
+                  "value": "56"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "3",
+                  "value": ".220"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "4",
+                  "value": ".294"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "50",
+                  "value": "38.0"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "42",
+                  "value": "49"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "26",
+                  "value": "6.63"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "27",
+                  "value": "1.47"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "89",
+                  "value": "0"
+                 }
+                }
+               ]
+              },
+              "team_points": {
+               "coverage_type": "week",
+               "week": "1",
+               "total": "6"
+              },
+              "team_remaining_games": {
+               "coverage_type": "week",
+               "week": "1",
+               "total": {
+                "remaining_games": 0,
+                "live_games": 0,
+                "completed_games": 46
+               }
+              }
+             }
+            ]
+           },
+           "1": {
+            "team": [
+             [
+              {
+               "team_key": "469.l.83828.t.13"
+              },
+              {
+               "team_id": "13"
+              },
+              {
+               "name": "Team 13"
+              },
+              [],
+              {},
+              {},
+              {
+               "previous_season_team_rank": 1
+              },
+              [],
+              {
+               "waiver_priority": 11
+              },
+              [],
+              {
+               "number_of_moves": 36
+              },
+              {
+               "number_of_trades": 0
+              },
+              {
+               "roster_adds": {
+                "coverage_type": "week",
+                "coverage_value": 26,
+                "value": "0"
+               }
+              },
+              {
+               "clinched_playoffs": 1
+              },
+              {
+               "league_scoring_type": "head"
+              },
+              [],
+              [],
+              {
+               "has_draft_grade": 0
+              },
+              [],
+              [],
+              [],
+              [],
+              [],
+              {
+               "managers": [
+                {
+                 "manager": {
+                  "manager_id": "13",
+                  "nickname": "dawson",
+                  "guid": "--hidden--",
+                  "felo_score": "701",
+                  "felo_tier": "gold"
+                 }
+                }
+               ]
+              }
+             ],
+             {
+              "team_stats": {
+               "coverage_type": "week",
+               "week": "1",
+               "stats": [
+                {
+                 "stat": {
+                  "stat_id": "60",
+                  "value": "25/118"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "7",
+                  "value": "18"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "12",
+                  "value": "1"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "13",
+                  "value": "12"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "16",
+                  "value": "2"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "23",
+                  "value": "37"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "3",
+                  "value": ".212"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "4",
+                  "value": ".351"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "50",
+                  "value": "28.1"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "42",
+                  "value": "34"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "26",
+                  "value": "4.13"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "27",
+                  "value": "1.31"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "89",
+                  "value": "3"
+                 }
+                }
+               ]
+              },
+              "team_points": {
+               "coverage_type": "week",
+               "week": "1",
+               "total": "6"
+              },
+              "team_remaining_games": {
+               "coverage_type": "week",
+               "week": "1",
+               "total": {
+                "remaining_games": 0,
+                "live_games": 0,
+                "completed_games": 54
+               }
+              }
+             }
+            ]
+           },
+           "count": 2
+          }
+         }
+        }
+       },
+       "1": {
+        "matchup": {
+         "week": "1",
+         "week_start": "2026-03-25",
+         "week_end": "2026-03-29",
+         "status": "postevent",
+         "is_playoffs": "0",
+         "is_consolation": "0",
+         "is_matchup_of_the_week": "0",
+         "is_tied": 0,
+         "winner_team_key": "469.l.83828.t.2",
+         "stat_winners": [
+          {
+           "stat_winner": {
+            "stat_id": "7",
+            "winner_team_key": "469.l.83828.t.2"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "12",
+            "winner_team_key": "469.l.83828.t.2"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "13",
+            "winner_team_key": "469.l.83828.t.2"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "16",
+            "winner_team_key": "469.l.83828.t.2"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "23",
+            "winner_team_key": "469.l.83828.t.2"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "3",
+            "winner_team_key": "469.l.83828.t.2"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "4",
+            "winner_team_key": "469.l.83828.t.2"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "50",
+            "winner_team_key": "469.l.83828.t.2"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "42",
+            "winner_team_key": "469.l.83828.t.2"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "26",
+            "winner_team_key": "469.l.83828.t.8"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "27",
+            "winner_team_key": "469.l.83828.t.8"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "89",
+            "winner_team_key": "469.l.83828.t.8"
+           }
+          }
+         ],
+         "0": {
+          "teams": {
+           "0": {
+            "team": [
+             [
+              {
+               "team_key": "469.l.83828.t.2"
+              },
+              {
+               "team_id": "2"
+              },
+              {
+               "name": "Team 2"
+              },
+              [],
+              {},
+              {},
+              {
+               "previous_season_team_rank": 9
+              },
+              [],
+              {
+               "waiver_priority": 9
+              },
+              [],
+              {
+               "number_of_moves": 95
+              },
+              {
+               "number_of_trades": 0
+              },
+              {
+               "roster_adds": {
+                "coverage_type": "week",
+                "coverage_value": 26,
+                "value": "0"
+               }
+              },
+              [],
+              {
+               "league_scoring_type": "head"
+              },
+              [],
+              [],
+              {
+               "has_draft_grade": 0
+              },
+              [],
+              [],
+              [],
+              [],
+              [],
+              {
+               "managers": [
+                {
+                 "manager": {
+                  "manager_id": "2",
+                  "nickname": "Jahn",
+                  "guid": "--hidden--",
+                  "felo_score": "611",
+                  "felo_tier": "silver"
+                 }
+                }
+               ]
+              }
+             ],
+             {
+              "team_stats": {
+               "coverage_type": "week",
+               "week": "1",
+               "stats": [
+                {
+                 "stat": {
+                  "stat_id": "60",
+                  "value": "29/131"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "7",
+                  "value": "23"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "12",
+                  "value": "6"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "13",
+                  "value": "19"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "16",
+                  "value": "1"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "23",
+                  "value": "50"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "3",
+                  "value": ".221"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "4",
+                  "value": ".346"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "50",
+                  "value": "32.1"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "42",
+                  "value": "42"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "26",
+                  "value": "3.62"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "27",
+                  "value": "1.18"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "89",
+                  "value": "0"
+                 }
+                }
+               ]
+              },
+              "team_points": {
+               "coverage_type": "week",
+               "week": "1",
+               "total": "9"
+              },
+              "team_remaining_games": {
+               "coverage_type": "week",
+               "week": "1",
+               "total": {
+                "remaining_games": 0,
+                "live_games": 0,
+                "completed_games": 53
+               }
+              }
+             }
+            ]
+           },
+           "1": {
+            "team": [
+             [
+              {
+               "team_key": "469.l.83828.t.8"
+              },
+              {
+               "team_id": "8"
+              },
+              {
+               "name": "Team 8"
+              },
+              [],
+              {},
+              {},
+              {
+               "previous_season_team_rank": 13
+              },
+              [],
+              {
+               "waiver_priority": 3
+              },
+              [],
+              {
+               "number_of_moves": 82
+              },
+              {
+               "number_of_trades": "1"
+              },
+              {
+               "roster_adds": {
+                "coverage_type": "week",
+                "coverage_value": 26,
+                "value": "0"
+               }
+              },
+              [],
+              {
+               "league_scoring_type": "head"
+              },
+              [],
+              [],
+              {
+               "has_draft_grade": 0
+              },
+              [],
+              [],
+              [],
+              [],
+              [],
+              {
+               "managers": [
+                {
+                 "manager": {
+                  "manager_id": "8",
+                  "nickname": "Ben",
+                  "guid": "--hidden--",
+                  "felo_score": "556",
+                  "felo_tier": "bronze"
+                 }
+                }
+               ]
+              }
+             ],
+             {
+              "team_stats": {
+               "coverage_type": "week",
+               "week": "1",
+               "stats": [
+                {
+                 "stat": {
+                  "stat_id": "60",
+                  "value": "21/127"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "7",
+                  "value": "13"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "12",
+                  "value": "1"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "13",
+                  "value": "13"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "16",
+                  "value": "0"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "23",
+                  "value": "31"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "3",
+                  "value": ".165"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "4",
+                  "value": ".277"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "50",
+                  "value": "31.0"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "42",
+                  "value": "36"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "26",
+                  "value": "2.61"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "27",
+                  "value": "0.84"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "89",
+                  "value": "1"
+                 }
+                }
+               ]
+              },
+              "team_points": {
+               "coverage_type": "week",
+               "week": "1",
+               "total": "3"
+              },
+              "team_remaining_games": {
+               "coverage_type": "week",
+               "week": "1",
+               "total": {
+                "remaining_games": 0,
+                "live_games": 0,
+                "completed_games": 58
+               }
+              }
+             }
+            ]
+           },
+           "count": 2
+          }
+         }
+        }
+       },
+       "2": {
+        "matchup": {
+         "week": "1",
+         "week_start": "2026-03-25",
+         "week_end": "2026-03-29",
+         "status": "postevent",
+         "is_playoffs": "0",
+         "is_consolation": "0",
+         "is_matchup_of_the_week": "0",
+         "is_tied": 0,
+         "winner_team_key": "469.l.83828.t.4",
+         "stat_winners": [
+          {
+           "stat_winner": {
+            "stat_id": "7",
+            "winner_team_key": "469.l.83828.t.4"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "12",
+            "winner_team_key": "469.l.83828.t.4"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "13",
+            "winner_team_key": "469.l.83828.t.4"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "16",
+            "winner_team_key": "469.l.83828.t.3"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "23",
+            "winner_team_key": "469.l.83828.t.4"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "3",
+            "winner_team_key": "469.l.83828.t.3"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "4",
+            "winner_team_key": "469.l.83828.t.4"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "50",
+            "winner_team_key": "469.l.83828.t.4"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "42",
+            "winner_team_key": "469.l.83828.t.4"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "26",
+            "winner_team_key": "469.l.83828.t.4"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "27",
+            "winner_team_key": "469.l.83828.t.4"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "89",
+            "winner_team_key": "469.l.83828.t.4"
+           }
+          }
+         ],
+         "0": {
+          "teams": {
+           "0": {
+            "team": [
+             [
+              {
+               "team_key": "469.l.83828.t.3"
+              },
+              {
+               "team_id": "3"
+              },
+              {
+               "name": "Team 3"
+              },
+              [],
+              {},
+              {},
+              {
+               "previous_season_team_rank": 3
+              },
+              [],
+              {
+               "waiver_priority": 1
+              },
+              [],
+              {
+               "number_of_moves": 50
+              },
+              {
+               "number_of_trades": 0
+              },
+              {
+               "roster_adds": {
+                "coverage_type": "week",
+                "coverage_value": 26,
+                "value": "0"
+               }
+              },
+              [],
+              {
+               "league_scoring_type": "head"
+              },
+              [],
+              [],
+              {
+               "has_draft_grade": 0
+              },
+              [],
+              [],
+              [],
+              [],
+              [],
+              {
+               "managers": [
+                {
+                 "manager": {
+                  "manager_id": "3",
+                  "nickname": "quinn",
+                  "guid": "--hidden--",
+                  "felo_score": "568",
+                  "felo_tier": "bronze"
+                 }
+                }
+               ]
+              }
+             ],
+             {
+              "team_stats": {
+               "coverage_type": "week",
+               "week": "1",
+               "stats": [
+                {
+                 "stat": {
+                  "stat_id": "60",
+                  "value": "31/122"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "7",
+                  "value": "16"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "12",
+                  "value": "5"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "13",
+                  "value": "17"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "16",
+                  "value": "4"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "23",
+                  "value": "50"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "3",
+                  "value": ".254"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "4",
+                  "value": ".333"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "50",
+                  "value": "16.1"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "42",
+                  "value": "13"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "26",
+                  "value": "5.51"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "27",
+                  "value": "1.53"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "89",
+                  "value": "0"
+                 }
+                }
+               ]
+              },
+              "team_points": {
+               "coverage_type": "week",
+               "week": "1",
+               "total": "2"
+              },
+              "team_remaining_games": {
+               "coverage_type": "week",
+               "week": "1",
+               "total": {
+                "remaining_games": 0,
+                "live_games": 0,
+                "completed_games": 54
+               }
+              }
+             }
+            ]
+           },
+           "1": {
+            "team": [
+             [
+              {
+               "team_key": "469.l.83828.t.4"
+              },
+              {
+               "team_id": "4"
+              },
+              {
+               "name": "Team 4"
+              },
+              [],
+              {},
+              {},
+              {
+               "previous_season_team_rank": 6
+              },
+              [],
+              {
+               "waiver_priority": 5
+              },
+              [],
+              {
+               "number_of_moves": 119
+              },
+              {
+               "number_of_trades": 0
+              },
+              {
+               "roster_adds": {
+                "coverage_type": "week",
+                "coverage_value": 26,
+                "value": "0"
+               }
+              },
+              {
+               "clinched_playoffs": 1
+              },
+              {
+               "league_scoring_type": "head"
+              },
+              [],
+              [],
+              {
+               "has_draft_grade": 0
+              },
+              [],
+              [],
+              [],
+              [],
+              [],
+              {
+               "managers": [
+                {
+                 "manager": {
+                  "manager_id": "4",
+                  "nickname": "gabriel",
+                  "guid": "--hidden--",
+                  "felo_score": "662",
+                  "felo_tier": "silver"
+                 }
+                }
+               ]
+              }
+             ],
+             {
+              "team_stats": {
+               "coverage_type": "week",
+               "week": "1",
+               "stats": [
+                {
+                 "stat": {
+                  "stat_id": "60",
+                  "value": "28/116"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "7",
+                  "value": "21"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "12",
+                  "value": "7"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "13",
+                  "value": "19"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "16",
+                  "value": "3"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "23",
+                  "value": "56"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "3",
+                  "value": ".241"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "4",
+                  "value": ".378"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "50",
+                  "value": "29.2"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "42",
+                  "value": "34"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "26",
+                  "value": "3.34"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "27",
+                  "value": "1.15"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "89",
+                  "value": "3"
+                 }
+                }
+               ]
+              },
+              "team_points": {
+               "coverage_type": "week",
+               "week": "1",
+               "total": "10"
+              },
+              "team_remaining_games": {
+               "coverage_type": "week",
+               "week": "1",
+               "total": {
+                "remaining_games": 0,
+                "live_games": 0,
+                "completed_games": 57
+               }
+              }
+             }
+            ]
+           },
+           "count": 2
+          }
+         }
+        }
+       },
+       "3": {
+        "matchup": {
+         "week": "1",
+         "week_start": "2026-03-25",
+         "week_end": "2026-03-29",
+         "status": "postevent",
+         "is_playoffs": "0",
+         "is_consolation": "0",
+         "is_matchup_of_the_week": "0",
+         "is_tied": 0,
+         "winner_team_key": "469.l.83828.t.5",
+         "stat_winners": [
+          {
+           "stat_winner": {
+            "stat_id": "7",
+            "winner_team_key": "469.l.83828.t.5"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "12",
+            "is_tied": 1
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "13",
+            "winner_team_key": "469.l.83828.t.5"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "16",
+            "winner_team_key": "469.l.83828.t.5"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "23",
+            "winner_team_key": "469.l.83828.t.5"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "3",
+            "winner_team_key": "469.l.83828.t.5"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "4",
+            "winner_team_key": "469.l.83828.t.5"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "50",
+            "winner_team_key": "469.l.83828.t.9"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "42",
+            "winner_team_key": "469.l.83828.t.9"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "26",
+            "winner_team_key": "469.l.83828.t.9"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "27",
+            "winner_team_key": "469.l.83828.t.9"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "89",
+            "winner_team_key": "469.l.83828.t.5"
+           }
+          }
+         ],
+         "0": {
+          "teams": {
+           "0": {
+            "team": [
+             [
+              {
+               "team_key": "469.l.83828.t.5"
+              },
+              {
+               "team_id": "5"
+              },
+              {
+               "name": "Team 5"
+              },
+              [],
+              {},
+              {},
+              {
+               "previous_season_team_rank": 11
+              },
+              [],
+              {
+               "waiver_priority": 12
+              },
+              [],
+              {
+               "number_of_moves": 69
+              },
+              {
+               "number_of_trades": 0
+              },
+              {
+               "roster_adds": {
+                "coverage_type": "week",
+                "coverage_value": 26,
+                "value": "0"
+               }
+              },
+              {
+               "clinched_playoffs": 1
+              },
+              {
+               "league_scoring_type": "head"
+              },
+              [],
+              [],
+              {
+               "has_draft_grade": 0
+              },
+              [],
+              [],
+              [],
+              [],
+              [],
+              {
+               "managers": [
+                {
+                 "manager": {
+                  "manager_id": "5",
+                  "nickname": "Dante",
+                  "guid": "--hidden--",
+                  "felo_score": "580",
+                  "felo_tier": "bronze"
+                 }
+                }
+               ]
+              }
+             ],
+             {
+              "team_stats": {
+               "coverage_type": "week",
+               "week": "1",
+               "stats": [
+                {
+                 "stat": {
+                  "stat_id": "60",
+                  "value": "32/124"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "7",
+                  "value": "18"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "12",
+                  "value": "3"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "13",
+                  "value": "23"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "16",
+                  "value": "6"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "23",
+                  "value": "45"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "3",
+                  "value": ".258"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "4",
+                  "value": ".367"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "50",
+                  "value": "30.0"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "42",
+                  "value": "23"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "26",
+                  "value": "8.10"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "27",
+                  "value": "1.67"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "89",
+                  "value": "1"
+                 }
+                }
+               ]
+              },
+              "team_points": {
+               "coverage_type": "week",
+               "week": "1",
+               "total": "7"
+              },
+              "team_remaining_games": {
+               "coverage_type": "week",
+               "week": "1",
+               "total": {
+                "remaining_games": 0,
+                "live_games": 0,
+                "completed_games": 57
+               }
+              }
+             }
+            ]
+           },
+           "1": {
+            "team": [
+             [
+              {
+               "team_key": "469.l.83828.t.9"
+              },
+              {
+               "team_id": "9"
+              },
+              {
+               "name": "Team 9"
+              },
+              {
+               "is_owned_by_current_login": 1
+              },
+              {},
+              {},
+              {
+               "previous_season_team_rank": 10
+              },
+              [],
+              {
+               "waiver_priority": 10
+              },
+              [],
+              {
+               "number_of_moves": 83
+              },
+              {
+               "number_of_trades": 0
+              },
+              {
+               "roster_adds": {
+                "coverage_type": "week",
+                "coverage_value": 26,
+                "value": "0"
+               }
+              },
+              [],
+              {
+               "league_scoring_type": "head"
+              },
+              [],
+              [],
+              {
+               "has_draft_grade": 0
+              },
+              [],
+              [],
+              [],
+              [],
+              [],
+              {
+               "managers": [
+                {
+                 "manager": {
+                  "manager_id": "9",
+                  "nickname": "Matt",
+                  "guid": "--hidden--",
+                  "is_commissioner": "1",
+                  "is_current_login": "1",
+                  "felo_score": "677",
+                  "felo_tier": "silver"
+                 }
+                }
+               ]
+              }
+             ],
+             {
+              "team_stats": {
+               "coverage_type": "week",
+               "week": "1",
+               "stats": [
+                {
+                 "stat": {
+                  "stat_id": "60",
+                  "value": "28/131"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "7",
+                  "value": "12"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "12",
+                  "value": "3"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "13",
+                  "value": "21"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "16",
+                  "value": "2"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "23",
+                  "value": "42"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "3",
+                  "value": ".214"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "4",
+                  "value": ".252"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "50",
+                  "value": "32.2"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "42",
+                  "value": "33"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "26",
+                  "value": "7.16"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "27",
+                  "value": "1.53"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "89",
+                  "value": "0"
+                 }
+                }
+               ]
+              },
+              "team_points": {
+               "coverage_type": "week",
+               "week": "1",
+               "total": "4"
+              },
+              "team_remaining_games": {
+               "coverage_type": "week",
+               "week": "1",
+               "total": {
+                "remaining_games": 0,
+                "live_games": 0,
+                "completed_games": 57
+               }
+              }
+             }
+            ]
+           },
+           "count": 2
+          }
+         }
+        }
+       },
+       "4": {
+        "matchup": {
+         "week": "1",
+         "week_start": "2026-03-25",
+         "week_end": "2026-03-29",
+         "status": "postevent",
+         "is_playoffs": "0",
+         "is_consolation": "0",
+         "is_matchup_of_the_week": "0",
+         "is_tied": 0,
+         "winner_team_key": "469.l.83828.t.10",
+         "stat_winners": [
+          {
+           "stat_winner": {
+            "stat_id": "7",
+            "winner_team_key": "469.l.83828.t.10"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "12",
+            "winner_team_key": "469.l.83828.t.10"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "13",
+            "winner_team_key": "469.l.83828.t.10"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "16",
+            "winner_team_key": "469.l.83828.t.6"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "23",
+            "winner_team_key": "469.l.83828.t.10"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "3",
+            "winner_team_key": "469.l.83828.t.10"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "4",
+            "winner_team_key": "469.l.83828.t.10"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "50",
+            "winner_team_key": "469.l.83828.t.6"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "42",
+            "winner_team_key": "469.l.83828.t.6"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "26",
+            "winner_team_key": "469.l.83828.t.6"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "27",
+            "winner_team_key": "469.l.83828.t.10"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "89",
+            "winner_team_key": "469.l.83828.t.10"
+           }
+          }
+         ],
+         "0": {
+          "teams": {
+           "0": {
+            "team": [
+             [
+              {
+               "team_key": "469.l.83828.t.6"
+              },
+              {
+               "team_id": "6"
+              },
+              {
+               "name": "Team 6"
+              },
+              [],
+              {},
+              {},
+              {
+               "previous_season_team_rank": 12
+              },
+              [],
+              {
+               "waiver_priority": 8
+              },
+              [],
+              {
+               "number_of_moves": 34
+              },
+              {
+               "number_of_trades": 0
+              },
+              {
+               "roster_adds": {
+                "coverage_type": "week",
+                "coverage_value": 26,
+                "value": "0"
+               }
+              },
+              [],
+              {
+               "league_scoring_type": "head"
+              },
+              [],
+              [],
+              {
+               "has_draft_grade": 0
+              },
+              [],
+              [],
+              [],
+              [],
+              [],
+              {
+               "managers": [
+                {
+                 "manager": {
+                  "manager_id": "6",
+                  "nickname": "david",
+                  "guid": "--hidden--",
+                  "felo_score": "628",
+                  "felo_tier": "silver"
+                 }
+                }
+               ]
+              }
+             ],
+             {
+              "team_stats": {
+               "coverage_type": "week",
+               "week": "1",
+               "stats": [
+                {
+                 "stat": {
+                  "stat_id": "60",
+                  "value": "28/118"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "7",
+                  "value": "16"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "12",
+                  "value": "2"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "13",
+                  "value": "13"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "16",
+                  "value": "5"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "23",
+                  "value": "39"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "3",
+                  "value": ".237"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "4",
+                  "value": ".305"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "50",
+                  "value": "28.2"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "42",
+                  "value": "31"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "26",
+                  "value": "3.77"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "27",
+                  "value": "1.43"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "89",
+                  "value": "1"
+                 }
+                }
+               ]
+              },
+              "team_points": {
+               "coverage_type": "week",
+               "week": "1",
+               "total": "4"
+              },
+              "team_remaining_games": {
+               "coverage_type": "week",
+               "week": "1",
+               "total": {
+                "remaining_games": 0,
+                "live_games": 0,
+                "completed_games": 57
+               }
+              }
+             }
+            ]
+           },
+           "1": {
+            "team": [
+             [
+              {
+               "team_key": "469.l.83828.t.10"
+              },
+              {
+               "team_id": "10"
+              },
+              {
+               "name": "Team 10"
+              },
+              [],
+              {},
+              {},
+              {
+               "previous_season_team_rank": 14
+              },
+              [],
+              {
+               "waiver_priority": 4
+              },
+              [],
+              {
+               "number_of_moves": 85
+              },
+              {
+               "number_of_trades": "1"
+              },
+              {
+               "roster_adds": {
+                "coverage_type": "week",
+                "coverage_value": 26,
+                "value": "0"
+               }
+              },
+              {
+               "clinched_playoffs": 1
+              },
+              {
+               "league_scoring_type": "head"
+              },
+              [],
+              [],
+              {
+               "has_draft_grade": 0
+              },
+              [],
+              [],
+              [],
+              [],
+              [],
+              {
+               "managers": [
+                {
+                 "manager": {
+                  "manager_id": "10",
+                  "nickname": "Ian",
+                  "guid": "--hidden--",
+                  "felo_score": "579",
+                  "felo_tier": "bronze"
+                 }
+                }
+               ]
+              }
+             ],
+             {
+              "team_stats": {
+               "coverage_type": "week",
+               "week": "1",
+               "stats": [
+                {
+                 "stat": {
+                  "stat_id": "60",
+                  "value": "42/148"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "7",
+                  "value": "24"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "12",
+                  "value": "12"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "13",
+                  "value": "23"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "16",
+                  "value": "0"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "23",
+                  "value": "82"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "3",
+                  "value": ".284"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "4",
+                  "value": ".361"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "50",
+                  "value": "18.2"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "42",
+                  "value": "20"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "26",
+                  "value": "3.86"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "27",
+                  "value": "1.29"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "89",
+                  "value": "3"
+                 }
+                }
+               ]
+              },
+              "team_points": {
+               "coverage_type": "week",
+               "week": "1",
+               "total": "8"
+              },
+              "team_remaining_games": {
+               "coverage_type": "week",
+               "week": "1",
+               "total": {
+                "remaining_games": 0,
+                "live_games": 0,
+                "completed_games": 56
+               }
+              }
+             }
+            ]
+           },
+           "count": 2
+          }
+         }
+        }
+       },
+       "5": {
+        "matchup": {
+         "week": "1",
+         "week_start": "2026-03-25",
+         "week_end": "2026-03-29",
+         "status": "postevent",
+         "is_playoffs": "0",
+         "is_consolation": "0",
+         "is_matchup_of_the_week": "0",
+         "is_tied": 0,
+         "winner_team_key": "469.l.83828.t.7",
+         "stat_winners": [
+          {
+           "stat_winner": {
+            "stat_id": "7",
+            "winner_team_key": "469.l.83828.t.14"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "12",
+            "winner_team_key": "469.l.83828.t.7"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "13",
+            "winner_team_key": "469.l.83828.t.7"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "16",
+            "winner_team_key": "469.l.83828.t.14"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "23",
+            "winner_team_key": "469.l.83828.t.7"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "3",
+            "winner_team_key": "469.l.83828.t.14"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "4",
+            "winner_team_key": "469.l.83828.t.14"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "50",
+            "winner_team_key": "469.l.83828.t.7"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "42",
+            "winner_team_key": "469.l.83828.t.7"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "26",
+            "winner_team_key": "469.l.83828.t.7"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "27",
+            "winner_team_key": "469.l.83828.t.14"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "89",
+            "winner_team_key": "469.l.83828.t.7"
+           }
+          }
+         ],
+         "0": {
+          "teams": {
+           "0": {
+            "team": [
+             [
+              {
+               "team_key": "469.l.83828.t.7"
+              },
+              {
+               "team_id": "7"
+              },
+              {
+               "name": "Team 7"
+              },
+              [],
+              {},
+              {},
+              {
+               "previous_season_team_rank": 2
+              },
+              [],
+              {
+               "waiver_priority": 13
+              },
+              [],
+              {
+               "number_of_moves": 131
+              },
+              {
+               "number_of_trades": "1"
+              },
+              {
+               "roster_adds": {
+                "coverage_type": "week",
+                "coverage_value": 26,
+                "value": "0"
+               }
+              },
+              {
+               "clinched_playoffs": 1
+              },
+              {
+               "league_scoring_type": "head"
+              },
+              [],
+              [],
+              {
+               "has_draft_grade": 0
+              },
+              [],
+              [],
+              [],
+              [],
+              [],
+              {
+               "managers": [
+                {
+                 "manager": {
+                  "manager_id": "7",
+                  "nickname": "nathan",
+                  "guid": "--hidden--",
+                  "felo_score": "887",
+                  "felo_tier": "platinum"
+                 }
+                }
+               ]
+              }
+             ],
+             {
+              "team_stats": {
+               "coverage_type": "week",
+               "week": "1",
+               "stats": [
+                {
+                 "stat": {
+                  "stat_id": "60",
+                  "value": "26/123"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "7",
+                  "value": "16"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "12",
+                  "value": "9"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "13",
+                  "value": "18"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "16",
+                  "value": "3"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "23",
+                  "value": "56"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "3",
+                  "value": ".211"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "4",
+                  "value": ".288"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "50",
+                  "value": "34.1"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "42",
+                  "value": "40"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "26",
+                  "value": "1.83"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "27",
+                  "value": "1.31"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "89",
+                  "value": "4"
+                 }
+                }
+               ]
+              },
+              "team_points": {
+               "coverage_type": "week",
+               "week": "1",
+               "total": "7"
+              },
+              "team_remaining_games": {
+               "coverage_type": "week",
+               "week": "1",
+               "total": {
+                "remaining_games": 0,
+                "live_games": 0,
+                "completed_games": 57
+               }
+              }
+             }
+            ]
+           },
+           "1": {
+            "team": [
+             [
+              {
+               "team_key": "469.l.83828.t.14"
+              },
+              {
+               "team_id": "14"
+              },
+              {
+               "name": "Team 14"
+              },
+              [],
+              {},
+              {},
+              {
+               "previous_season_team_rank": 4
+              },
+              [],
+              {
+               "waiver_priority": 6
+              },
+              [],
+              {
+               "number_of_moves": 113
+              },
+              {
+               "number_of_trades": 0
+              },
+              {
+               "roster_adds": {
+                "coverage_type": "week",
+                "coverage_value": 26,
+                "value": "0"
+               }
+              },
+              [],
+              {
+               "league_scoring_type": "head"
+              },
+              [],
+              [],
+              {
+               "has_draft_grade": 0
+              },
+              [],
+              [],
+              [],
+              [],
+              [],
+              {
+               "managers": [
+                {
+                 "manager": {
+                  "manager_id": "14",
+                  "nickname": "adam",
+                  "guid": "--hidden--",
+                  "felo_score": "592",
+                  "felo_tier": "bronze"
+                 }
+                }
+               ]
+              }
+             ],
+             {
+              "team_stats": {
+               "coverage_type": "week",
+               "week": "1",
+               "stats": [
+                {
+                 "stat": {
+                  "stat_id": "60",
+                  "value": "30/126"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "7",
+                  "value": "18"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "12",
+                  "value": "3"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "13",
+                  "value": "12"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "16",
+                  "value": "4"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "23",
+                  "value": "45"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "3",
+                  "value": ".238"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "4",
+                  "value": ".314"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "50",
+                  "value": "24.2"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "42",
+                  "value": "26"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "26",
+                  "value": "2.19"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "27",
+                  "value": "0.97"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "89",
+                  "value": "3"
+                 }
+                }
+               ]
+              },
+              "team_points": {
+               "coverage_type": "week",
+               "week": "1",
+               "total": "5"
+              },
+              "team_remaining_games": {
+               "coverage_type": "week",
+               "week": "1",
+               "total": {
+                "remaining_games": 0,
+                "live_games": 0,
+                "completed_games": 54
+               }
+              }
+             }
+            ]
+           },
+           "count": 2
+          }
+         }
+        }
+       },
+       "6": {
+        "matchup": {
+         "week": "1",
+         "week_start": "2026-03-25",
+         "week_end": "2026-03-29",
+         "status": "postevent",
+         "is_playoffs": "0",
+         "is_consolation": "0",
+         "is_matchup_of_the_week": "0",
+         "is_tied": 0,
+         "winner_team_key": "469.l.83828.t.12",
+         "stat_winners": [
+          {
+           "stat_winner": {
+            "stat_id": "7",
+            "winner_team_key": "469.l.83828.t.12"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "12",
+            "winner_team_key": "469.l.83828.t.12"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "13",
+            "winner_team_key": "469.l.83828.t.12"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "16",
+            "is_tied": 1
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "23",
+            "winner_team_key": "469.l.83828.t.12"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "3",
+            "winner_team_key": "469.l.83828.t.12"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "4",
+            "winner_team_key": "469.l.83828.t.11"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "50",
+            "winner_team_key": "469.l.83828.t.12"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "42",
+            "winner_team_key": "469.l.83828.t.12"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "26",
+            "winner_team_key": "469.l.83828.t.12"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "27",
+            "winner_team_key": "469.l.83828.t.12"
+           }
+          },
+          {
+           "stat_winner": {
+            "stat_id": "89",
+            "winner_team_key": "469.l.83828.t.11"
+           }
+          }
+         ],
+         "0": {
+          "teams": {
+           "0": {
+            "team": [
+             [
+              {
+               "team_key": "469.l.83828.t.11"
+              },
+              {
+               "team_id": "11"
+              },
+              {
+               "name": "Team 11"
+              },
+              [],
+              {},
+              {},
+              {
+               "previous_season_team_rank": 7
+              },
+              [],
+              {
+               "waiver_priority": 14
+              },
+              [],
+              {
+               "number_of_moves": 62
+              },
+              {
+               "number_of_trades": 0
+              },
+              {
+               "roster_adds": {
+                "coverage_type": "week",
+                "coverage_value": 26,
+                "value": "0"
+               }
+              },
+              {
+               "clinched_playoffs": 1
+              },
+              {
+               "league_scoring_type": "head"
+              },
+              [],
+              [],
+              {
+               "has_draft_grade": 0
+              },
+              [],
+              [],
+              [],
+              [],
+              [],
+              {
+               "managers": [
+                {
+                 "manager": {
+                  "manager_id": "11",
+                  "nickname": "Zach",
+                  "guid": "--hidden--",
+                  "felo_score": "705",
+                  "felo_tier": "gold"
+                 }
+                }
+               ]
+              }
+             ],
+             {
+              "team_stats": {
+               "coverage_type": "week",
+               "week": "1",
+               "stats": [
+                {
+                 "stat": {
+                  "stat_id": "60",
+                  "value": "29/110"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "7",
+                  "value": "13"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "12",
+                  "value": "1"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "13",
+                  "value": "11"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "16",
+                  "value": "3"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "23",
+                  "value": "38"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "3",
+                  "value": ".264"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "4",
+                  "value": ".354"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "50",
+                  "value": "24.2"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "42",
+                  "value": "33"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "26",
+                  "value": "4.38"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "27",
+                  "value": "1.38"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "89",
+                  "value": "6"
+                 }
+                }
+               ]
+              },
+              "team_points": {
+               "coverage_type": "week",
+               "week": "1",
+               "total": "2"
+              },
+              "team_remaining_games": {
+               "coverage_type": "week",
+               "week": "1",
+               "total": {
+                "remaining_games": 0,
+                "live_games": 0,
+                "completed_games": 55
+               }
+              }
+             }
+            ]
+           },
+           "1": {
+            "team": [
+             [
+              {
+               "team_key": "469.l.83828.t.12"
+              },
+              {
+               "team_id": "12"
+              },
+              {
+               "name": "Team 12"
+              },
+              [],
+              {},
+              {},
+              {
+               "previous_season_team_rank": 8
+              },
+              [],
+              {
+               "waiver_priority": 2
+              },
+              [],
+              {
+               "number_of_moves": 103
+              },
+              {
+               "number_of_trades": 0
+              },
+              {
+               "roster_adds": {
+                "coverage_type": "week",
+                "coverage_value": 26,
+                "value": "0"
+               }
+              },
+              {
+               "clinched_playoffs": 1
+              },
+              {
+               "league_scoring_type": "head"
+              },
+              [],
+              [],
+              {
+               "has_draft_grade": 0
+              },
+              [],
+              [],
+              [],
+              [],
+              [],
+              {
+               "managers": [
+                {
+                 "manager": {
+                  "manager_id": "12",
+                  "nickname": "JT",
+                  "guid": "--hidden--",
+                  "felo_score": "538",
+                  "felo_tier": "bronze"
+                 }
+                }
+               ]
+              }
+             ],
+             {
+              "team_stats": {
+               "coverage_type": "week",
+               "week": "1",
+               "stats": [
+                {
+                 "stat": {
+                  "stat_id": "60",
+                  "value": "38/138"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "7",
+                  "value": "22"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "12",
+                  "value": "7"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "13",
+                  "value": "19"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "16",
+                  "value": "3"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "23",
+                  "value": "66"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "3",
+                  "value": ".275"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "4",
+                  "value": ".348"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "50",
+                  "value": "28.1"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "42",
+                  "value": "40"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "26",
+                  "value": "0.32"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "27",
+                  "value": "0.67"
+                 }
+                },
+                {
+                 "stat": {
+                  "stat_id": "89",
+                  "value": "2"
+                 }
+                }
+               ]
+              },
+              "team_points": {
+               "coverage_type": "week",
+               "week": "1",
+               "total": "9"
+              },
+              "team_remaining_games": {
+               "coverage_type": "week",
+               "week": "1",
+               "total": {
+                "remaining_games": 0,
+                "live_games": 0,
+                "completed_games": 57
+               }
+              }
+             }
+            ]
+           },
+           "count": 2
+          }
+         }
+        }
+       },
+       "count": 7
+      }
+     }
+    }
+   }
+  ],
+  "time": "115.94796180725ms",
+  "copyright": "Certain Data by Sportradar, Stats Perform and Rotowire",
+  "refresh_rate": "30"
+ }
+}

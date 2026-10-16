@@ -1,0 +1,392 @@
+{
+ "469.l.83828.t.4": {
+  "team_key": "469.l.83828.t.4",
+  "team_id": "4",
+  "previous_season_team_rank": 6,
+  "waiver_priority": 5,
+  "number_of_moves": 119,
+  "number_of_trades": 0,
+  "roster_adds": {
+   "coverage_type": "week",
+   "coverage_value": 26,
+   "value": "0"
+  },
+  "clinched_playoffs": 1,
+  "league_scoring_type": "head",
+  "has_draft_grade": 0,
+  "managers": [
+   {
+    "manager": {
+     "manager_id": "4",
+     "nickname": "gabriel",
+     "guid": "--hidden--",
+     "felo_score": "662",
+     "felo_tier": "silver"
+    }
+   }
+  ],
+  "name": "Team 4"
+ },
+ "469.l.83828.t.11": {
+  "team_key": "469.l.83828.t.11",
+  "team_id": "11",
+  "previous_season_team_rank": 7,
+  "waiver_priority": 14,
+  "number_of_moves": 62,
+  "number_of_trades": 0,
+  "roster_adds": {
+   "coverage_type": "week",
+   "coverage_value": 26,
+   "value": "0"
+  },
+  "clinched_playoffs": 1,
+  "league_scoring_type": "head",
+  "has_draft_grade": 0,
+  "managers": [
+   {
+    "manager": {
+     "manager_id": "11",
+     "nickname": "Zach",
+     "guid": "--hidden--",
+     "felo_score": "705",
+     "felo_tier": "gold"
+    }
+   }
+  ],
+  "name": "Team 11"
+ },
+ "469.l.83828.t.7": {
+  "team_key": "469.l.83828.t.7",
+  "team_id": "7",
+  "previous_season_team_rank": 2,
+  "waiver_priority": 13,
+  "number_of_moves": 131,
+  "number_of_trades": "1",
+  "roster_adds": {
+   "coverage_type": "week",
+   "coverage_value": 26,
+   "value": "0"
+  },
+  "clinched_playoffs": 1,
+  "league_scoring_type": "head",
+  "has_draft_grade": 0,
+  "managers": [
+   {
+    "manager": {
+     "manager_id": "7",
+     "nickname": "nathan",
+     "guid": "--hidden--",
+     "felo_score": "887",
+     "felo_tier": "platinum"
+    }
+   }
+  ],
+  "name": "Team 7"
+ },
+ "469.l.83828.t.12": {
+  "team_key": "469.l.83828.t.12",
+  "team_id": "12",
+  "previous_season_team_rank": 8,
+  "waiver_priority": 2,
+  "number_of_moves": 103,
+  "number_of_trades": 0,
+  "roster_adds": {
+   "coverage_type": "week",
+   "coverage_value": 26,
+   "value": "0"
+  },
+  "clinched_playoffs": 1,
+  "league_scoring_type": "head",
+  "has_draft_grade": 0,
+  "managers": [
+   {
+    "manager": {
+     "manager_id": "12",
+     "nickname": "JT",
+     "guid": "--hidden--",
+     "felo_score": "538",
+     "felo_tier": "bronze"
+    }
+   }
+  ],
+  "name": "Team 12"
+ },
+ "469.l.83828.t.13": {
+  "team_key": "469.l.83828.t.13",
+  "team_id": "13",
+  "previous_season_team_rank": 1,
+  "waiver_priority": 11,
+  "number_of_moves": 36,
+  "number_of_trades": 0,
+  "roster_adds": {
+   "coverage_type": "week",
+   "coverage_value": 26,
+   "value": "0"
+  },
+  "clinched_playoffs": 1,
+  "league_scoring_type": "head",
+  "has_draft_grade": 0,
+  "managers": [
+   {
+    "manager": {
+     "manager_id": "13",
+     "nickname": "dawson",
+     "guid": "--hidden--",
+     "felo_score": "701",
+     "felo_tier": "gold"
+    }
+   }
+  ],
+  "name": "Team 13"
+ },
+ "469.l.83828.t.1": {
+  "team_key": "469.l.83828.t.1",
+  "team_id": "1",
+  "previous_season_team_rank": 5,
+  "waiver_priority": 7,
+  "number_of_moves": 121,
+  "number_of_trades": "1",
+  "roster_adds": {
+   "coverage_type": "week",
+   "coverage_value": 26,
+   "value": "0"
+  },
+  "clinched_playoffs": 1,
+  "league_scoring_type": "head",
+  "has_draft_grade": 0,
+  "managers": [
+   {
+    "manager": {
+     "manager_id": "1",
+     "nickname": "Jose",
+     "guid": "--hidden--",
+     "is_commissioner": "1",
+     "felo_score": "661",
+     "felo_tier": "silver"
+    }
+   }
+  ],
+  "name": "Team 1"
+ },
+ "469.l.83828.t.5": {
+  "team_key": "469.l.83828.t.5",
+  "team_id": "5",
+  "previous_season_team_rank": 11,
+  "waiver_priority": 12,
+  "number_of_moves": 69,
+  "number_of_trades": 0,
+  "roster_adds": {
+   "coverage_type": "week",
+   "coverage_value": 26,
+   "value": "0"
+  },
+  "clinched_playoffs": 1,
+  "league_scoring_type": "head",
+  "has_draft_grade": 0,
+  "managers": [
+   {
+    "manager": {
+     "manager_id": "5",
+     "nickname": "Dante",
+     "guid": "--hidden--",
+     "felo_score": "580",
+     "felo_tier": "bronze"
+    }
+   }
+  ],
+  "name": "Team 5"
+ },
+ "469.l.83828.t.10": {
+  "team_key": "469.l.83828.t.10",
+  "team_id": "10",
+  "previous_season_team_rank": 14,
+  "waiver_priority": 4,
+  "number_of_moves": 85,
+  "number_of_trades": "1",
+  "roster_adds": {
+   "coverage_type": "week",
+   "coverage_value": 26,
+   "value": "0"
+  },
+  "clinched_playoffs": 1,
+  "league_scoring_type": "head",
+  "has_draft_grade": 0,
+  "managers": [
+   {
+    "manager": {
+     "manager_id": "10",
+     "nickname": "Ian",
+     "guid": "--hidden--",
+     "felo_score": "579",
+     "felo_tier": "bronze"
+    }
+   }
+  ],
+  "name": "Team 10"
+ },
+ "469.l.83828.t.8": {
+  "team_key": "469.l.83828.t.8",
+  "team_id": "8",
+  "previous_season_team_rank": 13,
+  "waiver_priority": 3,
+  "number_of_moves": 82,
+  "number_of_trades": "1",
+  "roster_adds": {
+   "coverage_type": "week",
+   "coverage_value": 26,
+   "value": "0"
+  },
+  "league_scoring_type": "head",
+  "has_draft_grade": 0,
+  "managers": [
+   {
+    "manager": {
+     "manager_id": "8",
+     "nickname": "Ben",
+     "guid": "--hidden--",
+     "felo_score": "556",
+     "felo_tier": "bronze"
+    }
+   }
+  ],
+  "name": "Team 8"
+ },
+ "469.l.83828.t.9": {
+  "team_key": "469.l.83828.t.9",
+  "team_id": "9",
+  "is_owned_by_current_login": 1,
+  "previous_season_team_rank": 10,
+  "waiver_priority": 10,
+  "number_of_moves": 83,
+  "number_of_trades": 0,
+  "roster_adds": {
+   "coverage_type": "week",
+   "coverage_value": 26,
+   "value": "0"
+  },
+  "league_scoring_type": "head",
+  "has_draft_grade": 0,
+  "managers": [
+   {
+    "manager": {
+     "manager_id": "9",
+     "nickname": "Matt",
+     "guid": "--hidden--",
+     "is_commissioner": "1",
+     "is_current_login": "1",
+     "felo_score": "677",
+     "felo_tier": "silver"
+    }
+   }
+  ],
+  "name": "Team 9"
+ },
+ "469.l.83828.t.14": {
+  "team_key": "469.l.83828.t.14",
+  "team_id": "14",
+  "previous_season_team_rank": 4,
+  "waiver_priority": 6,
+  "number_of_moves": 113,
+  "number_of_trades": 0,
+  "roster_adds": {
+   "coverage_type": "week",
+   "coverage_value": 26,
+   "value": "0"
+  },
+  "league_scoring_type": "head",
+  "has_draft_grade": 0,
+  "managers": [
+   {
+    "manager": {
+     "manager_id": "14",
+     "nickname": "adam",
+     "guid": "--hidden--",
+     "felo_score": "592",
+     "felo_tier": "bronze"
+    }
+   }
+  ],
+  "name": "Team 14"
+ },
+ "469.l.83828.t.2": {
+  "team_key": "469.l.83828.t.2",
+  "team_id": "2",
+  "previous_season_team_rank": 9,
+  "waiver_priority": 9,
+  "number_of_moves": 95,
+  "number_of_trades": 0,
+  "roster_adds": {
+   "coverage_type": "week",
+   "coverage_value": 26,
+   "value": "0"
+  },
+  "league_scoring_type": "head",
+  "has_draft_grade": 0,
+  "managers": [
+   {
+    "manager": {
+     "manager_id": "2",
+     "nickname": "Jahn",
+     "guid": "--hidden--",
+     "felo_score": "611",
+     "felo_tier": "silver"
+    }
+   }
+  ],
+  "name": "Team 2"
+ },
+ "469.l.83828.t.6": {
+  "team_key": "469.l.83828.t.6",
+  "team_id": "6",
+  "previous_season_team_rank": 12,
+  "waiver_priority": 8,
+  "number_of_moves": 34,
+  "number_of_trades": 0,
+  "roster_adds": {
+   "coverage_type": "week",
+   "coverage_value": 26,
+   "value": "0"
+  },
+  "league_scoring_type": "head",
+  "has_draft_grade": 0,
+  "managers": [
+   {
+    "manager": {
+     "manager_id": "6",
+     "nickname": "david",
+     "guid": "--hidden--",
+     "felo_score": "628",
+     "felo_tier": "silver"
+    }
+   }
+  ],
+  "name": "Team 6"
+ },
+ "469.l.83828.t.3": {
+  "team_key": "469.l.83828.t.3",
+  "team_id": "3",
+  "previous_season_team_rank": 3,
+  "waiver_priority": 1,
+  "number_of_moves": 50,
+  "number_of_trades": 0,
+  "roster_adds": {
+   "coverage_type": "week",
+   "coverage_value": 26,
+   "value": "0"
+  },
+  "league_scoring_type": "head",
+  "has_draft_grade": 0,
+  "managers": [
+   {
+    "manager": {
+     "manager_id": "3",
+     "nickname": "quinn",
+     "guid": "--hidden--",
+     "felo_score": "568",
+     "felo_tier": "bronze"
+    }
+   }
+  ],
+  "name": "Team 3"
+ }
+}

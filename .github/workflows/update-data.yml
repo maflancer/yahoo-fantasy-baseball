@@ -1,0 +1,76 @@
+name: Update data
+
+on:
+  schedule:
+    - cron: "0 10 * * 1" # Mondays 10:00 UTC
+  workflow_dispatch:
+    inputs:
+      season:
+        description: "Season year to fetch (blank = latest in config.toml)"
+        required: false
+        default: ""
+      all:
+        description: "Fetch every season in config.toml"
+        type: boolean
+        default: false
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+
+      - name: Write OAuth file
+        env:
+          YAHOO_OAUTH: ${{ secrets.YAHOO_OAUTH_FULL }}
+        run: printf '%s' "$YAHOO_OAUTH" > oauth2.json
+
+      - name: Run pipeline
+        env:
+          TEAM_NAME_MAP: ${{ secrets.TEAM_NAME_MAP }}
+          SEASON: ${{ inputs.season }}
+          ALL: ${{ inputs.all }}
+        run: |
+          args=()
+          if [ "$ALL" = "true" ]; then args+=(--all)
+          elif [ -n "$SEASON" ]; then args+=(--season "$SEASON"); fi
+          uv run --locked --project pipeline fantasy-pipeline "${args[@]}"
+
+      - name: Remove OAuth file
+        if: always()
+        run: rm -f oauth2.json
+
+      - name: Commit data
+        id: commit
+        run: |
+          git add web/public/data
+          if git diff --staged --quiet; then
+            echo "No data changes"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Update league data"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+  deploy:
+    needs: update
+    if: needs.update.outputs.changed == 'true'
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/deploy.yml

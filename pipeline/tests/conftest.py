@@ -14,6 +14,12 @@ def load(name: str):
 
 
 @pytest.fixture
+def fixture():
+    """Load any saved Yahoo response by name."""
+    return load
+
+
+@pytest.fixture
 def settings_raw():
     return load("settings_raw")
 

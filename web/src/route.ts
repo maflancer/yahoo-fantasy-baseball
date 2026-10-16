@@ -3,7 +3,7 @@ import { useCallback, useEffect, useState } from "react";
 // Hash routing (#/scoreboard?season=2026&week=5) works on GitHub Pages without a
 // 404 fallback and keeps every view linkable.
 
-export type Page = "standings" | "scoreboard" | "stats";
+export type Page = "standings" | "scoreboard" | "stats" | "draft";
 
 export interface Route {
   page: Page;
@@ -16,8 +16,8 @@ function parseHash(): Route {
   const page: Page =
     path === "scoreboard" || path === "leaders"
       ? "scoreboard"
-      : path === "stats"
-        ? "stats"
+      : path === "stats" || path === "draft"
+        ? path
         : "standings";
   return { page, params: new URLSearchParams(query) };
 }

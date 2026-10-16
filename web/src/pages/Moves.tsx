@@ -22,7 +22,6 @@ interface TeamActivity {
 }
 
 const PAGE_SIZE = 100;
-const HIGHLIGHTS = 5;
 
 const ACTIONS: { id: Action; label: string }[] = [
   { id: "", label: "All moves" },
@@ -138,7 +137,7 @@ export default function Moves({ season, params, onParamsChange }: Props) {
     return `${nameOf(s.team_key)} (${how} ${formatDate(s.start)}–${until})`;
   };
 
-  // In the highlights, credit the team that held each pickup longest after adding him.
+  // Credit each pickup to the team that held him longest after adding him.
   const keeper = (stints: Stint[]) =>
     [...stints]
       .filter((s) => s.acquired !== "draft")
@@ -179,42 +178,21 @@ export default function Moves({ season, params, onParamsChange }: Props) {
       key: "teams",
       label: "Rostered by",
       value: (p) => p.stints.length,
-      render: (p) => (
-        <span className="stints">
-          {p.stints.map((s, i) => (
-            <span key={i}>{stintText(s)}</span>
-          ))}
-        </span>
-      ),
+      render: (p) => {
+        const credited = keeper(p.stints);
+        return (
+          <span className="stints">
+            {p.stints.map((s, i) =>
+              s === credited ? <b key={i}>{stintText(s)}</b> : <span key={i}>{stintText(s)}</span>,
+            )}
+          </span>
+        );
+      },
     },
   ];
 
   return (
     <>
-      <section className="card highlight">
-        <h2 className="section-title">Top pickups</h2>
-        <p className="note highlight-note">Best-ranked players added during the season</p>
-        <ol>
-          {top_pickups.slice(0, HIGHLIGHTS).map((p) => {
-            const best = keeper(p.stints);
-            return (
-              <li key={p.player_key}>
-                <span className="player">
-                  {players[p.player_key]?.name}
-                  {best && (
-                    <span className="player-meta">
-                      {nameOf(best.team_key)} · {best.acquired === "trade" ? "traded for" : "added"}{" "}
-                      {formatDate(best.start)}
-                    </span>
-                  )}
-                </span>
-                <span className="rank-badge">#{players[p.player_key]?.rank}</span>
-              </li>
-            );
-          })}
-        </ol>
-      </section>
-
       <section className="card">
         <div className="segmented" role="tablist" aria-label="View">
           {(
@@ -323,6 +301,12 @@ export default function Moves({ season, params, onParamsChange }: Props) {
             rowKey={(p) => p.player_key}
             initialSort={{ key: "rank", asc: true }}
           />
+        )}
+        {view === "pickups" && (
+          <p className="note">
+            The best-ranked players added during the season. Bold marks the team credited with the
+            pickup: whoever held him longest after adding him.
+          </p>
         )}
       </section>
     </>

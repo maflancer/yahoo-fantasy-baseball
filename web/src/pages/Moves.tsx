@@ -22,7 +22,9 @@ interface TeamActivity {
 }
 
 const PAGE_SIZE = 100;
+// Most-added cards show the first few, expandable to the full list.
 const MOST_ADDED = 10;
+const MOST_ADDED_PREVIEW = 5;
 const PITCHER_POSITIONS = new Set(["SP", "RP", "P"]);
 
 interface AddCount {
@@ -56,6 +58,7 @@ function days(stint: Stint, seasonEnd: string): number {
 export default function Moves({ season, params, onParamsChange }: Props) {
   const file = useData<MovesFile>(season.has_moves ? `${season.year}/moves.json` : null);
   const [shown, setShown] = useState(PAGE_SIZE);
+  const [allAdded, setAllAdded] = useState(false);
 
   const view = (["log", "teams", "pickups"] as const).includes(params.get("view") as View)
     ? (params.get("view") as View)
@@ -246,7 +249,7 @@ export default function Moves({ season, params, onParamsChange }: Props) {
         <p className="note">No adds this season.</p>
       ) : (
         <ol>
-          {list.map((c) => {
+          {list.slice(0, allAdded ? MOST_ADDED : MOST_ADDED_PREVIEW).map((c) => {
             const p = players[c.player_key];
             return (
               <li key={c.player_key}>
@@ -272,6 +275,16 @@ export default function Moves({ season, params, onParamsChange }: Props) {
             );
           })}
         </ol>
+      )}
+      {list.length > MOST_ADDED_PREVIEW && (
+        <button
+          type="button"
+          className="more"
+          aria-expanded={allAdded}
+          onClick={() => setAllAdded((open) => !open)}
+        >
+          {allAdded ? `Show top ${MOST_ADDED_PREVIEW}` : `Show top ${MOST_ADDED}`}
+        </button>
       )}
     </section>
   );

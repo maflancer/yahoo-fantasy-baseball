@@ -501,6 +501,15 @@ select {
   margin: -4px 0 4px;
 }
 
+.add-count {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--accent);
+}
+
 .rank-badge {
   font-weight: 700;
   font-variant-numeric: tabular-nums;

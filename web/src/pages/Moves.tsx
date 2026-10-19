@@ -22,6 +22,23 @@ interface TeamActivity {
 }
 
 const PAGE_SIZE = 100;
+const MOST_ADDED = 10;
+const PITCHER_POSITIONS = new Set(["SP", "RP", "P"]);
+
+interface AddCount {
+  player_key: string;
+  adds: number;
+  teams: number;
+  /** The team(s) that added him the most, and how many times. */
+  topTeams: string[];
+  topAdds: number;
+}
+
+/** Pitchers are players eligible only at pitching positions (two-way players count as batters). */
+function isPitcher(position: string): boolean {
+  const positions = position.split(",").filter(Boolean);
+  return positions.length > 0 && positions.every((p) => PITCHER_POSITIONS.has(p));
+}
 
 const ACTIONS: { id: Action; label: string }[] = [
   { id: "", label: "All moves" },
@@ -54,10 +71,14 @@ export default function Moves({ season, params, onParamsChange }: Props) {
     const activity = new Map<string, TeamActivity>(
       teams.map((t) => [t.team_key, { team_key: t.team_key, name: t.name, adds: 0, drops: 0, trades: 0 }]),
     );
+    const addedBy = new Map<string, string[]>();
     for (const entry of transactions) {
       const traders = new Set<string>();
       for (const m of entry.moves) {
-        if (m.action === "add" && m.to_team_key) activity.get(m.to_team_key)!.adds++;
+        if (m.action === "add" && m.to_team_key) {
+          activity.get(m.to_team_key)!.adds++;
+          addedBy.set(m.player_key, [...(addedBy.get(m.player_key) ?? []), m.to_team_key]);
+        }
         if (m.action === "drop" && m.from_team_key) activity.get(m.from_team_key)!.drops++;
         if (m.action === "trade") {
           if (m.from_team_key) traders.add(m.from_team_key);
@@ -68,7 +89,27 @@ export default function Moves({ season, params, onParamsChange }: Props) {
     }
     // The last date anyone moved, standing in for "end of season" in stint lengths.
     const lastDate = transactions.find((e) => e.type !== "draft")?.date ?? "";
-    return { names, activity: [...activity.values()], lastDate };
+    // Most-added players, split into batters and pitchers; ties go to the better season rank.
+    const counts: AddCount[] = [...addedBy].map(([player_key, teamKeys]) => {
+      const perTeam = new Map<string, number>();
+      for (const key of teamKeys) perTeam.set(key, (perTeam.get(key) ?? 0) + 1);
+      const topAdds = Math.max(...perTeam.values());
+      return {
+        player_key,
+        adds: teamKeys.length,
+        teams: perTeam.size,
+        topTeams: [...perTeam].filter(([, n]) => n === topAdds).map(([key]) => key),
+        topAdds,
+      };
+    });
+    const rankOf = (c: AddCount) => file.data.players[c.player_key]?.rank ?? Infinity;
+    counts.sort((a, b) => b.adds - a.adds || rankOf(a) - rankOf(b));
+    const pitcher = (c: AddCount) => isPitcher(file.data.players[c.player_key]?.position ?? "");
+    const mostAdded = {
+      batters: counts.filter((c) => !pitcher(c)).slice(0, MOST_ADDED),
+      pitchers: counts.filter(pitcher).slice(0, MOST_ADDED),
+    };
+    return { names, activity: [...activity.values()], lastDate, mostAdded };
   }, [file]);
 
   if (!season.has_moves) return <p className="status">No moves for {season.year}.</p>;
@@ -191,8 +232,57 @@ export default function Moves({ season, params, onParamsChange }: Props) {
     },
   ];
 
+  // "gabriel", "gabriel & Zach", or "gabriel & 2 others" when teams tie.
+  const topTeamsText = (keys: string[]) => {
+    const names = keys.map(nameOf).sort((a, b) => a.localeCompare(b));
+    if (names.length <= 2) return names.join(" & ");
+    return `${names[0]} & ${names.length - 1} others`;
+  };
+
+  const mostAddedCard = (title: string, list: AddCount[]) => (
+    <section className="card highlight">
+      <h2 className="section-title">{title}</h2>
+      {list.length === 0 ? (
+        <p className="note">No adds this season.</p>
+      ) : (
+        <ol>
+          {list.map((c) => {
+            const p = players[c.player_key];
+            return (
+              <li key={c.player_key}>
+                <span className="player">
+                  {p?.name ?? c.player_key}
+                  <span className="player-meta">
+                    {p?.position}
+                    {p?.rank ? ` · #${p.rank}` : ""}
+                  </span>
+                  {c.teams > 1 && c.topAdds > 1 && (
+                    <span className="player-meta">
+                      Most by {topTeamsText(c.topTeams)} ({c.topAdds}×)
+                    </span>
+                  )}
+                </span>
+                <span className="add-count">
+                  {c.adds}×
+                  <span className="player-meta">
+                    {c.teams} {c.teams === 1 ? "team" : "teams"}
+                  </span>
+                </span>
+              </li>
+            );
+          })}
+        </ol>
+      )}
+    </section>
+  );
+
   return (
     <>
+      <div className="highlights">
+        {mostAddedCard("Most added batters", data.mostAdded.batters)}
+        {mostAddedCard("Most added pitchers", data.mostAdded.pitchers)}
+      </div>
+
       <section className="card">
         <div className="segmented" role="tablist" aria-label="View">
           {(

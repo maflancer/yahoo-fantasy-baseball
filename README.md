@@ -1,6 +1,8 @@
 # Yahoo Fantasy Baseball
 
-A stats site for a Yahoo Fantasy Baseball league: **[maflancer.github.io/yahoo-fantasy-baseball](https://maflancer.github.io/yahoo-fantasy-baseball/)**
+A stats site for my Yahoo Fantasy Baseball league with friends: **[maflancer.github.io/yahoo-fantasy-baseball](https://maflancer.github.io/yahoo-fantasy-baseball/)**
+
+It's built so anyone can point it at their own league; see [Use it for your own league](#use-it-for-your-own-league).
 
 - **Standings**: final or current standings for each season
 - **Scoreboard**: each week's matchups, category by category, plus the week's category leaders
@@ -8,7 +10,13 @@ A stats site for a Yahoo Fantasy Baseball league: **[maflancer.github.io/yahoo-f
 - **Draft**: every pick with the player's season rank and how long the drafting team kept him, plus the biggest steals and busts
 - **Moves**: every add, drop and trade, each team's activity, and the best pickups of the season
 
-Data is pulled from Yahoo every Monday by a GitHub Action, and the site is hosted on GitHub Pages.
+## How it works
+
+1. A Python pipeline pulls league data from the Yahoo Fantasy API and writes JSON files to `web/public/data/`.
+2. A scheduled GitHub Action runs the pipeline every Monday and commits any changed data (in the offseason there's nothing new, so it commits nothing).
+3. New data, or a merged pull request, builds the React + TypeScript site and deploys it to GitHub Pages.
+
+Every pull request runs CI: Python tests (pytest, against saved real Yahoo responses) covering parsing, stat totals, the playoff bracket and draft/transaction history, plus linting and a type-check and build of the site.
 
 Fantasy data provided by [Yahoo Fantasy](https://sports.yahoo.com/fantasy/).
 
